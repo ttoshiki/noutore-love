@@ -75,7 +75,7 @@ get_header();
 					>
 				</h2>
 				<span class="archive__subHeading">「脳トレ」コラム</span>
-				<ul class="archive__columnCategoryList">
+				<!-- <ul class="archive__columnCategoryList">
 					<li class="cat-item"><a href="<?php echo home_url('/column/') ?>">最新記事</a></li>
 					<?php
 						$terms = get_terms('column_category');
@@ -83,7 +83,7 @@ get_header();
 							echo '<li class="cat-item cat-' . $term->slug . '"><a href="'.get_term_link($term).'">'.$term->name.'</a></li>';
 						}
 						?>
-				</ul>
+				</ul> -->
 			</section>
 		<?php } elseif(is_tax('column_category')) { ?>
 			<div class="archive__taxTitleWrapper"><h2 class="archive__taxTitle">CATEGORY</h2></div>
@@ -145,14 +145,14 @@ get_header();
 							>
 					</h2>
 					<?php get_template_part('template-parts/searchform'); ?>
-					<h2 class="archive__categoryHeading">
+					<!-- <h2 class="archive__categoryHeading">
 						<span class="sr-only">CATEGORY</span>
 						<img
 							src="<?php echo get_template_directory_uri(); ?>/assets/img/archive/category_header.svg"
 							alt="CATEGORY"
 						>
 					</h2>
-					<?php get_template_part('template-parts/search-category'); ?>
+					<?php get_template_part('template-parts/search-category'); ?> -->
 					<h2 class="archive__pushNoticeHeading">
 						<span class="sr-only">プッシュ通知を購読</span>
 						<img
