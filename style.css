@@ -3228,7 +3228,7 @@ img {
 }
 
 .single__content h3 {
-  display: inline-block;
+  display: block;
   padding: 6px 12px;
   margin-top: 2rem;
   margin-bottom: 1.6rem;
@@ -7142,6 +7142,17 @@ img {
   background-color: transparent;
 }
 
+.breadcrumb {
+  margin-top: 100px;
+  font-size: 13px;
+}
+
+.breadcrumb__icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+}
+
 @media screen and (max-width: 768px) {
   .single-news__inner {
     padding: 0;
@@ -7188,6 +7199,9 @@ img {
   }
   .single-news__links {
     padding: 0 24px;
+  }
+  .breadcrumb {
+    margin-top: 80px;
   }
 }
 

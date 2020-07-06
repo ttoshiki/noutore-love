@@ -98,6 +98,7 @@ get_header();
 						<a href="https://39auto.biz/namakemono-yuki/touroku/entryform15.htm" class="single__followSnsLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_line.svg" alt="" class="single__followSnsIcon"></a>
 				</div>
 			</section>
+			<?php get_template_part('template-parts/breadcrumb'); ?>
 		</div>
 <?php
 get_sidebar();
