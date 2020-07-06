@@ -265,6 +265,9 @@ window.addEventListener("load", function () {
             this.isShowGroupD = true;
           }
         });
+        setTimeout(function(){
+          location.href="#diagnosis-result"
+        }, 50);
       },
     },
   });

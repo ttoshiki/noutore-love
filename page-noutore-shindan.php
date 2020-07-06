@@ -54,7 +54,7 @@
             </div>
             <button @click="diagnose" class="diagnosis__button">診断結果へ</button>
             <transition name="diagnosis-fade">
-                <div v-if="showResult" class="diagnosis__resultHeaderWrapper">
+                <div v-if="showResult" class="diagnosis__resultHeaderWrapper" id="diagnosis-result">
                     <h2 class="diagnosis__resultHeading">
                         あなたに合った<br />
                         オーダーの仕方はこれ！
@@ -69,7 +69,7 @@
                         :key="type.group"
                         :type-source="'<?php echo get_template_directory_uri() ?>/assets/img/diagnosis/type_spring_text.png'"
                         :group="type.group"
-                        more-link="hoge"
+                        more-link="<?php get_permalink(3760); ?>"
                         :chara-source="'<?php echo get_template_directory_uri() ?>/assets/img/diagnosis/type_spring_image.jpg'"
                         :person-source="'<?php echo get_template_directory_uri() ?>/assets/img/diagnosis/y-etoh.jpg'"
                         :person-name="type.personName"
@@ -91,7 +91,7 @@
                         :key="type.group"
                         :type-source="'<?php echo get_template_directory_uri() ?>/assets/img/diagnosis/type_summer_text.png'"
                         :group="type.group"
-                        more-link="hoge"
+                        more-link="<?php get_permalink(3763); ?>"
                         :chara-source="'<?php echo get_template_directory_uri() ?>/assets/img/diagnosis/type_summer_image.jpg'"
                         :person-source="'<?php echo get_template_directory_uri() ?>/assets/img/diagnosis/mii.jpg'"
                         :person-name="type.personName"
@@ -110,7 +110,7 @@
                         :key="type.group"
                         :type-source="'<?php echo get_template_directory_uri() ?>/assets/img/diagnosis/type_fall_text.png'"
                         :group="type.group"
-                        more-link="hoge"
+                        more-link="<?php get_permalink(3767); ?>"
                         :chara-source="'<?php echo get_template_directory_uri() ?>/assets/img/diagnosis/type_fall_image.jpg'"
                         :person-source="'<?php echo get_template_directory_uri() ?>/assets/img/diagnosis/saki.jpg'"
                         :person-name="type.personName"
@@ -132,7 +132,7 @@
                         :group="type.group"
                         :type-source="'<?php echo get_template_directory_uri() ?>/assets/img/diagnosis/type_winter_text.png'"
                         :group="type.group"
-                        more-link="hoge"
+                        more-link="<?php get_permalink(3771); ?>"
                         :chara-source="'<?php echo get_template_directory_uri() ?>/assets/img/diagnosis/type_winter_image.jpg'"
                         :person-source="'<?php echo get_template_directory_uri() ?>/assets/img/diagnosis/s-ohara.jpg'"
                         :person-name="type.personName"
