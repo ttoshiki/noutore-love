@@ -256,24 +256,32 @@ get_header();
       </h2>
       <ul class="home__profileList">
         <li class="home__profileItem">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/profile_saki.jpg" alt="ナビゲーター saki">
-          <span class="home__profilePosition">ナビゲーター</span>
-          <span class="home__profileName">saki</span>
+          <a href="<?php echo home_url('/profile#saki') ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/profile_saki.jpg" alt="ナビゲーター saki">
+            <span class="home__profilePosition">ナビゲーター</span>
+            <span class="home__profileName">saki</span>
+          </a>
         </li>
         <li class="home__profileItem">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/profile_mii.jpg" alt="ナビゲーター みい">
-          <span class="home__profilePosition">ナビゲーター</span>
-          <span class="home__profileName">みい</span>
+          <a href="<?php echo home_url('/profile#mii') ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/profile_mii.jpg" alt="ナビゲーター みい">
+            <span class="home__profilePosition">ナビゲーター</span>
+            <span class="home__profileName">みい</span>
+          </a>
         </li>
         <li class="home__profileItem">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/profile_s-ohara.jpg" alt="運営統括 小原 彩夏">
-          <span class="home__profilePosition">運営統括</span>
-          <span class="home__profileName">小原 彩夏</span>
+          <a href="<?php echo home_url('/profile#obara') ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/profile_s-ohara.jpg" alt="運営統括 小原 彩夏">
+            <span class="home__profilePosition">運営統括</span>
+            <span class="home__profileName">小原 彩夏</span>
+          </a>
         </li>
         <li class="home__profileItem">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/profile_y-etoh.jpg" alt="代表 江藤 有紀">
-          <span class="home__profilePosition">代表</span>
-          <span class="home__profileName">江藤 有紀</span>
+          <a href="<?php echo home_url('/profile#etoh') ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/profile_y-etoh.jpg" alt="代表 江藤 有紀">
+            <span class="home__profilePosition">代表</span>
+            <span class="home__profileName">江藤 有紀</span>
+          </a>
         </li>
       </ul>
     </section>
