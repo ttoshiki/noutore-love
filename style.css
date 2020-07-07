@@ -3603,11 +3603,6 @@ img {
     top: 24px;
   }
   .single__main
-    .liquid-speech-balloon-wrap.iguana
-    .liquid-speech-balloon-text::after {
-    top: 40px;
-  }
-  .single__main
     .liquid-speech-balloon-wrap.namakemono
     .liquid-speech-balloon-text::after {
     top: 32px;
@@ -3616,6 +3611,11 @@ img {
     .liquid-speech-balloon-right.liquid-speech-balloon-wrap:not(.liquid-speech-balloon-vertical)
     .liquid-speech-balloon-arrow {
     top: 20px;
+  }
+  .single__main
+    .liquid-speech-balloon-right
+    .liquid-speech-balloon-text::after {
+    top: 33px;
   }
   .single__header {
     flex-direction: column;
