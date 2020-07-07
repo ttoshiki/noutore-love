@@ -27,6 +27,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #000;
+  counter-reset: number;
   background-color: #fff;
 }
 
@@ -445,20 +446,20 @@ img {
 
 .loader {
   position: absolute;
-  left: 50%;
+  position: relative;
   top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 25px;
+  left: 50%;
   width: 1em;
   height: 1em;
-  border-radius: 50%;
-  position: relative;
+  font-size: 25px;
   text-indent: -9999em;
-  -webkit-animation: load5 1.1s infinite ease;
-  animation: load5 1.1s infinite ease;
+  border-radius: 50%;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
+  transform: translate(-50%, -50%);
   transform: translateZ(0);
+  -webkit-animation: load5 1.1s infinite ease;
+  animation: load5 1.1s infinite ease;
 }
 
 @keyframes load5 {
@@ -3077,7 +3078,7 @@ img {
 
 .single__main .liquid-speech-balloon-text::after {
   position: absolute;
-  top: 45%;
+  top: 35px;
   left: -25px;
   margin-top: -14px;
   content: "";
@@ -3110,6 +3111,7 @@ img {
 .single__main
   .liquid-speech-balloon-wrap.namakemono
   .liquid-speech-balloon-text::after {
+  top: 37px;
   border-right: 12px solid #f7c9d9;
 }
 
@@ -3123,11 +3125,21 @@ img {
   border-right: 12px solid #93d2f0;
 }
 
+.single__main .liquid-speech-balloon-wrap.ayaka .liquid-speech-balloon-text {
+  border: 2px solid #9ddd93;
+}
+
+.single__main
+  .liquid-speech-balloon-wrap.ayaka
+  .liquid-speech-balloon-text::after {
+  border-right: 12px solid #9ddd93;
+}
+
 .single__main
   .liquid-speech-balloon-wrap:not(.liquid-speech-balloon-vertical)
   .liquid-speech-balloon-arrow {
   position: absolute;
-  top: 28%;
+  top: 24px;
   left: -20px;
   border: 10px solid transparent;
   border-right: 10px solid #fff;
@@ -3241,13 +3253,21 @@ img {
   border-left: 4px solid #f0908a;
 }
 
+.single__content h4 {
+  display: block;
+  padding: 6px 12px;
+  font-size: 20px;
+  font-weight: 400;
+  border-left: 2px solid #f0908a;
+}
+
 .single__content p {
   padding-bottom: 2rem;
   margin: 0 auto;
   color: #716a58;
 }
 
-.single__content p.box {
+.single__content .box {
   padding: 24px;
   margin: 40px 0 64px;
   border: 2px solid #a6d5c8;
@@ -3265,6 +3285,30 @@ img {
   margin-bottom: 1.5em;
 }
 
+.single__content ol {
+  counter-reset: number 0;
+}
+
+.single__content ol > li {
+  padding-left: 36px;
+}
+
+.single__content ol > li::before {
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  color: #ffffff;
+  content: counter(number);
+  counter-increment: number 1;
+  background-color: #f4b0a9;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
 .single__content li {
   position: relative;
   padding-left: 26px;
@@ -3276,17 +3320,21 @@ img {
 
 .single__content li::before {
   position: absolute;
-  display: block;
-  content: "";
   top: 0.6em;
   left: 10px;
+  display: block;
   width: 6px;
   height: 6px;
+  content: "";
   background-color: #efe4dc;
 }
 
 .single__content .wp-block-embed {
   margin: 16px 0;
+}
+
+.single__content .wp-block-image {
+  margin: 1em 0;
 }
 
 .single__sns {
@@ -3319,8 +3367,8 @@ img {
 .single__relatedKeywordsList a {
   display: inline-block;
   padding: 4px 8px;
-  background-color: #c6a385;
   color: #ffffff;
+  background-color: #c6a385;
 }
 
 .single__footerHeading {
@@ -3463,11 +3511,11 @@ img {
 }
 
 .single__relatedPostTitle {
+  display: block;
   margin: 0;
   font-size: 24px;
   font-weight: 400;
   color: #716a58;
-  display: block;
 }
 
 .single__relatedDaytime {
@@ -3552,7 +3600,7 @@ img {
   .single__main
     .liquid-speech-balloon-wrap:not(.liquid-speech-balloon-vertical)
     .liquid-speech-balloon-arrow {
-    top: 28px;
+    top: 23px;
   }
   .single__main
     .liquid-speech-balloon-wrap.iguana
@@ -3567,7 +3615,7 @@ img {
   .single__main
     .liquid-speech-balloon-right.liquid-speech-balloon-wrap:not(.liquid-speech-balloon-vertical)
     .liquid-speech-balloon-arrow {
-    top: 20px;
+    top: 23px;
   }
   .single__header {
     flex-direction: column;
@@ -3587,7 +3635,7 @@ img {
   .single__contributor img {
     width: 56px;
   }
-  .single__content p.box {
+  .single__content .box {
     margin: 24px 0 48px;
   }
   .single__content ul {
