@@ -3600,7 +3600,7 @@ img {
   .single__main
     .liquid-speech-balloon-wrap:not(.liquid-speech-balloon-vertical)
     .liquid-speech-balloon-arrow {
-    top: 23px;
+    top: 24px;
   }
   .single__main
     .liquid-speech-balloon-wrap.iguana
@@ -3615,7 +3615,7 @@ img {
   .single__main
     .liquid-speech-balloon-right.liquid-speech-balloon-wrap:not(.liquid-speech-balloon-vertical)
     .liquid-speech-balloon-arrow {
-    top: 23px;
+    top: 20px;
   }
   .single__header {
     flex-direction: column;

@@ -38,10 +38,12 @@ get_header();
 								<span><?php the_category(', '); ?></span>
 							</div>
 						</div>
-						<div class="single__contributor">
-							<?php echo get_avatar( get_the_author_id(), 300 ); ?>
-							<?php echo get_the_author(); ?>
-						</div>
+						<?php if( !(get_post_type() === 'post')): ?>
+							<div class="single__contributor">
+								<?php echo get_avatar( get_the_author_id(), 300 ); ?>
+								<?php echo get_the_author(); ?>
+							</div>
+						<?php endif; ?>
 					</div>
 				</header>
 				<div class="single__content">
