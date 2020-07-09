@@ -223,19 +223,25 @@ get_header();
           </div>
         </h2>
         <div class="online-lesson__stepsSchedules">
-          <span class="online-lesson__stepsSchedule"><div class="online-lesson__stepsEvenAlignment"><span>東</span><span>京</span></div></span>
           <span class="online-lesson__stepsSchedule">
-            <span>名古屋</span>
-            <small class="online-lesson__stepsSmall">or</small>
-            <span>大阪</span>
-            <small class="online-lesson__stepsSmall">or</small>
-            <span>福岡</span>
+            <div class="online-lesson__stepsEvenAlignment">
+              <span>東</span><span>京</span>
+            </div>
+            <span class="online-lesson__stepsSmall">（対面）</span>
           </span>
-          <span class="online-lesson__stepsSchedule">オンライン</span>
           <span class="online-lesson__stepsSchedule">
-            <span class="online-lesson__stepsScheduleCaution">（開催方法未定）</span>
-            <span>限定</span>
-            <span>セッション</span>
+            <div class="online-lesson__stepsEvenAlignment">
+              <span>京</span><span>都</span>
+            </div>
+            <span class="online-lesson__stepsSmall">（対面）</span>
+          </span>
+          <span class="online-lesson__stepsSchedule">
+            zoom
+            <span class="online-lesson__stepsSmall">（オンライン）</span>
+          </span>
+          <span class="online-lesson__stepsSchedule">
+            全国各地
+            <span class="online-lesson__stepsSmall">（対面or<br />オンライン）</span>
           </span>
         </div>
         <p class="online-lesson__stepsScheduleParagraph">ご都合の良い回を選んで<br class="-sp"><mark class="online-lesson__stepsMark">月2回まで</mark>ご参加ください</p>
@@ -417,18 +423,11 @@ get_header();
       <span class="online-lesson__flowCaution">※事務手続きの関係上、原則クレジット決済のみとなります。</span>
       <div class="online-lesson__terms">
         <h3 class="online-lesson__termsHeading">利用規約</h3>
-        <p>ホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげ</p>
-        <p>ホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげ</p>
-        <p>ホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげ</p>
-        <p>ホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげ</p>
-        <p>ホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげ</p>
-        <p>ホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげ</p>
-        <p>ホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげ</p>
-        <p>ホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげ</p>
-        <p>ホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげ</p>
-        <p>ホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげ</p>
-        <p>ホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげ</p>
-        <p>ホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげホゲホゲほげ</p>
+        <p>・お申し込みをいただいた時点で、下記の内容に同意いただいたものとして進めます。</p>
+        <p>・本レッスンは「脳トレ」の概念を伝えるものです。取得度には個人差がありますので、オンラインレッスンに参加するだけで希望の変化が現れることをお約束するものではありません。</p>
+        <p>・デジタルコンテンツという特性上、レッスン開始後（会員サイトへのログイン後）のキャンセルは承ることができません。</p>
+        <p>・お申し込み後3日以内にレッスン費用を決済いただき、決済を持って確定といたします。決済後のキャンセルはレッスン開始月の1日以前の場合、入学金を除いた金額を返金いたします。</p>
+        <p>・レッスン規約等が改定された場合の告知は、ウェブサイト上への表示と申込者への連絡先へ通知します。</p>
       </div>
       <div id="online-lesson__termsAgreeWrapper">
         <div class="online-lesson__termsAgree">

@@ -2619,7 +2619,7 @@ img {
 
 .archive__columnArticle img {
   width: 100%;
-  height: 16.8vw;
+  height: 18.14vw;
   object-fit: cover;
 }
 
@@ -2923,7 +2923,7 @@ img {
     column-gap: 4%;
   }
   .archive__columnArticle img {
-    height: 25.8vw;
+    height: 31.2vw;
   }
   .archive__itemTitle {
     font-size: 14px;
@@ -3165,6 +3165,7 @@ img {
 
 .single__header {
   display: flex;
+  align-items: center;
   font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
     "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
 }
@@ -5664,7 +5665,7 @@ img {
 
 .online-lesson__step.-step2 .online-lesson__stepsSchedules {
   padding: 0 3vw;
-  margin-top: 48px;
+  margin-top: 40px;
 }
 
 .online-lesson__step.-step3 {
@@ -5951,7 +5952,7 @@ img {
 .online-lesson__step2SubHeadingImage {
   position: relative;
   display: block;
-  width: 35.03vw;
+  width: 45.7vw;
   margin: 3.4vw auto 0;
 }
 
@@ -5961,7 +5962,7 @@ img {
 
 .online-lesson__step2SubHeadingWrapper {
   position: relative;
-  width: 39vw;
+  width: 43vw;
   margin: 0 auto;
   background-color: #ffffff;
 }
@@ -6012,9 +6013,10 @@ img {
   align-items: center;
   justify-content: center;
   width: 21.5%;
-  padding: 2vw 0;
-  font-size: 2.2vw;
+  padding: 3vw 0;
+  font-size: 2.27vw;
   font-weight: 600;
+  line-height: 1;
   background-color: #c6a385;
   border-radius: 12px;
 }
@@ -6030,18 +6032,7 @@ img {
   width: 5.5vw;
   height: 5.5vw;
   content: "";
-  background-image: url(assets/img/online-lesson/step2_month_per1.svg);
-  background-size: cover;
-}
-
-.online-lesson__stepsSchedule:first-child::after {
-  position: absolute;
-  top: -3vw;
-  right: 0.5vw;
-  width: 8vw;
-  height: 2.4vw;
-  content: "";
-  background-image: url(assets/img/online-lesson/step2_ftof_decoration.svg);
+  background-image: url(assets/img/online-lesson/step2_month_per2.svg);
   background-size: cover;
 }
 
@@ -6053,17 +6044,6 @@ img {
   height: 5.5vw;
   content: "";
   background-image: url(assets/img/online-lesson/step2_month_per1.svg);
-  background-size: cover;
-}
-
-.online-lesson__stepsSchedule:nth-child(2)::after {
-  position: absolute;
-  top: -3vw;
-  right: 0.5vw;
-  width: 8vw;
-  height: 2.4vw;
-  content: "";
-  background-image: url(assets/img/online-lesson/step2_ftof_decoration.svg);
   background-size: cover;
 }
 
@@ -6085,7 +6065,7 @@ img {
   width: 5.5vw;
   height: 5.5vw;
   content: "";
-  background-image: url(assets/img/online-lesson/step2_month_per3.svg);
+  background-image: url(assets/img/online-lesson/step2_month_per2.svg);
   background-size: cover;
 }
 
@@ -6099,9 +6079,13 @@ img {
   font-size: 1.65vw;
 }
 
-.online-lesson__stepsSmall {
-  font-size: 1.6vw;
-  line-height: 1;
+span.online-lesson__stepsSmall {
+  display: block;
+  margin-top: 6px;
+  font-size: 1.66vw;
+  color: #efe4dc;
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 .online-lesson__stepsScheduleCaution {
@@ -6533,6 +6517,10 @@ img {
     height: auto;
     padding: 80px 0 88px;
   }
+  span.online-lesson__stepsSmall {
+    font-size: 3.7vw;
+    line-height: 1.2;
+  }
   .online-lesson__step.-step1,
   .online-lesson__step.-step2 {
     position: relative;
@@ -6602,7 +6590,7 @@ img {
     left: -12%;
     z-index: 50;
     width: 124%;
-    height: 91%;
+    height: 93%;
     content: "";
     background-image: url(assets/img/online-lesson/step2_bg-sp.png);
     background-size: cover;
@@ -6743,7 +6731,7 @@ img {
     width: 100%;
   }
   .online-lesson__step2SubHeadingImage {
-    width: 70%;
+    width: 60%;
     margin: 44px auto 0;
   }
   .online-lesson__step2SubHeadingImage.-pc {
