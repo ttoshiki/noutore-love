@@ -24,7 +24,8 @@
 			<li class="footer__upperItem"><a href="<?php home_url(); ?>" class="footer__upperItemLink">トップページ</a></li>
 			<li class="footer__upperItem"><a href="<?php home_url(); ?>" class="footer__upperItemLink">Information</a></li>
 			<li class="footer__upperItem"><a href="<?php home_url(); ?>" class="footer__upperItemLink">会社情報</a></li>
-			<li class="footer__upperItem"><a href="https://team.noutore-love.com" class="footer__upperItemLink">コミュニティサイト</a></li>
+			<li class="footer__upperItem"><a href="https://team.noutore-love.com" class="footer__upperItemLink">運営コミュニティサイト</a></li>
+			<li class="footer__upperItem"><a href="https:/reservation.noutore-love.com" class="footer__upperItemLink">個人セッション予約サイト</a></li>
 		</ul>
 		<div class="footer__middle">
 			<ul class="footer__middleList">
@@ -84,7 +85,7 @@
 			</div>
 		</div>
 		<div class="footer__lower">
-			 <a href="#" class="footer__lowerLink">プライバシーポリシー・面積事項</a>
+			 <a href="#" class="footer__lowerLink">プライバシーポリシー・免責事項</a>
 			 <small class="footer__copyright">Copyright © 2020 「脳トレ」NOUTORE online lesson. <br class="-sp">All Rights Reserved.</small>
 		</div>
 	</footer><!-- #colophon -->
