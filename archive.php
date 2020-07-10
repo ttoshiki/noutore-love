@@ -61,7 +61,6 @@ get_header();
 					<?php else: ?>
 						<p>準備中です</p>
 					<?php endif; ?>
-					<hooper-navigation slot="hooper-addons"></hooper-navigation>
 					<hooper-pagination slot="hooper-addons"></hooper-pagination>
 				</hooper>
 			</div>

@@ -60,7 +60,7 @@ get_header();
                 class="-sp"
             >
           </p>
-          <a href="" class="profile__moreButton">SEE MORE</a>
+          <a href="<?php echo get_permalink(3832) ?>" class="profile__moreButton">SEE MORE</a>
         </div>
       </div>
       <div class="profile__personWrapper" id="mii">
@@ -87,7 +87,7 @@ get_header();
                 class="-sp"
             >
           </p>
-          <a href="" class="profile__moreButton">SEE MORE</a>
+          <a href="<?php echo get_permalink(3837) ?>" class="profile__moreButton">SEE MORE</a>
         </div>
       </div>
       <div class="profile__personWrapper" id="obara">
@@ -114,7 +114,7 @@ get_header();
                 class="-sp"
             >
           </p>
-          <a href="" class="profile__moreButton">SEE MORE</a>
+          <a href="<?php echo get_permalink(3830) ?>" class="profile__moreButton">SEE MORE</a>
         </div>
       </div>
       <div class="profile__personWrapper" id="etoh">
@@ -141,7 +141,7 @@ get_header();
                 class="-sp"
             >
           </p>
-          <a href="" class="profile__moreButton">SEE MORE</a>
+          <a href="<?php echo get_permalink(3827) ?>" class="profile__moreButton">SEE MORE</a>
         </div>
       </div>
     </section>
