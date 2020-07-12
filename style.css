@@ -1058,6 +1058,9 @@ img {
   .banner {
     width: 100%;
   }
+  .banner:not(:first-of-type) {
+    margin-top: 8px;
+  }
   .prHeading {
     font-size: 14px;
   }
@@ -1700,6 +1703,10 @@ img {
   transform: translate(-50%, -50%);
 }
 
+.home__flow .buttonWrapper {
+  margin-top: 3.2vw;
+}
+
 .home__flowHeading,
 .home__flowLessonHeading {
   width: 42.17vw;
@@ -1977,12 +1984,16 @@ img {
 }
 
 .home__prArea {
-  padding: 6.22vw 0;
+  padding: 6.22vw 0 0;
 }
 
 .home__twitterArea {
   width: 40%;
   margin: 1vw auto 0;
+}
+
+.home__prHeading {
+  font-weight: 400;
 }
 
 @keyframes news-5 {
@@ -2282,6 +2293,12 @@ img {
   .home__flow {
     padding: 0 0 6.22vw;
   }
+  .home__flow .buttonWrapper {
+    margin: 12vw 0 4vw;
+  }
+  .home__flow .buttonInner {
+    padding: 3.6vw 7vw;
+  }
   .home__flowBlock {
     width: 80%;
     margin: 0 auto;
@@ -2348,6 +2365,9 @@ img {
     width: 100%;
     height: 58vw;
     background-image: url(assets/img/home/howto_noutore_bg-sp.png);
+  }
+  .home__howtoNoutoreHeading {
+    width: 64.6vw;
   }
   .home__howtoNoutoreMethod {
     flex-direction: column;
@@ -2448,6 +2468,9 @@ img {
   }
   .home__twitterArea {
     width: 80%;
+  }
+  .home__prHeading {
+    font-size: 14px;
   }
   @keyframes news-3 {
     0% {
@@ -3751,7 +3774,7 @@ img {
 
 .hananiwa__aboutHeading {
   width: 68.08vw;
-  margin: 7vw auto 4vw;
+  margin: 24px auto 4vw;
 }
 
 .hananiwa__desc {
@@ -4585,7 +4608,6 @@ img {
 .profile__personMore {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-top: 16px;
 }
 

@@ -26,8 +26,8 @@
 			<li class="footer__upperItem"><a href="<?php home_url(); ?>" class="footer__upperItemLink">トップページ</a></li>
 			<li class="footer__upperItem"><a href="<?php home_url(); ?>" class="footer__upperItemLink">Information</a></li>
 			<li class="footer__upperItem"><a href="<?php home_url(); ?>" class="footer__upperItemLink">会社情報</a></li>
-			<li class="footer__upperItem"><a href="//team.noutore-love.com" class="footer__upperItemLink">運営コミュニティサイト</a></li>
-			<li class="footer__upperItem"><a href="//reservation.noutore-love.com" class="footer__upperItemLink">個人セッション予約サイト</a></li>
+			<li class="footer__upperItem"><a href="//team.noutore-love.com" class="footer__upperItemLink">運営コミュニティ<br class="-sp">サイト</a></li>
+			<li class="footer__upperItem"><a href="//reservation.noutore-love.com" class="footer__upperItemLink">個人セッション予約<br class="-sp">サイト</a></li>
 		</ul>
 		<div class="footer__middle">
 			<ul class="footer__middleList">
