@@ -45,8 +45,8 @@ get_header();
 											<span class="archive__titleSpan">
 												<?php
                                                     if (wp_is_mobile()) {
-                                                        if (mb_strlen($post->post_title) > 29) {
-                                                            $title= mb_substr($post->post_title, 0, 29) ;
+                                                        if (mb_strlen($post->post_title) > 27) {
+                                                            $title= mb_substr($post->post_title, 0, 27) ;
                                                             echo $title . '<span class="archive__ellipsis">...</span>';
                                                         } else {
                                                             echo $post->post_title;

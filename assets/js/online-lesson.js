@@ -44,12 +44,12 @@ new Vue({
   },
   methods:{
     openModal: function() {
-      let modal = document.getElementById('overlay')
+      let modal = document.getElementById('content')
       bodyScrollLock.disableBodyScroll(modal);
       this.showContent = true
     },
     closeModal: function() {
-      let modal = document.getElementById('overlay')
+      let modal = document.getElementById('content')
       bodyScrollLock.enableBodyScroll(modal);
       this.showContent = false
     },

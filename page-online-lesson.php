@@ -105,12 +105,12 @@ get_header();
             <h2 class="online-lesson-movie__heading">
               <span class="sr-only">「脳トレ」オンラインレッスン動画目次</span>
               <img
-                src="/wp-content/themes/noutore-love/assets/img/online-lesson/online-lesson_movie_header.svg"
+                src="/wp/wp-content/themes/noutore-love/assets/img/online-lesson/online-lesson_movie_header.svg"
                 alt="「脳トレ」オンラインレッスン動画目次"
                 class="-pc"
               >
               <img
-                src="/wp-content/themes/noutore-love/assets/img/online-lesson/online-lesson_movie_header-sp.svg"
+                src="/wp/wp-content/themes/noutore-love/assets/img/online-lesson/online-lesson_movie_header-sp.svg"
                 alt="「脳トレ」オンラインレッスン動画目次"
                 class="-sp"
               >

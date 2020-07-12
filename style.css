@@ -339,6 +339,7 @@ img {
 .header__iconMail img,
 .header__iconSearch img {
   width: 32px;
+  height: 32px;
 }
 
 .header__iconTwitter img:hover,
@@ -351,6 +352,7 @@ img {
 
 .header__iconMap img {
   width: 22px;
+  height: 32px;
 }
 
 .header__iconButton {
@@ -1072,8 +1074,9 @@ img {
     font-size: 18px;
   }
   .search-input {
-    padding: 16px;
+    padding: 16px 16px 8px 16px;
     font-size: 16px;
+    border-radius: 0;
   }
   .search-icon {
     width: 24px;
@@ -3814,7 +3817,7 @@ img {
 }
 
 .hananiwa__baseContents {
-  width: 100%;
+  width: 146px;
   text-align: center;
 }
 
@@ -3835,6 +3838,9 @@ img {
   }
   .hananiwa__baseText {
     margin-top: 0;
+  }
+  .hananiwa__baseContents {
+    width: 100%;
   }
 }
 
@@ -4332,6 +4338,11 @@ img {
   }
   .diagnosis__button {
     margin: 80px auto 64px;
+  }
+  /* ページ内スクロール時のヘッダー高さ */
+  .diagnosis__resultHeaderWrapper {
+    padding-top: 48px;
+    margin-top: -48px;
   }
   .diagnosis__resultHeading {
     font-size: 19px;
@@ -4911,6 +4922,7 @@ img {
 
 .seminar-video__content .wp-block-button__link::after {
   position: absolute;
+  top: 7%;
   left: 1.6%;
   width: 97%;
   height: 88%;
@@ -6449,13 +6461,11 @@ span.online-lesson__stepsSmall {
   align-items: center;
   justify-content: center;
   margin-top: 2vw;
-  font-size: 2.07vw;
+  font-size: 20px;
 }
 
 .online-lesson__termsCheckbox {
-  width: 2.07vw;
-  height: 2.07vw;
-  margin-right: 1vw;
+  margin-right: 8px;
 }
 
 .online-lesson__termsError {
@@ -6672,7 +6682,6 @@ span.online-lesson__stepsSmall {
     position: absolute;
     top: 229px;
     left: -12%;
-    z-index: 50;
     width: 124%;
     height: 93%;
     content: "";
@@ -7065,6 +7074,10 @@ span.online-lesson__stepsSmall {
   #content {
     width: 88%;
     padding: 16px 16px 40px 16px;
+  }
+  #online-lesson__modal {
+    position: relative;
+    z-index: 10;
   }
 }
 
