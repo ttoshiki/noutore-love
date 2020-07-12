@@ -22,7 +22,7 @@ get_header();
 				$the_query = new WP_Query($args); if($the_query->have_posts()):
 			?>
 			<div id="column-slider">
-				<hooper :wheel-control="false" :auto-play="true" :play-speed="3000">
+				<hooper :wheel-control="false" :auto-play="false" :play-speed="3000">
 					<?php while ($the_query->have_posts()): $the_query->the_post(); ?>
 						<slide>
 							<div>
@@ -44,12 +44,21 @@ get_header();
 										<div class="archive__titleDivision">
 											<span class="archive__titleSpan">
 												<?php
-													if (mb_strlen($post->post_title) > 33) {
-														$title= mb_substr($post->post_title, 0, 33) ;
+													if(wp_is_mobile()) {
+														if (mb_strlen($post->post_title) > 29) {
+															$title= mb_substr($post->post_title, 0, 29) ;
 															echo $title . '<span class="archive__ellipsis">...</span>';
 														} else {
 															echo $post->post_title;
 														}
+													} else {
+														if (mb_strlen($post->post_title) > 33) {
+															$title= mb_substr($post->post_title, 0, 33) ;
+															echo $title . '<span class="archive__ellipsis">...</span>';
+															} else {
+																echo $post->post_title;
+															}
+													}
 													?>
 											</span>
 										</div>

@@ -25,7 +25,7 @@
 <div class="loader-wrap" id="loading">
 	<div class="loader">Loading...</div>
 </div>
-<?php if( is_home() ) { ?>
+<?php if (is_home()) { ?>
 	<div class="opening__animation" id="opening-animation"></div>
 <?php } ?>
 <div id="page" class="site">
@@ -140,10 +140,13 @@
 					</footer>
 				</div>
 				<div class="hammenu__communityLinkWrapper">
-					<a href="https://team.noutore-love.com" class="hammenu__communityLink">
-						<span class="hammenu__communityLinkSpan">「脳トレ」</span>
-						<span class="hammenu__communityLinkSpan">コミュニティ</span>
-						<span class="hammenu__communityLinkSpan">サイト</span>
+					<a href="https://team.noutore-love.com" class="hammenu__relationLink">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/community_text.png" alt="脳トレコミュニティ">
+					</a>
+				</div>
+				<div class="hammenu__reservationLinkWrapper">
+					<a href="https://reservation.noutore-love.com" class="hammenu__relationLink">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/reservation_text.png" alt="脳トレコミュニティ">
 					</a>
 				</div>
 			</div>
