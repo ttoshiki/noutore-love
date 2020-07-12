@@ -4088,7 +4088,7 @@ img {
 
 .diagnosis__resultTypeImage {
   display: block;
-  width: 72%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -4102,7 +4102,7 @@ img {
 .diagnosis__resultSpan {
   display: block;
   margin: 8px auto 0;
-  font-size: 15px;
+  font-size: 13px;
   text-align: center;
   letter-spacing: 2px;
 }
@@ -4110,7 +4110,7 @@ img {
 .diagnosis__resultHr {
   position: relative;
   margin-top: 16px;
-  border-top: 4px solid #000000;
+  border-top: 3px solid #000000;
 }
 
 .diagnosis__resultHr::after {
@@ -4127,31 +4127,26 @@ img {
   transform: translateX(-50%);
 }
 
-.diagnosis__resultParagraph {
-  margin: 32px 0;
-  font-size: 18px;
-}
-
 .diagnosis__resultImageWrapper {
   position: relative;
 }
 
 .diagnosis__resultCharaImage {
   display: block;
-  width: 80%;
+  width: 50%;
   margin: 24px auto 0;
 }
 
 .diagnosis__moreLink {
   position: absolute;
-  right: 40px;
-  bottom: 40px;
+  right: 120px;
+  bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 12.44vw;
-  height: 12.44vw;
-  font-size: 2.48vw;
+  width: 120px;
+  height: 120px;
+  font-size: 26px;
   font-weight: 600;
   line-height: 1.4;
   color: #ffffff;
@@ -4249,30 +4244,30 @@ img {
 .diagnosis__resultPerson {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   width: 80%;
   margin: 56px auto 0;
 }
 
 .diagnosis__resultPersonImage {
-  width: 30%;
+  width: 24%;
   margin-right: 40px;
 }
 
 .diagnosis__resultParagraph {
   margin: 0;
-  font-size: 1.66vw;
-  line-height: 1.4;
+  font-size: 16px;
 }
 
 .diagnosis__resultDesc {
   margin: 32px auto 0;
-  font-size: 1.66vw;
+  font-size: 16px;
   line-height: 1.4;
 }
 
 .diagnosis__resultContentsHeading {
   margin-bottom: 0;
-  font-size: 2vw;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -4285,10 +4280,10 @@ img {
 
 .diagnosis__profileButton {
   display: inline-block;
-  width: clamp(160px, 26vw, 260px);
+  width: clamp(160px, 26vw, 220px);
   padding: 12px 0;
   margin-top: 20px;
-  font-size: clamp(16px, 2.48vw, 24px);
+  font-size: clamp(15px, 2.48vw, 18px);
   font-weight: 600;
   color: #ffffff;
   text-align: center;
@@ -4317,7 +4312,7 @@ img {
 
 .diagnosis__genreWrapper {
   display: inline-block;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .diagnosis__genreWrapper:last-of-type .diagnosis__separate {
@@ -4407,12 +4402,14 @@ img {
     font-size: 15px;
   }
   .diagnosis__resultCharaImage {
+    width: 80%;
     margin: 4px auto 0;
   }
   .diagnosis__moreLink {
     bottom: 0;
     left: 50%;
     width: 70%;
+    height: 40px;
     font-size: 20px;
     border-radius: 16px;
     transform: translateX(-50%);
