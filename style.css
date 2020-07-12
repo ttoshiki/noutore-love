@@ -701,6 +701,10 @@ img {
     min-height: auto;
     padding: 32px 24px 24px;
   }
+  .loader {
+    top: 40%;
+    left: 48%;
+  }
 }
 
 .l-diagnosis__checkbox {
