@@ -169,7 +169,7 @@ function namakemono_community_scripts()
         wp_enqueue_script('comment-reply');
     }
 
-    if(is_front_page()) {
+    if (is_front_page()) {
         wp_enqueue_script('home-slider', get_template_directory_uri() . '/assets/js/home.js', array(), _S_VERSION, true);
         wp_enqueue_script('namakemono-slider', get_template_directory_uri() . '/assets/js/hooper.js', array(), _S_VERSION, true);
     }
@@ -251,34 +251,36 @@ function official_pagination()
         'current' => max(1, get_query_var('paged')),
         'prev_text' => __('PREV'),
         'next_text' => __('NEXT'),
-        'mid_size' => 0,
+        'mid_size' => 1,
         'total' => $wp_query->max_num_pages
     ));
 }
 
 // ContactForm7に完了画面を追加
-add_action( 'wp_footer', 'add_thanks_page' );
-function add_thanks_page() {
-echo <<< EOD
+add_action('wp_footer', 'add_thanks_page');
+function add_thanks_page()
+{
+    echo <<< EOD
 <script>
 document.addEventListener( 'wpcf7mailsent', function( event ) {
-  location = 'http://noutorelove.local/complete/'; /* 遷移先のURL */
+  location = 'https://noutore-love.com/complete/'; /* 遷移先のURL */
 }, false );
 </script>
 EOD;
 }
 
 //合わせて読みたいショートコード
-function related_func ( $atts ) {
-    extract( shortcode_atts( array(
+function related_func($atts)
+{
+    extract(shortcode_atts(array(
         'id' => '',
         'label' => 'あわせて読みたい',
-    ), $atts ) );
+    ), $atts));
 
-    $ids = mb_split(",",$id);
+    $ids = mb_split(",", $id);
     $outputTag = '';
 
-    if($id):
+    if ($id):
         $outputTag .= '
         <div class="single__together">
         <ul class="single__togetherList">
@@ -287,17 +289,17 @@ function related_func ( $atts ) {
             </h5>
         ';
 
-        foreach($ids as $value):
-            if(ctype_digit($value)):
+    foreach ($ids as $value):
+            if (ctype_digit($value)):
                 $link = get_permalink($value);
-                $title = get_the_title($value);
-                $page = get_post($value);
-                if(get_post_thumbnail_id($value)){
-                    $thmbnail_url = wp_get_attachment_url(get_post_thumbnail_id( $value ));
-                } else {
-                    $thmbnail_url = '/wp-content/themes/wdd2/images/common/no-image.jpg';
-                }
-                $outputTag .='
+    $title = get_the_title($value);
+    $page = get_post($value);
+    if (get_post_thumbnail_id($value)) {
+        $thmbnail_url = wp_get_attachment_url(get_post_thumbnail_id($value));
+    } else {
+        $thmbnail_url = '/wp-content/themes/wdd2/images/common/no-image.jpg';
+    }
+    $outputTag .='
                 <li class="single__togetherItem">
                     <a class="single__togetherLink flex flex--bet" href="'. $link . '">
                         <figure class="single__togetherImage">
@@ -308,14 +310,12 @@ function related_func ( $atts ) {
                             <p class="single__togetherArticleExcerpt">' . $page->post_excerpt .'</p>
                         </div>
                     </a>
-                </li>';
-            else:
+                </li>'; else:
                 $outputTag .='<li class="single__togetherItem">記事IDの指定が正しくありません</li>';
-            endif;
-        endforeach;
-        $outputTag .= '</ul></div>';
-        return $outputTag;
-    else:
+    endif;
+    endforeach;
+    $outputTag .= '</ul></div>';
+    return $outputTag; else:
         return '
         <div class="signle">
             <h5 class="signle__title">
@@ -331,7 +331,8 @@ add_shortcode('related', 'related_func');
 /* 人気記事一覧
 ---------------------------------------------------------- */
 //記事のビュー数メタデータを作成・更新する関数
-function setPostViews() {
+function setPostViews()
+{
     $post_id = get_the_ID();
     $custom_key = 'post_views_count';
     $view_count = get_post_meta($post_id, $custom_key, true);  //現在のビュー数を取得

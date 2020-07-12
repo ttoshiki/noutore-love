@@ -136,15 +136,25 @@
 								<li class="hammenu__footerItem hammenu__iconLine"><a href="https://39auto.biz/namakemono-yuki/touroku/entryform15.htm" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_line.svg"></a></li>
 							</ul>
 						</div>
-						<small class="hammenu__copyright">Copyright © 2020 「脳トレ」NOUTORE online lesson. <br class="sp">All Rights Reserved.</small>
+						<small class="hammenu__copyright">Copyright © 2020 「脳トレ」NOUTORE online lesson. <br class="-sp">All Rights Reserved.</small>
+						<div class="hammenu__communityLinkWrapper -sp">
+							<a href="https://team.noutore-love.com" class="hammenu__relationLink">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/community_text.png" alt="脳トレコミュニティ">
+							</a>
+						</div>
+						<div class="hammenu__reservationLinkWrapper -sp">
+							<a href="https://reservation.noutore-love.com" class="hammenu__relationLink">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/reservation_text.png" alt="脳トレコミュニティ">
+							</a>
+						</div>
 					</footer>
 				</div>
-				<div class="hammenu__communityLinkWrapper">
+				<div class="hammenu__communityLinkWrapper -pc">
 					<a href="https://team.noutore-love.com" class="hammenu__relationLink">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/community_text.png" alt="脳トレコミュニティ">
 					</a>
 				</div>
-				<div class="hammenu__reservationLinkWrapper">
+				<div class="hammenu__reservationLinkWrapper -pc">
 					<a href="https://reservation.noutore-love.com" class="hammenu__relationLink">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/reservation_text.png" alt="脳トレコミュニティ">
 					</a>

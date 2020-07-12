@@ -11,18 +11,18 @@ get_header();
 ?>
 
 	<main class="archive__main">
-		<?php if ( !is_tax('column_category') && !is_tax('keyword') ) { ?>
+		<?php if (!is_tax('column_category') && !is_tax('keyword')) { ?>
 			<?php
-				$args = array(
-					'post_type' => 'column',
-					'meta_key' => 'post_views_count',
-      		'orderby' => 'meta_value_num',
-					'posts_per_page' => 5
-				);
-				$the_query = new WP_Query($args); if($the_query->have_posts()):
-			?>
+                $args = array(
+                    'post_type' => 'column',
+                    'meta_key' => 'post_views_count',
+              'orderby' => 'meta_value_num',
+                    'posts_per_page' => 5
+                );
+                $the_query = new WP_Query($args); if ($the_query->have_posts()):
+            ?>
 			<div id="column-slider">
-				<hooper :wheel-control="false" :auto-play="false" :play-speed="3000">
+				<hooper :wheel-control="false" :auto-play="true" :play-speed="3000">
 					<?php while ($the_query->have_posts()): $the_query->the_post(); ?>
 						<slide>
 							<div>
@@ -44,22 +44,22 @@ get_header();
 										<div class="archive__titleDivision">
 											<span class="archive__titleSpan">
 												<?php
-													if(wp_is_mobile()) {
-														if (mb_strlen($post->post_title) > 29) {
-															$title= mb_substr($post->post_title, 0, 29) ;
-															echo $title . '<span class="archive__ellipsis">...</span>';
-														} else {
-															echo $post->post_title;
-														}
-													} else {
-														if (mb_strlen($post->post_title) > 33) {
-															$title= mb_substr($post->post_title, 0, 33) ;
-															echo $title . '<span class="archive__ellipsis">...</span>';
-															} else {
-																echo $post->post_title;
-															}
-													}
-													?>
+                                                    if (wp_is_mobile()) {
+                                                        if (mb_strlen($post->post_title) > 29) {
+                                                            $title= mb_substr($post->post_title, 0, 29) ;
+                                                            echo $title . '<span class="archive__ellipsis">...</span>';
+                                                        } else {
+                                                            echo $post->post_title;
+                                                        }
+                                                    } else {
+                                                        if (mb_strlen($post->post_title) > 31) {
+                                                            $title= mb_substr($post->post_title, 0, 31) ;
+                                                            echo $title . '<span class="archive__ellipsis">...</span>';
+                                                        } else {
+                                                            echo $post->post_title;
+                                                        }
+                                                    }
+                                                    ?>
 											</span>
 										</div>
 									</h2>
@@ -86,14 +86,14 @@ get_header();
 				<!-- <ul class="archive__columnCategoryList">
 					<li class="cat-item"><a href="<?php echo home_url('/column/') ?>">最新記事</a></li>
 					<?php
-						$terms = get_terms('column_category');
-						foreach ( $terms as $term ) {
-							echo '<li class="cat-item cat-' . $term->slug . '"><a href="'.get_term_link($term).'">'.$term->name.'</a></li>';
-						}
-						?>
+                        $terms = get_terms('column_category');
+                        foreach ($terms as $term) {
+                            echo '<li class="cat-item cat-' . $term->slug . '"><a href="'.get_term_link($term).'">'.$term->name.'</a></li>';
+                        }
+                        ?>
 				</ul> -->
 			</section>
-		<?php } elseif(is_tax('column_category')) { ?>
+		<?php } elseif (is_tax('column_category')) { ?>
 			<div class="archive__taxTitleWrapper"><h2 class="archive__taxTitle">CATEGORY</h2></div>
 			<h3 class="archive__titleCategory">"<?php single_term_title(); ?>"<span class="archive__catCount"><<?php echo $wp_query->found_posts; ?>件></span></h3>
 			<?php } else { ?>
@@ -119,7 +119,7 @@ get_header();
 													<span class="archive__category category-<?php echo$term->slug; ?>"><?php echo $term->name; ?></span>
 												<?php } ?>
 											<?php } ?>
-											<time class="archive__articleDate"><?php echo get_the_date( 'Y/m/d' ); ?></time>
+											<time class="archive__articleDate"><?php echo get_the_date('Y/m/d'); ?></time>
 										</div>
 									<h2 class="archive__itemTitle"><?php the_title(); ?></h2>
 								</article>

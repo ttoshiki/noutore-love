@@ -19,7 +19,9 @@
 	</div>
 	</main><!-- #main -->
 
-	<footer class="footer<?php if(is_page('online-lesson')) { echo(' bg-brown'); } ?>">
+	<footer class="footer<?php if (is_page('online-lesson')) {
+    echo(' bg-brown');
+} ?>">
 		<ul class="footer__upperList">
 			<li class="footer__upperItem"><a href="<?php home_url(); ?>" class="footer__upperItemLink">トップページ</a></li>
 			<li class="footer__upperItem"><a href="<?php home_url(); ?>" class="footer__upperItemLink">Information</a></li>
@@ -87,7 +89,7 @@
 		<div class="footer__lower">
 			<div class=footer__links>
 				<a href="#" class="footer__lowerLink">プライバシーポリシー・免責事項</a>
-				<small class="footer__copyright">Copyright © 2020 「脳トレ」NOUTORE online lesson. <br class="-sp">All Rights Reserved.</small>
+				<small class="footer__copyright">Copyright © 2020 「脳トレ」NOUTORE online lesson. <br class="-sp" />All Rights Reserved.</small>
 			</div>
 			<div class="footer__banner">
 				<a href="//team.noutore-love.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner_community.png" alt=""></a>

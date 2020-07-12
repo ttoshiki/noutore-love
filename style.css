@@ -156,6 +156,7 @@ img {
 .hammenu__item {
   margin: 0 0 6px 1em;
   font-size: clamp(15px, 1.65vw, 18px);
+  font-weight: 400;
   line-height: 1.5;
 }
 
@@ -182,6 +183,7 @@ img {
 .hammenu__span {
   display: block;
   font-size: 18px;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -196,7 +198,9 @@ img {
 
 .hammenu__copyright {
   display: block;
+  margin-top: 8px;
   font-size: clamp(12px, 1.24vw, 14px);
+  font-weight: 400;
   color: #808080;
   text-align: center;
 }
@@ -205,7 +209,6 @@ img {
   position: absolute;
   right: 40px;
   bottom: 248px;
-  display: inline-block;
 }
 
 .hammenu__reservationLinkWrapper {
@@ -298,12 +301,18 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 12px;
+  margin: 0 16px;
   transition: all 0.2s;
 }
 
+.header__iconLink {
+  display: flex;
+}
+
+
 .header__iconSearch {
   position: relative;
+  width: 32px;
 }
 
 .header__iconSearch .search-input {
@@ -341,7 +350,7 @@ img {
 }
 
 .header__iconMap img {
-  width: 24px;
+  width: 22px;
 }
 
 .header__iconButton {
@@ -627,35 +636,41 @@ img {
     top: 8px;
     right: 8px;
     height: 40px;
+    font-size: 10px;
   }
   .hammenu__closeButton::before,
   .hammenu__closeButton::after {
     width: 3px;
-    height: 24px;
+    height: 40px;
   }
   .hammenu__closeButton::before {
+    top: 13px;
+  }
+  .hammenu__closeButton::after {
     top: 15px;
   }
   .hammenu__item {
-    margin: 0 6px 16px;
+    margin: 0 12px 16px;
     font-size: 15px;
   }
   .hammenu__communityLinkWrapper {
-    right: 24px;
-    bottom: 384px;
+    top: -288px;
+    right: 0;
+    bottom: auto;
   }
   .hammenu__reservationLinkWrapper {
-    right: 24px;
-    bottom: 278px;
+    top: -184px;
+    right: 0;
+    bottom: auto;
   }
   .hammenu__communityLinkWrapper::before,
   .hammenu__reservationLinkWrapper::before {
-    width: 92px;
-    height: 92px;
+    width: 24.53vw;
+    height: 24.53vw;
   }
   .hammenu__relationLink {
-    width: 92px;
-    height: 92px;
+    width: 24.53vw;
+    height: 24.53vw;
   }
   .hammenu__sns {
     position: absolute;
@@ -664,6 +679,9 @@ img {
   }
   .hammenu__copyright {
     margin-top: 44px;
+  }
+  .hammenu__footer {
+    position: relative;
   }
   .hammenu__footerList {
     margin: 4px 0 6px;
@@ -680,7 +698,8 @@ img {
     font-size: 11px;
   }
   #hammenu {
-    padding: 24px;
+    min-height: auto;
+    padding: 32px 24px 24px;
   }
 }
 
@@ -781,7 +800,7 @@ img {
   justify-content: space-between;
   width: 80%;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 1vw auto 0;
 }
 
 .banner {
@@ -2708,7 +2727,7 @@ img {
 .archive__keywordList {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 60%;
   margin: 1.4vw auto 0;
 }
 
@@ -2718,7 +2737,8 @@ img {
 
 .archive__keywordItem a {
   display: inline-block;
-  width: 7vw;
+  width: 11vw;
+  padding: 4px 0;
   color: #ffffff;
   background-color: #c6a385;
 }
@@ -2965,6 +2985,7 @@ img {
     height: 31.2vw;
   }
   .archive__itemTitle {
+    margin: 6px 0 12px;
     font-size: 14px;
   }
   .archive__subHeading {
@@ -7289,6 +7310,12 @@ span.online-lesson__stepsSmall {
 
 .complete__main img {
   height: auto;
+}
+
+.complete__main .namakemono {
+  width: 60%;
+  max-width: 260px;
+  margin: 0 auto;
 }
 
 .complete__inner {
