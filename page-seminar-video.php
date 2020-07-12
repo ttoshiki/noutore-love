@@ -34,8 +34,8 @@ get_header();
         <span class="seminar-video__iconCircle -sp"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/seminar_icon_movie.svg" alt="" class="seminar-video__catIcon"></span>
         <div class="seminar-video__catHeadingWrapper">
           <span class="seminar-video__iconCircle -pc"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/seminar_icon_movie.svg" alt="" class="seminar-video__catIcon"></span>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/mv_catch_copy.svg" alt="空気感を体感しやすい「動画」でお届け！" class="seminar-video__catCatchCopy -pc">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/mv_catch_copy-sp.svg" alt="空気感を体感しやすい「動画」でお届け！" class="seminar-video__catCatchCopy -sp">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/mv_catch_copy.svg" alt="空気感を体感しやすい「動画」でお届け！" class="seminar-video__catCatchCopy -movie -pc">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/mv_catch_copy-sp.svg" alt="空気感を体感しやすい「動画」でお届け！" class="seminar-video__catCatchCopy -movie -sp">
         </div>
       </h3>
       <div class="seminar-video__articleWrapper">
@@ -48,15 +48,15 @@ get_header();
               'term' => 'seminar_video_movie',
               'posts_per_page' => -1,
             );
-            $the_query = new WP_Query($args); if($the_query->have_posts()):
+            $the_query = new WP_Query($args); if ($the_query->have_posts()):
           ?>
           <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
             <li id="post-<?php the_ID(); ?>" class="seminar-video__item">
               <article class="seminar-video__article">
                 <a href="<?php echo home_url('/seminar_video_detail') ?>#post-<?php the_ID(); ?>">
-                  <?php if ( has_post_thumbnail()) {
-                    the_post_thumbnail('large', array('class' => 'seminar-video__articleImage'));
-                  }
+                  <?php if (has_post_thumbnail()) {
+              the_post_thumbnail('large', array('class' => 'seminar-video__articleImage'));
+          }
                   ?>
                   <span class="seminar-video__title"><?php echo get_the_title(); ?></span>
                 </a>
@@ -88,15 +88,15 @@ get_header();
               'term' => 'seminar_video_manual',
               'posts_per_page' => -1,
             );
-            $the_query = new WP_Query($args); if($the_query->have_posts()):
+            $the_query = new WP_Query($args); if ($the_query->have_posts()):
           ?>
           <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
             <li id="post-<?php the_ID(); ?>" class="seminar-video__item">
               <article class="seminar-video__article">
                 <a href="<?php echo home_url('/seminar_video_detail') ?>#post-<?php the_ID(); ?>">
-                  <?php if ( has_post_thumbnail()) {
-                    the_post_thumbnail('large', array('class' => 'seminar-video__articleImage'));
-                  }
+                  <?php if (has_post_thumbnail()) {
+              the_post_thumbnail('large', array('class' => 'seminar-video__articleImage'));
+          }
                   ?>
                   <span class="seminar-video__title"><?php echo get_the_title(); ?></span>
                 </a>

@@ -237,7 +237,6 @@ img {
   border-radius: 50%;
 }
 
-
 .hammenu__communityLinkWrapper::before,
 .hammenu__reservationLinkWrapper::before {
   position: absolute;
@@ -308,7 +307,6 @@ img {
 .header__iconLink {
   display: flex;
 }
-
 
 .header__iconSearch {
   position: relative;
@@ -805,6 +803,22 @@ img {
   margin: 1vw auto 0;
 }
 
+.banners.-front {
+  flex-direction: column;
+  justify-content: start;
+  width: 30%;
+  margin: 0;
+}
+
+.banners.-front .banner {
+  width: auto;
+  margin: 1vw 0 0;
+}
+
+.banners.-front .banner:not(:first-of-type) {
+  margin-top: 24px;
+}
+
 .banner {
   width: 48.5%;
 }
@@ -817,13 +831,14 @@ img {
 }
 
 .prHeading {
+  margin-top: 18.72px;
   margin-bottom: 0.2vw;
   font-weight: 400;
 }
 
 .twitterArea {
   width: 40%;
-  margin: 1vw auto 0;
+  margin: 1vw 0 0;
 }
 
 .pagination {
@@ -1056,6 +1071,13 @@ img {
   }
   .banners {
     flex-direction: column;
+  }
+  .banners.-front {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .banners.-front .banner:not(:first-of-type) {
+    margin-top: 0;
   }
   .banner {
     width: 100%;
@@ -1987,12 +2009,14 @@ img {
 }
 
 .home__prArea {
+  display: flex;
+  justify-content: center;
   padding: 6.22vw 0 0;
 }
 
 .home__twitterArea {
   width: 40%;
-  margin: 1vw auto 0;
+  margin: 1vw 0 0 64px;
 }
 
 .home__prHeading {
@@ -2471,6 +2495,10 @@ img {
   }
   .home__twitterArea {
     width: 80%;
+    margin: 1vw auto 0;
+  }
+  .home__prArea {
+    flex-direction: column;
   }
   .home__prHeading {
     font-size: 14px;
@@ -4793,6 +4821,10 @@ img {
   width: 42.38vw;
 }
 
+.seminar-video__catCatchCopy.-movie {
+  width: 33vw;
+}
+
 .seminar-video__articleWrapper {
   max-width: 1000px;
   margin: 6vw auto;
@@ -5015,6 +5047,9 @@ img {
   .seminar-video__catCatchCopy {
     z-index: 100;
     width: 55.2vw;
+  }
+  .seminar-video__catCatchCopy.-movie {
+    width: 61vw;
   }
   .seminar-video__cat:nth-of-type(2) .seminar-video__catHeading {
     margin-top: 20vw;
@@ -7415,5 +7450,4 @@ span.online-lesson__stepsSmall {
   .notFound__image {
     margin-top: 24px;
   }
-}img,width
 }
