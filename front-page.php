@@ -42,7 +42,7 @@ get_header();
               'post_type' => 'news',
               'posts_per_page' => 3
             );
-            $the_query = new WP_Query($args); if($the_query->have_posts()):
+            $the_query = new WP_Query($args); if ($the_query->have_posts()):
           ?>
           <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
             <li id="post-<?php the_ID(); ?>" <?php post_class('home__newsItem'); ?>>
@@ -221,22 +221,22 @@ get_header();
       </p>
       <ul class="home__supportList">
         <li class="home__supportItem -big">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support01.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support01@2x.png" alt="30本の動画" class="home__supportContent -large">
+          <a href="<?php echo home_url('/online-lesson/'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support01.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support01@2x.png" alt="30本の動画" class="home__supportContent -large"></a>
         </li>
         <li class="home__supportItem -big">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support02.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support02@2x.png" alt="月2回のグループセッション" class="home__supportContent -large">
+          <a href="<?php echo home_url('/online-lesson/#online-lesson-step2'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support02.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support02@2x.png" alt="月2回のグループセッション" class="home__supportContent -large"></a>
         </li>
         <li class="home__supportItem -big">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support03.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support03@2x.png" alt="過去の相談500件超公開" class="home__supportContent -large">
+          <a href="<?php echo home_url('/online-lesson/#online-lesson-step3'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support03.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support03@2x.png" alt="過去の相談500件超公開" class="home__supportContent -large"></a>
         </li>
         <li class="home__supportItem -small">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support04.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support04@2x.png" alt="成功報告コーナー250件超公開" class="home__supportContent -small">
+          <a href="<?php echo home_url('/online-lesson/#online-lesson-step4'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support04.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support04@2x.png" alt="成功報告コーナー250件超公開" class="home__supportContent -small"></a>
         </li>
         <li class="home__supportItem -small">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support05.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support05@2x.png" alt="タイムリーなコラム配信" class="home__supportContent -small">
+          <a href="<?php echo home_url('/online-lesson/#online-lesson-step5'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support05.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support05@2x.png" alt="タイムリーなコラム配信" class="home__supportContent -small"></a>
         </li>
         <li class="home__supportItem -small">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support06.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support06@2x.png" alt="限定セミナー" class="home__supportContent -small">
+          <a href="<?php echo home_url('/online-lesson/#online-lesson-step6'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support06.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support06@2x.png" alt="限定セミナー" class="home__supportContent -small"></a>
         </li>
       </ul>
     </section>

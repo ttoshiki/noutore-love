@@ -81,7 +81,7 @@ get_header();
             alt="このボリュームがあなたの頑固な現実にアプローチする！"
         >
       </h2>
-      <div class="online-lesson__step -step1">
+      <div class="online-lesson__step -step1" id="online-lesson-step1">
         <h2 class="online-lesson__step1Heading">
           <span class="sr-only">「脳トレ」の基本知識を動画で学ぶ</span>
           <img
@@ -175,7 +175,7 @@ get_header();
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/online-lesson/steps_snake.png" alt="" class="online-lesson__stepsSnake -pc">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/online-lesson/steps_kusa.png" alt="" class="online-lesson__stepsKusa -pc">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/online-lesson/steps_flower.png" alt="" class="online-lesson__stepsFlower -pc">
-      <div class="online-lesson__step -step2">
+      <div class="online-lesson__step -step2" id="online-lesson-step2">
         <h2 class="online-lesson__step2Heading">
           <span class="sr-only">月2回のグループセッションでメンターに直接相談する（対面・オンライン）</span>
           <img
@@ -252,7 +252,7 @@ get_header();
       </div>
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/online-lesson/steps_butterfly.png" alt="" class="online-lesson__stepsButterfly -pc">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/online-lesson/step2_3_road.svg" alt="" class="online-lesson__step2_3 -pc">
-      <div class="online-lesson__step -step3">
+      <div class="online-lesson__step -step3" id="online-lesson-step3">
         <h2 class="online-lesson__step3Heading">
           <span class="sr-only">過去メンバーの相談・回答を読んでヒントを得る</span>
           <img
@@ -275,7 +275,7 @@ get_header();
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/online-lesson/step3_4_road.svg" alt="" class="online-lesson__step3_4 -pc">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/online-lesson/steps_bird.png" alt="" class="online-lesson__stepsBird -pc">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/online-lesson/steps_flamingo.png" alt="" class="online-lesson__stepsFlamingo -pc">
-      <div class="online-lesson__step -step4">
+      <div class="online-lesson__step -step4" id="online-lesson-step4">
         <h2 class="online-lesson__step4Heading">
           <span class="sr-only">コミュニティメンバー限定の成功報告コーナーを使う</span>
           <img
@@ -298,7 +298,7 @@ get_header();
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/online-lesson/steps_leafs.png" alt="" class="online-lesson__stepsLeafs -pc">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/online-lesson/step4_5_road.svg" alt="" class="online-lesson__step4_5 -pc">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/online-lesson/steps_apple.png" alt="" class="online-lesson__stepsApple -pc">
-      <div class="online-lesson__step -step5">
+      <div class="online-lesson__step -step5" id="online-lesson-step5">
         <h2 class="online-lesson__step5Heading">
           <span class="sr-only">タイムリーなコラムを読む</span>
           <img
@@ -334,7 +334,7 @@ get_header();
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/online-lesson/step5_6_road-sp.svg" alt="" class="online-lesson__step5_6 -sp">
       </div>
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/online-lesson/step5_6_road.svg" alt="" class="online-lesson__step5_6 -pc">
-      <div class="online-lesson__step -step6">
+      <div class="online-lesson__step -step6" id="online-lesson-step6">
         <h2 class="online-lesson__step6Heading">
           <span class="sr-only">限定セミナーに参加する</span>
           <img
