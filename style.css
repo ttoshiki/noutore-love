@@ -64,6 +64,18 @@ img {
   display: none;
 }
 
+.fadein {
+  opacity: 0.1;
+  transition: all 500ms;
+  transform: translate(0, 50px);
+}
+
+/* 画面内に入った状態 */
+.fadein.scrollin {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 @media screen and (max-width: 768px) {
   .-pc {
     display: none;
@@ -1668,6 +1680,19 @@ img {
   width: 31.6%;
 }
 
+.home__supportItem.fadein:nth-child(2) {
+  transition-delay: 200ms;
+}
+.home__supportItem.fadein:nth-child(3) {
+  transition-delay: 400ms;
+}
+.home__supportItem.fadein:nth-child(5) {
+  transition-delay: 200ms;
+}
+.home__supportItem.fadein:nth-child(6) {
+  transition-delay: 400ms;
+}
+
 .home__supportContent.-large {
   margin-bottom: 2.4vw;
 }
@@ -1691,6 +1716,18 @@ img {
 
 .home__profileItem {
   width: 23%;
+}
+
+.home__profileItem:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.home__profileItem:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.home__profileItem:nth-child(4) {
+  transition-delay: 600ms;
 }
 
 .home__profilePosition {
@@ -1812,15 +1849,15 @@ img {
   display: flex;
   justify-content: space-around;
   width: 80%;
-  margin: 10vw auto 0;
+  margin: 5vw auto 0;
 }
 
 .home__howtoNoutoreMethodWrapper::before {
   position: absolute;
-  top: 11.3vw;
+  top: 6.3vw;
   left: 6.8vw;
   width: 84%;
-  height: 50%;
+  height: 54%;
   content: "";
   background-image: url(assets/img/home/howto_noutore_bg.png);
   background-size: contain;
@@ -1833,6 +1870,10 @@ img {
   margin: 0;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.home__howtoNoutoreMethod:nth-of-type(2) {
+  transition-delay: 200ms;
 }
 
 .home__howtoNoutoreMethod.-private {
@@ -1955,6 +1996,10 @@ img {
 
 .home__recommendItem {
   width: 48%;
+}
+
+.home__recommendItem:nth-child(2) {
+  transition-delay: 200ms;
 }
 
 .home__lineAccount {
