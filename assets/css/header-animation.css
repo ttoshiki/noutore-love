@@ -3044,3 +3044,158 @@ svg .svg-home-recommend-heading-sp-25 {
 svg.active .svg-home-recommend-heading-sp-25 {
   fill: rgb(240, 144, 138);
 }
+
+/* 公式LINEアカウントはこちら */
+
+svg .svg-home-lineAccount-heading-1 {
+  fill: transparent;
+  -webkit-transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.1s;
+  transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.1s;
+}
+
+svg.active .svg-home-lineAccount-heading-1 {
+  fill: rgb(57, 181, 74);
+}
+
+svg .svg-home-lineAccount-heading-2 {
+  fill: transparent;
+  -webkit-transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.16s;
+  transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.16s;
+}
+
+svg.active .svg-home-lineAccount-heading-2 {
+  fill: rgb(57, 181, 74);
+}
+
+svg .svg-home-lineAccount-heading-3 {
+  fill: transparent;
+  -webkit-transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.22s;
+  transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.22s;
+}
+
+svg.active .svg-home-lineAccount-heading-3 {
+  fill: rgb(57, 181, 74);
+}
+
+svg .svg-home-lineAccount-heading-4 {
+  fill: transparent;
+  -webkit-transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.28s;
+  transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.28s;
+}
+
+svg.active .svg-home-lineAccount-heading-4 {
+  fill: rgb(57, 181, 74);
+}
+
+svg .svg-home-lineAccount-heading-5 {
+  fill: transparent;
+  -webkit-transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715)
+    0.33999999999999997s;
+  transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.33999999999999997s;
+}
+
+svg.active .svg-home-lineAccount-heading-5 {
+  fill: rgb(57, 181, 74);
+}
+
+svg .svg-home-lineAccount-heading-6 {
+  fill: transparent;
+  -webkit-transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s;
+  transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s;
+}
+
+svg.active .svg-home-lineAccount-heading-6 {
+  fill: rgb(57, 181, 74);
+}
+
+svg .svg-home-lineAccount-heading-7 {
+  fill: transparent;
+  -webkit-transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715)
+    0.45999999999999996s;
+  transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.45999999999999996s;
+}
+
+svg.active .svg-home-lineAccount-heading-7 {
+  fill: rgb(57, 181, 74);
+}
+
+svg .svg-home-lineAccount-heading-8 {
+  fill: transparent;
+  -webkit-transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.52s;
+  transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.52s;
+}
+
+svg.active .svg-home-lineAccount-heading-8 {
+  fill: rgb(57, 181, 74);
+}
+
+svg .svg-home-lineAccount-heading-9 {
+  fill: transparent;
+  -webkit-transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.58s;
+  transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.58s;
+}
+
+svg.active .svg-home-lineAccount-heading-9 {
+  fill: rgb(57, 181, 74);
+}
+
+svg .svg-home-lineAccount-heading-10 {
+  fill: transparent;
+  -webkit-transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.64s;
+  transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.64s;
+}
+
+svg.active .svg-home-lineAccount-heading-10 {
+  fill: rgb(57, 181, 74);
+}
+
+svg .svg-home-lineAccount-heading-11 {
+  fill: transparent;
+  -webkit-transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7s;
+  transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7s;
+}
+
+svg.active .svg-home-lineAccount-heading-11 {
+  fill: rgb(57, 181, 74);
+}
+
+svg .svg-home-lineAccount-heading-12 {
+  fill: transparent;
+  -webkit-transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715)
+    0.7599999999999999s;
+  transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7599999999999999s;
+}
+
+svg.active .svg-home-lineAccount-heading-12 {
+  fill: rgb(57, 181, 74);
+}
+
+svg .svg-home-lineAccount-heading-13 {
+  fill: transparent;
+  -webkit-transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.82s;
+  transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.82s;
+}
+
+svg.active .svg-home-lineAccount-heading-13 {
+  fill: rgb(57, 181, 74);
+}
+
+svg .svg-home-lineAccount-heading-14 {
+  fill: transparent;
+  -webkit-transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.88s;
+  transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.88s;
+}
+
+svg.active .svg-home-lineAccount-heading-14 {
+  fill: rgb(57, 181, 74);
+}
+
+svg .svg-home-lineAccount-heading-15 {
+  fill: transparent;
+  -webkit-transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.94s;
+  transition: fill 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.94s;
+}
+
+svg.active .svg-home-lineAccount-heading-15 {
+  fill: rgb(57, 181, 74);
+}

@@ -939,12 +939,26 @@ img {
 }
 
 .button {
+  position: relative;
   display: inline-block;
   padding: 0.4vw;
+  overflow: hidden;
   font-weight: 600;
   color: #ffffff;
   background-color: #e9474a;
   border-radius: 12px;
+}
+
+.button::before {
+  position: absolute;
+  top: -180px;
+  left: 0;
+  display: inline-block;
+  width: 30px;
+  height: 100%;
+  content: "";
+  background-color: #fff;
+  animation: shiny-btn 3s ease-in-out infinite;
 }
 
 .button.-secondary {
@@ -953,6 +967,7 @@ img {
 
 .buttonWrapper {
   margin-top: 6.21vw;
+  overflow: hidden;
   text-align: center;
 }
 
@@ -2007,9 +2022,14 @@ img {
   background-color: #f7f2ee;
 }
 
+.home__lineAccountSubHeading {
+  width: 26.73vw;
+  margin: 0 auto;
+}
+
 .home__lineAccountHeading {
   width: 57.62vw;
-  margin: 0 auto;
+  margin: 1vw auto 0;
 }
 
 .home__lineAccountContents {
@@ -2057,6 +2077,28 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   transform: translateX(-50%);
+}
+
+.home__linkAccountButtonShiny {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.home__linkAccountButtonShiny::after {
+  position: absolute;
+  top: -180px;
+  left: 0;
+  display: inline-block;
+  width: 30px;
+  height: 100%;
+  content: "";
+  background-color: #fff;
+  animation: shiny-btn 3s ease-in-out infinite;
 }
 
 .home__prArea {
@@ -2519,6 +2561,9 @@ img {
   }
   .home__lineAccount {
     padding: 10.66vw 0;
+  }
+  .home__lineAccountSubHeading {
+    width: 57.6vw;
   }
   .home__lineAccountHeading {
     width: 70.93vw;
@@ -5930,14 +5975,14 @@ img {
 
 .online-lesson__step1_2 {
   position: absolute;
-  top: 67.6vw;
+  top: 66.6vw;
   left: 9vw;
   width: 30.88vw;
 }
 
 .online-lesson__step2_3 {
   position: absolute;
-  top: 156.6vw;
+  top: 154.6vw;
   left: 62vw;
   width: 30.88vw;
 }
@@ -6042,14 +6087,14 @@ img {
 
 .online-lesson__stepsSnake {
   position: absolute;
-  top: 68.6vw;
+  top: 67.6vw;
   left: 6vw;
   width: 24vw;
 }
 
 .online-lesson__stepsKusa {
   position: absolute;
-  top: 89.6vw;
+  top: 88.6vw;
   left: 11.5vw;
   width: 17.6vw;
 }
@@ -7497,5 +7542,24 @@ span.online-lesson__stepsSmall {
   }
   .notFound__image {
     margin-top: 24px;
+  }
+}
+
+@keyframes shiny-btn {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(45deg);
+  }
+  80% {
+    opacity: 0.5;
+    transform: scale(0) rotate(45deg);
+  }
+  81% {
+    opacity: 1;
+    transform: scale(4) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(50) rotate(45deg);
   }
 }
