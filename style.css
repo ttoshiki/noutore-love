@@ -6433,6 +6433,19 @@ span.online-lesson__stepsSmall {
   transform: translateX(-50%);
 }
 
+.online-lesson__welcomeText.active {
+  animation-name: wave;
+  animation-duration: 0.3s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+@keyframes wave {
+  100% {
+    transform: translate3d(0, -40px, 0);
+  }
+}
+
 .online-lesson__stepsPetal {
   position: absolute;
   bottom: -9vw;

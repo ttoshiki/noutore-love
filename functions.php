@@ -161,7 +161,6 @@ function namakemono_community_scripts()
 
     wp_enqueue_script('vue-js', get_template_directory_uri() . '/assets/js/lib/vue.js', array(), '2.6.11', false);
     wp_enqueue_script('body-scroll-lock-js', get_template_directory_uri() . '/assets/js/lib/bodyScrollLock.js', array(), '', false);
-    wp_enqueue_script('body-scroll-lock-js', get_template_directory_uri() . '/assets/js/lib/bodyScrollLock.js', array(), '', false);
     wp_enqueue_script('scroll-triger-scripts', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.3/ScrollTrigger.min.js
 ', array(), '1.0.3', false);
     wp_enqueue_script('header-scripts', get_template_directory_uri() . '/assets/js/header.js', array(), _S_VERSION, false);
@@ -198,6 +197,9 @@ function namakemono_community_scripts()
 
     if (is_page('online-lesson')) {
         wp_enqueue_script('online-lesson-scripts', get_template_directory_uri() . '/assets/js/online-lesson.js', array(), _S_VERSION, true);
+        wp_enqueue_script('trigger-scripts', get_template_directory_uri() . '/assets/js/data-trigger.js', array(), _S_VERSION, true);
+        wp_register_style('header-animation-style', get_template_directory_uri() . '/assets/css/header-animation.css', array(), '1.0', 'all');
+        wp_enqueue_style('header-animation-style');
     }
 
     if (is_page('startbook')) {
