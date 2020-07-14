@@ -161,6 +161,9 @@ function namakemono_community_scripts()
 
     wp_enqueue_script('vue-js', get_template_directory_uri() . '/assets/js/lib/vue.js', array(), '2.6.11', false);
     wp_enqueue_script('body-scroll-lock-js', get_template_directory_uri() . '/assets/js/lib/bodyScrollLock.js', array(), '', false);
+    wp_enqueue_script('body-scroll-lock-js', get_template_directory_uri() . '/assets/js/lib/bodyScrollLock.js', array(), '', false);
+    wp_enqueue_script('scroll-triger-scripts', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.3/ScrollTrigger.min.js
+', array(), '1.0.3', false);
     wp_enqueue_script('header-scripts', get_template_directory_uri() . '/assets/js/header.js', array(), _S_VERSION, false);
     wp_enqueue_script('footer-scripts', get_template_directory_uri() . '/assets/js/footer.js', array(), _S_VERSION, false);
 
@@ -172,6 +175,9 @@ function namakemono_community_scripts()
     if (is_front_page()) {
         wp_enqueue_script('home-slider', get_template_directory_uri() . '/assets/js/home.js', array(), _S_VERSION, true);
         wp_enqueue_script('namakemono-slider', get_template_directory_uri() . '/assets/js/hooper.js', array(), _S_VERSION, true);
+        wp_enqueue_script('trigger-scripts', get_template_directory_uri() . '/assets/js/data-trigger.js', array(), _S_VERSION, true);
+        wp_register_style('header-animation-style', get_template_directory_uri() . '/assets/css/header-animation.css', array(), '1.0', 'all');
+        wp_enqueue_style('header-animation-style');
     }
 
     if (is_front_page() || is_archive()) {
@@ -180,6 +186,7 @@ function namakemono_community_scripts()
         wp_register_style('hooper-style', 'https://cdn.jsdelivr.net/npm/hooper@0.2.1/dist/hooper.css', array(), '2.1', 'all');
         wp_enqueue_style('hooper-style');
     }
+
 
     if (is_archive() && !is_post_type_archive('seminar_video')) {
         wp_enqueue_script('namakemono-column-slider', get_template_directory_uri() . '/assets/js/hooper-column.js', array(), _S_VERSION, true);
