@@ -5989,14 +5989,14 @@ img {
 
 .online-lesson__step3_4 {
   position: absolute;
-  top: 220vw;
+  top: 219vw;
   left: 12vw;
   width: 30.88vw;
 }
 
 .online-lesson__step4_5 {
   position: absolute;
-  top: 281vw;
+  top: 280vw;
   left: 39vw;
   width: 30.88vw;
 }
@@ -6010,7 +6010,7 @@ img {
 
 .online-lesson__step6_end {
   position: absolute;
-  top: 339vw;
+  top: 338vw;
   left: 38vw;
   width: 37vw;
 }
@@ -6436,6 +6436,7 @@ span.online-lesson__stepsSmall {
 .online-lesson__welcomeText.active {
   animation-name: wave;
   animation-duration: 0.3s;
+  animation-delay: 0.6s;
   animation-iteration-count: 2;
   animation-direction: alternate;
 }
