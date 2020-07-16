@@ -30,9 +30,12 @@ get_header();
         class="home__diagnosisButtonImage -sp"
       >
       </a>
-		</h2>
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual@2x.jpg" alt="" class="home__mainVisual -pc">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual-sp.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual-sp@2x.jpg" alt="" class="home__mainVisual -sp">
+    </h2>
+    <picture>
+      <source media="(min-width: 769px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual.jpg 1x <?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual@2x.jpg 2x" class="home__mainVisual -pc">
+      <source media="(max-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual-sp.jpg" class="home__mainVisual -sp">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual.jpg" alt="" class="home__mainVisual">
+    </picture>
     <section class="home__news">
       <div class="home__newsArea">
         <div class="home__newsAreaIcon"><?php echo file_get_contents(get_template_directory() . '/assets/img/icons/icon_leaf.svg'); ?></div>
@@ -349,16 +352,20 @@ get_header();
       <ul class="home__recommendList">
         <li class="home__recommendItem fadein">
           <a href="<?php echo home_url("/column/") ?>">
-            <div>
-              <img src="<?php echo get_template_directory_uri(); ?>./assets/img/home/recommend_column.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_column@2x.jpg" alt="どんどん更新！コラム集" class="-pc">
-              <img src="<?php echo get_template_directory_uri(); ?>./assets/img/home/recommend_column-sp.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_column-sp@2x.jpg" alt="どんどん更新！コラム集" class="-sp">
-            </div>
+            <picture>
+              <source media="(min-width: 769px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_column.jpg 1x <?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_column@2x.jpg 2x" class="-pc">
+              <source media="(max-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_column-sp.jpg" class="-sp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_column.jpg" srcset="<?php echo get_template_directory_uri(); ?>./assets/img/home/recommend_column.jpg 1x <?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_column@2x.jpg 2x" alt="どんどん更新！コラム集">
+            </picture>
           </a>
         </li>
         <li class="home__recommendItem fadein">
           <a href="<?php echo home_url("/noutore-shindan/") ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>./assets/img/home/recommend_diagnosis.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_diagnosis@2x.jpg" alt="あなたは何タイプ？脳トレ4タイプ診断" class="-pc">
-            <img src="<?php echo get_template_directory_uri(); ?>./assets/img/home/recommend_diagnosis-sp.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_diagnosis-sp@2x.jpg" alt="あなたは何タイプ？脳トレ4タイプ診断" class="-sp">
+            <picture>
+              <source media="(min-width: 769px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_diagnosis.jpg 1x <?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_diagnosis@2x.jpg 2x" alt="あなたは何タイプ？脳トレ4タイプ診断" class="-pc">
+              <source media="(max-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_diagnosis-sp.jpg" alt="あなたは何タイプ？脳トレ4タイプ診断" class="-sp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_diagnosis.jpg" srcset="<?php echo get_template_directory_uri(); ?>./assets/img/home/recommend_column.jpg 1x <?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_column@2x.jpg 2x" alt="あなたは何タイプ？脳トレ4タイプ診断">
+            </picture>
           </a>
         </li>
       </ul>
