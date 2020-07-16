@@ -1695,6 +1695,20 @@ img {
   width: 31.6%;
 }
 
+.home__supportItem.-big {
+  height: 26.9vw;
+  margin-bottom: 3vw;
+}
+
+.home__supportItem.-small {
+  height: 7.1vw;
+}
+
+.home__supportItem a {
+  display: block;
+  height: 100%;
+}
+
 .home__supportItem.fadein:nth-child(2) {
   transition-delay: 200ms;
 }
@@ -2378,13 +2392,15 @@ img {
     align-items: center;
   }
   .home__supportItem:nth-child(4) {
-    margin-top: 32px;
+    margin-top: 12px;
   }
   .home__supportItem.-big {
     width: 69%;
+    height: auto;
   }
   .home__supportItem.-small {
     width: 90%;
+    height: auto;
     margin-bottom: 8px;
   }
   .home__profile {
