@@ -1344,6 +1344,11 @@ img {
   }
 }
 
+.home__main picture {
+  display: block;
+  text-align: center;
+}
+
 .home__diagnosisButtonWrapper {
   position: absolute;
   top: 33.2vw;
