@@ -19,7 +19,11 @@
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon/64x64.png">
-
+	<meta property="og:url" content="https://noutore-love.com" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="「脳トレ」オンラインレッスン" />
+	<meta property="og:description" content="「脳トレ」オンラインレッスンは、脳と心の仕組みを学んで、現実を思う通りに創造していくスキルを学ぶ場所です。" />
+	<meta property="og:image" content="<?php echo get_template_directory(); ?>/assets/img/ogp.jpg" />
 	<?php wp_head(); ?>
 </head>
 
