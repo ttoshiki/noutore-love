@@ -1695,6 +1695,20 @@ img {
   width: 31.6%;
 }
 
+.home__supportItem.-big {
+  height: 26.9vw;
+  margin-bottom: 3vw;
+}
+
+.home__supportItem.-small {
+  height: 7.1vw;
+}
+
+.home__supportItem a {
+  display: block;
+  height: 100%;
+}
+
 .home__supportItem.fadein:nth-child(2) {
   transition-delay: 200ms;
 }
@@ -2378,13 +2392,15 @@ img {
     align-items: center;
   }
   .home__supportItem:nth-child(4) {
-    margin-top: 32px;
+    margin-top: 12px;
   }
   .home__supportItem.-big {
     width: 69%;
+    height: auto;
   }
   .home__supportItem.-small {
     width: 90%;
+    height: auto;
     margin-bottom: 8px;
   }
   .home__profile {
@@ -5975,7 +5991,7 @@ img {
 
 .online-lesson__step1_2 {
   position: absolute;
-  top: 66.6vw;
+  top: 65.6vw;
   left: 9vw;
   width: 30.88vw;
 }
@@ -5989,14 +6005,14 @@ img {
 
 .online-lesson__step3_4 {
   position: absolute;
-  top: 220vw;
+  top: 219vw;
   left: 12vw;
   width: 30.88vw;
 }
 
 .online-lesson__step4_5 {
   position: absolute;
-  top: 281vw;
+  top: 280vw;
   left: 39vw;
   width: 30.88vw;
 }
@@ -6010,7 +6026,7 @@ img {
 
 .online-lesson__step6_end {
   position: absolute;
-  top: 339vw;
+  top: 338vw;
   left: 38vw;
   width: 37vw;
 }
@@ -6087,14 +6103,14 @@ img {
 
 .online-lesson__stepsSnake {
   position: absolute;
-  top: 67.6vw;
+  top: 66.6vw;
   left: 6vw;
   width: 24vw;
 }
 
 .online-lesson__stepsKusa {
   position: absolute;
-  top: 88.6vw;
+  top: 87.6vw;
   left: 11.5vw;
   width: 17.6vw;
 }
@@ -6431,6 +6447,20 @@ span.online-lesson__stepsSmall {
   left: 50%;
   width: 46vw;
   transform: translateX(-50%);
+}
+
+.online-lesson__welcomeText.active {
+  animation-name: wave;
+  animation-duration: 0.3s;
+  animation-delay: 0.6s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+@keyframes wave {
+  100% {
+    transform: translate3d(0, -40px, 0);
+  }
 }
 
 .online-lesson__stepsPetal {
