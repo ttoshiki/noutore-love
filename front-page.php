@@ -105,9 +105,6 @@ get_header();
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/slide_1.jpg" alt="">
               </slide>
               <slide>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/slide_2.jpg" alt="">
-              </slide>
-              <slide>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/slide_3.jpg" alt="">
               </slide>
               <slide>
