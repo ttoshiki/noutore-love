@@ -33,7 +33,7 @@ get_header();
     </h2>
     <picture>
       <source media="(min-width: 769px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual.jpg 1x <?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual@2x.jpg 2x" class="home__mainVisual -pc">
-      <source media="(max-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual-sp.jpg" class="home__mainVisual -sp">
+      <source media="(max-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual-sp@2x.jpg" class="home__mainVisual -sp">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual.jpg" alt="" class="home__mainVisual">
     </picture>
     <section class="home__news">

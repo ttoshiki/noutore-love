@@ -380,7 +380,7 @@ get_header();
         <h2 class="online-lesson__flowSubHeading">【レッスン参加後の流れ】</h2>
         <p class="online-lesson__flowParagraph">はじめに会員サイトの「レッスンの進め方」をご確認ください。</p>
         <h2 class="online-lesson__flowSubHeading">【月額決済につきまして】</h2>
-        <p class="online-lesson__flowParagraph">月会費はStripeというオンラインクレジット決済を利用しています。最初に決済いただいた日が、毎月の決済日となります。</p>
+        <p class="online-lesson__flowParagraph">月会費はクレジット決済を利用しています。最初に決済いただいた日が、毎月の決済日となります。</p>
       </div>
     </section>
     <section class="online-lesson__recruit">
