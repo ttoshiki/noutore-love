@@ -383,7 +383,7 @@ get_header();
         <p class="online-lesson__flowParagraph">月会費はクレジット決済を利用しています。最初に決済いただいた日が、毎月の決済日となります。</p>
       </div>
     </section>
-    <section class="online-lesson__recruit">
+    <section class="online-lesson__recruit" id="online-lesson-recruit">
       <h2 class="online-lesson__recruitHeading">
         <span class="sr-only">2020年8月スタートメンバー募集要綱</span>
         <img

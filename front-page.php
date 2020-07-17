@@ -291,10 +291,10 @@ get_header();
         <p class="home__flowParagraph">入会金も含めて<br />30,000円×7回支払い</p>
       </div>
       <div class="buttonWrapper">
-        <a href="#" class="button">
+        <a href="<?php echo home_url('/online-lesson/#online-lesson-recruit'); ?>" class="button">
           <div class="buttonInner">
             <div class="buttonIcon"><?php echo file_get_contents(get_template_directory() . '/assets/img/icons/icon_angle.svg'); ?></div>
-            <span>お申し込みはこちら</span>
+            <span>お申し込み詳細</span>
           </div>
         </a>
       </div>
