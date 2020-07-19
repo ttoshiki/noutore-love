@@ -16,7 +16,7 @@ get_header();
 ?>
 
 	<main class="seminar-video__main">
-    <h2 class="seminar-video__heading">
+    <h1 class="seminar-video__heading">
       <span class="sr-only">自宅でこっそり脳内を変える動画＆マニュアルのご案内</span>
       <img
           src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/guidance_header.svg"
@@ -28,12 +28,12 @@ get_header();
           alt="自宅でこっそり脳内を変える動画＆マニュアルのご案内"
           class="-sp"
       >
-    </h2>
+    </h1>
     <section class="seminar-video__cat">
       <h3 class="seminar-video__catHeading">
-        <span class="seminar-video__iconCircle -sp"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/seminar_icon_movie.svg" alt="" class="seminar-video__catIcon"></span>
+        <span class="seminar-video__iconCircle -sp"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/seminar_icon_movie.svg" alt="movieアイコン" class="seminar-video__catIcon"></span>
         <div class="seminar-video__catHeadingWrapper">
-          <span class="seminar-video__iconCircle -pc"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/seminar_icon_movie.svg" alt="" class="seminar-video__catIcon"></span>
+          <span class="seminar-video__iconCircle -pc"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/seminar_icon_movie.svg" alt="movieアイコン" class="seminar-video__catIcon"></span>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/mv_catch_copy.svg" alt="空気感を体感しやすい「動画」でお届け！" class="seminar-video__catCatchCopy -movie -pc">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/mv_catch_copy-sp.svg" alt="空気感を体感しやすい「動画」でお届け！" class="seminar-video__catCatchCopy -movie -sp">
         </div>
@@ -73,7 +73,7 @@ get_header();
     <section class="seminar-video__cat">
       <h3 class="seminar-video__catHeading">
         <div class="seminar-video__catHeadingWrapper">
-          <span class="seminar-video__iconCircle"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/seminar_icon_manual.svg" alt="" class="seminar-video__catIcon"></span>
+          <span class="seminar-video__iconCircle"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/seminar_icon_manual.svg" alt="manualアイコン" class="seminar-video__catIcon"></span>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/manual_catch_copy.svg" alt="空気感を体感しやすい「マニュアル」でお届け！" class="seminar-video__catCatchCopy -pc">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/manual_catch_copy-sp.svg" alt="空気感を体感しやすい「マニュアル」でお届け！" class="seminar-video__catCatchCopy -sp">
         </div>

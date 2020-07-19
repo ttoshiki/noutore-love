@@ -34,7 +34,7 @@ get_header();
     <picture>
       <source media="(min-width: 769px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual.jpg 1x <?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual@2x.jpg 2x" class="home__mainVisual -pc">
       <source media="(max-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual-sp@2x.jpg" class="home__mainVisual -sp">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual.jpg" alt="" class="home__mainVisual">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual.jpg" alt="「脳トレ」オンラインレッスンメインビジュアル" class="home__mainVisual">
     </picture>
     <section class="home__news">
       <div class="home__newsArea">
@@ -102,16 +102,16 @@ get_header();
           <div id="slider">
             <hooper :wheel-control="false">
               <slide>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/slide_1.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/slide_1.jpg" alt="「脳トレ」マンガ1枚目">
               </slide>
               <slide>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/slide_3.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/slide_3.jpg" alt="「脳トレ」マンガ2枚目">
               </slide>
               <slide>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/slide_4.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/slide_4.jpg" alt="「脳トレ」マンガ3枚目">
               </slide>
               <slide>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/slide_5.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/slide_5.jpg" alt="「脳トレ」マンガ4枚目">
               </slide>
               <hooper-navigation slot="hooper-addons"></hooper-navigation>
               <hooper-pagination slot="hooper-addons"></hooper-pagination>
@@ -136,9 +136,9 @@ get_header();
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/genre_heading_icon.svg" alt="" class="home__genreChartHeadingIcon">
           <h2 class="home__genreChartHeading">人間関係全般</h2>
           <div class="home__genreChartArrows">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/genre_arrow01.svg" alt="" class="home__genreArrow -left -pc">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/genre_arrow02.svg" alt="" class="home__genreArrow -center -pc">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/genre_arrow03.svg" alt="" class="home__genreArrow -right -pc">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/genre_arrow01.svg" alt="矢印" class="home__genreArrow -left -pc">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/genre_arrow02.svg" alt="矢印" class="home__genreArrow -center -pc">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/genre_arrow03.svg" alt="矢印" class="home__genreArrow -right -pc">
           </div>
           <ul class="home__genreList">
             <li class="home__genreItem">
@@ -197,24 +197,32 @@ get_header();
       </p>
       <ul class="home__supportList">
         <li class="home__supportItem fadein -big">
-          <a href="<?php echo home_url('/online-lesson/'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support01.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support01@2x.png" alt="30本の動画" class="home__supportContent -large"></a>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support01.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support01@2x.png" alt="30本の動画" class="home__supportContent -large">
         </li>
         <li class="home__supportItem fadein -big">
-          <a href="<?php echo home_url('/online-lesson/#online-lesson-step2'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support02.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support02@2x.png" alt="月2回のグループセッション" class="home__supportContent -large"></a>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support02.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support02@2x.png" alt="月2回のグループセッション" class="home__supportContent -large">
         </li>
         <li class="home__supportItem fadein -big">
-          <a href="<?php echo home_url('/online-lesson/#online-lesson-step3'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support03.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support03@2x.png" alt="過去の相談500件超公開" class="home__supportContent -large"></a>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support03.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support03@2x.png" alt="過去の相談500件超公開" class="home__supportContent -large">
         </li>
         <li class="home__supportItem fadein -small">
-          <a href="<?php echo home_url('/online-lesson/#online-lesson-step4'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support04.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support04@2x.png" alt="成功報告コーナー250件超公開" class="home__supportContent -small"></a>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support04.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support04@2x.png" alt="成功報告コーナー250件超公開" class="home__supportContent -small">
         </li>
         <li class="home__supportItem fadein -small">
-          <a href="<?php echo home_url('/online-lesson/#online-lesson-step5'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support05.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support05@2x.png" alt="タイムリーなコラム配信" class="home__supportContent -small"></a>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support05.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support05@2x.png" alt="タイムリーなコラム配信" class="home__supportContent -small">
         </li>
         <li class="home__supportItem fadein -small">
-          <a href="<?php echo home_url('/online-lesson/#online-lesson-step6'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support06.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support06@2x.png" alt="限定セミナー" class="home__supportContent -small"></a>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support06.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/support06@2x.png" alt="限定セミナー" class="home__supportContent -small">
         </li>
       </ul>
+      <div class="buttonWrapper">
+        <a href="<?php echo home_url('/online-lesson/'); ?>" class="button">
+          <div class="buttonInner">
+            <div class="buttonIcon"><?php echo file_get_contents(get_template_directory() . '/assets/img/icons/icon_angle.svg'); ?></div>
+            <span>レッスン詳細</span>
+          </div>
+        </a>
+      </div>
     </section>
     <section class="home__profile">
       <h2 class="home__profileHeading">
@@ -381,7 +389,7 @@ get_header();
         <svg data-trigger id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 265.39 67.88" class="home__lineAccountHeaderSvg -sp"><path class="cls-1 svg-home-line-account-heading-sp-1" d="M52.36,13.8S59,8.12,61.16.32l5.32,1.84C61,15.24,52.36,13.8,52.36,13.8Zm18.32-1.2c-2,6.24-4.4,10.16-6.6,12.68,2.8-.32,6.24-.64,10.28-1L73,20l4.92-1s1.2,4.24,3.24,12.39L77,32.28l-1.12-3.44c-11.6,1.79-19.8,2.95-19.8,2.95l-.64-5.55s1.48-.2,4.24-.52A49.33,49.33,0,0,0,65.4,10.8Zm14.08,1.2S76.08,15.24,70.68,2.16L76,.32C78.08,8.12,84.76,13.8,84.76,13.8Z"></path><path class="cls-1 svg-home-line-account-heading-sp-2" d="M92.48,26.44c-.24-4-.36-7-.4-8.48h-4.2V16H99.12l1.6-1.6,1.56,1.6v2H97.52c0,1.32-.08,4-.2,7.84,3-.56,5.16-1.16,5.16-1.16s-2,5.2-13.48,7.32l-1.16-5.44A35.94,35.94,0,0,0,92.48,26.44Zm-4-18.72H103.2c-.2-2.36-.28-4.92-.28-7.72h5.6c0,2.8.08,5.36.2,7.72H114l1.6-1.6,1.6,1.6v2h-8.4c1.36,19.52,6.72,22.71,6.72,22.71s-10,.12-12.2-22.71H88.52Zm23.92-1.6a10.29,10.29,0,0,0-2.76-4.4s4.8-1.4,6.36,3.16Z"></path><path class="cls-1 svg-home-line-account-heading-sp-3" d="M134.56,5.6s-.52,10.28-.68,19.6c8.44-.24,10.24-.24,10.24-.24v5.59l-13.72-.71C129.2,18.68,129,5.6,129,5.6Z"></path><path class="cls-1 svg-home-line-account-heading-sp-4" d="M153.76,5.6h5.6s.16,12.92-.56,24.24h-4.88C153.64,18.76,153.76,5.6,153.76,5.6Z"></path><path class="cls-1 svg-home-line-account-heading-sp-5" d="M168.76,29.84c-1.2-11.16-1.4-24.24-1.4-24.24H173s5.28,6.16,9.68,12.48c.12-4.08.24-8.56.24-12.48h3.44c1.2,11.16,1.4,24.24,1.4,24.24h-5.6s.16-2.48.28-6.12c-3.12-4-7-8.8-9.72-12-.2,5-.48,12.28-.48,18.16Z"></path><path class="cls-1 svg-home-line-account-heading-sp-6" d="M196.36,29.84c-1.2-11.16-1.44-24.24-1.44-24.24,12.76-.28,17.16-.28,17.16-.28V9.4s-3.16-.08-11.72-.36c-.08,1.76-.16,4-.24,6.6,6.72-.2,10.16-.2,10.16-.2v4.08s-3.68-.08-10.28-.44c-.08,2-.12,4.12-.16,6.16,9.92-.28,12.72-.28,12.72-.28v5.59S208,30.39,196.36,29.84Z"></path><path class="cls-1 svg-home-line-account-heading-sp-7" d="M0,45.8s8.36,0,21.12.28c0,9.48-8.6,10.32-8.6,10.32s2.08-1.8,2.76-6.88C6.08,49.8,0,49.88,0,49.88Zm1.68,22S6.4,64.08,6.4,53.12H12C12,66.92,1.68,67.84,1.68,67.84Z"></path><path class="cls-1 svg-home-line-account-heading-sp-8" d="M34,67.84S36.56,64,37.48,52.2c-1.76,0-2.64,0-2.64,0V48.16h2.88c0-1.4.08-2.92.08-4.56h5.6c0,1.64,0,3.2-.12,4.64,2.92,0,6.64.08,11.08.2,0,19.4-6,19.44-6,19.44s.32-7.84.36-16c-2.16,0-4.08.12-5.8.16C41,67.84,34,67.84,34,67.84Z"></path><path class="cls-1 svg-home-line-account-heading-sp-9" d="M70.84,56.12a34.65,34.65,0,0,1-1.4-8.48H75V48h3.84a5.19,5.19,0,0,1-3.64-4.8H80A32.34,32.34,0,0,0,80.4,48h1.68v-.4h5.6c0,20.52-13.56,20.2-13.56,20.2S81.44,64.4,82,49.64H74.92c-.08,1.6-.16,4-.16,6.48Z"></path><path class="cls-1 svg-home-line-account-heading-sp-10" d="M106.84,51s-3.8-2.12-7-2.16l0-4.16C107.16,45.12,106.84,51,106.84,51Zm12.4-.76s3.6,10.48-18.12,16.72l-1.24-5.44C115.4,57.28,119.24,50.28,119.24,50.28Z"></path><path class="cls-1 svg-home-line-account-heading-sp-11" d="M136.76,67.84h-4.48c-.56-10.8-.72-24.24-.72-24.24h5.6S137.16,56,136.76,67.84Zm8.52-8c-7.08,0-7.44-7.36-7.44-7.36a14.78,14.78,0,0,0,7.44,1.76Z"></path><path class="cls-1 svg-home-line-account-heading-sp-12" d="M162.8,46.84c0,9.24.4,13.44.4,13.44s-6-.32-6-13.44ZM181,45.24l1.6,1.6v1.6h-4.32v3.68a65.65,65.65,0,0,1-.28,7.16c1.2.32,2.2.6,3,.84L179.64,65c-.8-.4-1.76-.84-2.76-1.24-1.16,2.56-3.24,4-7,4-6.36,0-5.52-8.92-.08-9.44a15.43,15.43,0,0,1,2.72,0c.12-1.68.16-3.76.16-6.28V48.44h-7.28v-1.6h7.28V43.6h5.6v3.24h1.12Zm-9,17a9.85,9.85,0,0,0-2-.32,1.48,1.48,0,0,0,0,3C170.84,64.84,171.52,64.24,172,62.2Z"></path><path class="cls-1 svg-home-line-account-heading-sp-13" d="M213.8,65s-1.92,1.48-13.28,1.48c-8.36,0-6.32-8.16-6.32-8.16s1.4,2.56,6.32,2.56c10.56,0,12.84-1.48,12.84-1.48Zm-2.92-14.08A97.66,97.66,0,0,0,196.76,50V45.6a112.86,112.86,0,0,1,14.92.88Z"></path><path class="cls-1 svg-home-line-account-heading-sp-14" d="M227.36,48.44H223v-1.6h4.52c.16-1.4.24-2.76.32-4L233.44,44c-.16,1-.36,1.92-.6,2.8h3.84l1.56-1.6,1.6,1.6v1.6h-7.48a29.25,29.25,0,0,1-3.76,7.8S234,54.12,237,57c3.92,3.68,2.12,10.88-7.8,10.88,2.8-1.32,6.08-4.2,4.56-7.36-1.76-3.64-8.68-1.56-8.68-1.56A48.61,48.61,0,0,0,227.36,48.44Z"></path><path class="cls-1 svg-home-line-account-heading-sp-15" d="M259.32,60.8c-2.52-3.72-8.36.2-8.36.2a101.1,101.1,0,0,1,0-16.28h5.6s-1.12,8-1.68,12.32c0,0,5.4-3.32,8.68-.32C268,60.8,264,67.36,255,67.84,257.92,66.2,260.88,63.08,259.32,60.8Zm-1.52-13,2.64-5c6.24,3.32,3.12,10,3.12,10A15.09,15.09,0,0,0,257.8,47.76Z"></path></svg>
       </h2>
       <div class="home__lineAccountContents">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/line_account_smartphone.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/line_account_smartphone@2x.png" alt="" class="home__lineAccountImage">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/line_account_smartphone.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/line_account_smartphone@2x.png" alt="スマートフォン" class="home__lineAccountImage">
         <div class="home__lineAccountContent">
           <p class="home__lineAccountParagraph">
             「私に合った学び方は？」など<br />

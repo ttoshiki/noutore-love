@@ -373,3 +373,19 @@ function custom_posts_column($column_name, $post_id)
 }
 add_filter('manage_posts_columns', 'add_views_columns');
 add_action('manage_posts_custom_column', 'custom_posts_column', 10, 2);
+
+
+/*********************************
+ カスタム投稿タイプの記事編集画面にメタボックス（作成者変更）を表示する
+**********************************/
+
+/* admin_menu アクションフックでカスタムボックスを定義 */
+add_action('admin_menu', 'myplugin_add_custom_box');
+
+/* 投稿ページの "advanced" 画面にカスタムセクションを追加 */
+function myplugin_add_custom_box()
+{
+    if (function_exists('add_meta_box')) {
+        add_meta_box('myplugin_sectionid', __('作成者', 'myplugin_textdomain'), 'post_author_meta_box', 'column', 'advanced');
+    }
+}

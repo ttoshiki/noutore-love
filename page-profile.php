@@ -17,7 +17,7 @@ get_header();
 
 	<main class="profile__main">
     <section class="profile__lead">
-      <h2 class="profile__leadHeading">
+      <h1 class="profile__leadHeading">
         <span class="sr-only">「脳トレ」運営陣プロフィール</span>
         <img
             src="<?php echo get_template_directory_uri(); ?>/assets/img/profile/profile_header.svg"
@@ -29,7 +29,7 @@ get_header();
             alt="「脳トレ」運営陣プロフィール"
             class="-sp"
         >
-      </h2>
+      </h1>
       <p class="profile__leadParagraph">
         コミュニティを盛り上げるため、<br class="-sp">日々活動中です。<br />
         レッスンやイベントでお会いしたら<br class="-sp">ぜひ声をかけてくださいね！

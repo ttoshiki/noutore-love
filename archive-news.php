@@ -11,13 +11,13 @@ get_header();
 ?>
 
 	<main class="news__main">
-		<h2 class="news__heading">
-      <span class="sr-only">「脳トレ」スタートブック</span>
+		<h1 class="news__heading">
+      <span class="sr-only">NEWS LIST</span>
       <img
           src="<?php echo get_template_directory_uri(); ?>/assets/img/news/news_header.svg"
           alt="NEWS LIST"
       >
-		</h2>
+		</h1>
 		<ul class="news__list">
 			<?php if (have_posts()): ?>
 			<?php while (have_posts()) : the_post(); ?>
@@ -28,7 +28,7 @@ get_header();
 								<?php if (has_post_thumbnail()) { ?>
 									<?php the_post_thumbnail(); ?>
 								<?php } else { ?>
-									<img src="" alt="no image">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.jpg" alt="no image">
 								<?php }?>
 								<div class="news__itemText">
 									<h2 class="news__title"><?php echo get_the_title(); ?></h2>
@@ -44,11 +44,11 @@ get_header();
 				<!-- 投稿が無い場合の処理 -->
 			<?php endif; ?>
 			<div class="news__pagination">
-				<?php if ( wp_is_mobile() ) : ?>
+				<?php if (wp_is_mobile()) : ?>
 					<?php previous_posts_link('PREV') ?>
 					<?php next_posts_link('NEXT') ?>
 				<?php else: ?>
-					<?php get_template_part( 'template-parts/pagination' ); ?>
+					<?php get_template_part('template-parts/pagination'); ?>
 				<?php endif; ?>
 			</div>
 		</ul>

@@ -12,20 +12,20 @@ get_header();
 
 	<main class="single__main">
 		<div class="single__inner">
-			<?php if(have_posts()): while(have_posts()):the_post(); ?>
+			<?php if (have_posts()): while (have_posts()):the_post(); ?>
 				<?php
-					if( !is_user_logged_in() && !is_robots() ) { //クローラーとログイン時のアクセスをカウントから除外
-						setPostViews( get_the_ID() );
-					}
-				?>
+                    if (!is_user_logged_in() && !is_robots()) { //クローラーとログイン時のアクセスをカウントから除外
+                        setPostViews(get_the_ID());
+                    }
+                ?>
 				<header class="single__header">
 					<?php
-					if ( has_post_thumbnail() ) {
-						the_post_thumbnail();
-					}
-					?>
+                    if (has_post_thumbnail()) {
+                        the_post_thumbnail();
+                    }
+                    ?>
 					<div class="single__headerText">
-						<h2 class="single__title"><?php the_title(); ?></h2>
+						<h1 class="single__title"><?php the_title(); ?></h1>
 						<div class="single__metaData">
 							<time datetime="<?php the_time('Y-m-d'); ?>" class="single__daytime"><?php the_time('Y.m.d'); ?></time>
 							<?php $terms = get_the_terms('', 'column_category'); ?>
@@ -38,9 +38,9 @@ get_header();
 								<span><?php the_category(', '); ?></span>
 							</div>
 						</div>
-						<?php if( !(get_post_type() === 'post')): ?>
+						<?php if (!(get_post_type() === 'post')): ?>
 							<div class="single__contributor">
-								<?php echo get_avatar( get_the_author_id(), 300 ); ?>
+								<?php echo get_avatar(get_the_author_id(), 300); ?>
 								<?php echo get_the_author(); ?>
 							</div>
 						<?php endif; ?>
@@ -73,12 +73,12 @@ get_header();
 				<h3 class="single__footerHeading">関連するキーワード</h3>
 				<ul class="single__relatedKeywordsList">
 					<?php
-						$catlist = wp_list_categories(array(
-							'taxonomy' => 'keyword',
-							'title_li' => '', // リストの外側に表示されるタイトルを非表示
-						));
-						echo $catlist; // タームの一覧を表示
-					?>
+                        $catlist = wp_list_categories(array(
+                            'taxonomy' => 'keyword',
+                            'title_li' => '', // リストの外側に表示されるタイトルを非表示
+                        ));
+                        echo $catlist; // タームの一覧を表示
+                    ?>
 				</ul>
 			</div>
 			<section class="single__follow">
@@ -96,8 +96,8 @@ get_header();
 					SNSで「脳トレ」をチェック！
 				</p>
 				<div class="single__followSns">
-						<a href="https://twitter.com/noutore_info?s=20" class="single__followSnsLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_twitter.svg" alt="" class="single__followSnsIcon"></a>
-						<a href="https://39auto.biz/namakemono-yuki/touroku/entryform15.htm" class="single__followSnsLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_line.svg" alt="" class="single__followSnsIcon"></a>
+						<a href="https://twitter.com/noutore_info?s=20" class="single__followSnsLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_twitter.svg" alt="twitterアイコン" class="single__followSnsIcon"></a>
+						<a href="https://39auto.biz/namakemono-yuki/touroku/entryform15.htm" class="single__followSnsLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_line.svg" alt="lineアイコン" class="single__followSnsIcon"></a>
 				</div>
 			</section>
 			<?php get_template_part('template-parts/breadcrumb'); ?>

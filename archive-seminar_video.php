@@ -19,7 +19,7 @@ get_header();
     <section class="seminar-video__cat">
       <h3 class="seminar-video__catHeading">
         <div class="seminar-video__catHeadingWrapper">
-          <span class="seminar-video__iconCircle"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/seminar_icon_movie.svg" alt="" class="seminar-video__catIcon"></span>
+          <span class="seminar-video__iconCircle"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/seminar_icon_movie.svg" alt="MOVIEアイコン" class="seminar-video__catIcon"></span>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/mv_catch_copy.svg" alt="空気感を体感しやすい「動画」でお届け！" class="seminar-video__catCatchCopy -pc">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/mv_catch_copy-sp.svg" alt="空気感を体感しやすい「動画」でお届け！" class="seminar-video__catCatchCopy -sp">
         </div>
@@ -33,14 +33,14 @@ get_header();
               'term' => 'seminar_video_movie',
               'posts_per_page' => -1,
             );
-            $the_query = new WP_Query($args); if($the_query->have_posts()):
+            $the_query = new WP_Query($args); if ($the_query->have_posts()):
           ?>
           <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
             <li id="post-<?php the_ID(); ?>" class="seminar-video__item -archive">
               <article class="seminar-video__article">
-                <?php if ( has_post_thumbnail()) {
-                  the_post_thumbnail('large', array('class' => 'seminar-video__articleImage -archive'));
-                }
+                <?php if (has_post_thumbnail()) {
+              the_post_thumbnail('large', array('class' => 'seminar-video__articleImage -archive'));
+          }
                 ?>
                 <span class="seminar-video__title -archive"><?php echo get_the_title(); ?></span>
                 <div class="seminar-video__content -movie"><?php the_content(); ?></div>
@@ -57,7 +57,7 @@ get_header();
     <section class="seminar-video__cat">
       <h3 class="seminar-video__catHeading -archive">
         <div class="seminar-video__catHeadingWrapper">
-          <span class="seminar-video__iconCircle"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/seminar_icon_manual.svg" alt="" class="seminar-video__catIcon"></span>
+          <span class="seminar-video__iconCircle"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/seminar_icon_manual.svg" alt="MANUALアイコン" class="seminar-video__catIcon"></span>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/seminar-video/manual_catch_copy.svg" alt="空気感を体感しやすい「マニュアル」でお届け！" class="seminar-video__catCatchCopy">
         </div>
       </h3>
@@ -70,14 +70,14 @@ get_header();
               'term' => 'seminar_video_manual',
               'posts_per_page' => -1,
             );
-            $the_query = new WP_Query($args); if($the_query->have_posts()):
+            $the_query = new WP_Query($args); if ($the_query->have_posts()):
           ?>
           <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
             <li id="post-<?php the_ID(); ?>" class="seminar-video__item -archive">
               <article class="seminar-video__article">
-                <?php if ( has_post_thumbnail()) {
-                  the_post_thumbnail('large', array('class' => 'seminar-video__articleImage -archive'));
-                }
+                <?php if (has_post_thumbnail()) {
+              the_post_thumbnail('large', array('class' => 'seminar-video__articleImage -archive'));
+          }
                 ?>
                 <span class="seminar-video__title -archive"><?php echo get_the_title(); ?></span>
                 <div class="seminar-video__content -manual"><?php the_content(); ?></div>

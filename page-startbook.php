@@ -16,7 +16,7 @@ get_header();
 ?>
 
 	<main class="startbook__main">
-    <h2 class="startbook__startbookHeading">
+    <h1 class="startbook__startbookHeading">
       <span class="sr-only">「脳トレ」スタートブック</span>
       <img
           src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/startbook_header.svg"
@@ -28,7 +28,7 @@ get_header();
           alt="「脳トレ」スタートブック"
           class="-sp"
       >
-    </h2>
+    </h1>
     <div class="startbook__mainVisualWrapper">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/main_visual.png" alt="「脳トレ」スタートブック" class="startbook__mainVisual -pc">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/main_visual-sp.png" alt="「脳トレ」スタートブック" class="startbook__mainVisual -sp">
@@ -53,14 +53,14 @@ get_header();
       </p>
       <div class="startbook__speechBubbleWrapper">
         <div class="startbook__speechBubbleSpeaker -iguana">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/iguana.jpg" alt="" class="startbook__iguana">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/iguana.jpg" alt="イグアナさんイラスト" class="startbook__iguana">
           <div><span class="startbook__speakerName">イグアナさん</span></div>
         </div>
         <p class="startbook__speech -iguana">「脳トレ」®︎スタートブックってどんな人にオススメなの？</p>
       </div>
       <div class="startbook__speechBubbleWrapper">
         <div class="startbook__speechBubbleSpeaker -namakemono">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/namakemono.jpg" alt="" class="startbook__namakemono">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/namakemono.jpg" alt="ナマケモノ有紀イラスト" class="startbook__namakemono">
           <div><span class="startbook__speakerName">ナマケモノ有紀</span></div>
         </div>
         <p class="startbook__speech -namakemono">「脳トレ」を独学でやってみたい人かな！直に質問できる機会があったほうが現実の変化は早いのだけど、まずはじっくり一人で学びたい人にオススメ。</p>
@@ -96,10 +96,10 @@ get_header();
     </section>
     <section class="startbook__content">
       <div class="startbook__contentInner">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/content_text.svg" alt="" class="startbook__contentText -pc">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/content_text-sp.svg" alt="" class="startbook__contentText -sp">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/content_image.png" alt="" class="startbook__contentImage -pc">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/content_image-sp.png" alt="" class="startbook__contentImage -sp">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/content_text.svg" alt="「脳トレ」スタートブック中身チラ見せ！" class="startbook__contentText -pc">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/content_text-sp.svg" alt="「脳トレ」スタートブック中身チラ見せ！" class="startbook__contentText -sp">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/content_image.png" alt="「脳トレ」コンテンツ内容" class="startbook__contentImage -pc">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/content_image-sp.png" alt="「脳トレ」コンテンツ内容" class="startbook__contentImage -sp">
       </div>
     </section>
     <section class="startbook__contents">
@@ -253,8 +253,8 @@ get_header();
         </div>
         <div class="startbook__flowPay">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/flow_pay.svg" alt="お支払い">
-          <p class="startbook__flowParagraph">stripe(ストライプ)アカウントによるネット決済システム（クレジットカード・銀行口座振替）にて承ります。恐れ入りますがstripe(ストライプ)のアカウントをお持ちでない方はご登録のほどお願いいたします。</p>
-          <p class="startbook__flowLinkParagraph">→<a href="#" class="startbook__flowLink">stripe(ストライプ)のアカウント登録・銀行口座振替に関するご案内ページはこちら</a></p>
+          <p class="startbook__flowParagraph">PayPal(ペイパル)アカウントによるネット決済システム（クレジットカード・銀行口座振替）にて承ります。恐れ入りますがPayPal(ペイパル)のアカウントをお持ちでない方はご登録のほどお願いいたします。</p>
+          <p class="startbook__flowLinkParagraph">→<a href="#" class="startbook__flowLink">PayPal(ペイパル)のアカウント登録・銀行口座振替に関するご案内ページはこちら</a></p>
         </div>
         <div class="startbook__flowShipping">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/flow_shipping.svg" alt="発送">

@@ -102,7 +102,7 @@
 				<span class="hammenu__closeButton" @click="toggleMenu">CLOSE</span>
 				<div class="hammenu__inner">
 					<div class="hammenu__block">
-						<img src="<?php echo get_template_directory_uri();?>/assets/img/menu_heading01.svg" alt="" id="hammenu__headingAbout" class="hammenu__heading">
+						<img src="<?php echo get_template_directory_uri();?>/assets/img/menu_heading01.svg" alt="About「NOUTORE」" id="hammenu__headingAbout" class="hammenu__heading">
 						<ul class="hammenu__list">
 							<li class="hammenu__item"><a href="<?php echo home_url('#home-about') ?>" @click="toggleMenu">「脳トレ」とは？</a></li>
 							<li class="hammenu__item"><a href="<?php echo home_url('#home-genre') ?>" @click="toggleMenu">「脳トレ」が効果的なジャンル</a></li>
@@ -111,7 +111,7 @@
 						</ul>
 					</div>
 					<div class="hammenu__block">
-						<img src="<?php echo get_template_directory_uri();?>/assets/img/menu_heading02.svg" alt="" id="hammenu__headingNoutore" class="hammenu__heading">
+						<img src="<?php echo get_template_directory_uri();?>/assets/img/menu_heading02.svg" alt="To learn「NOUTORE」" id="hammenu__headingNoutore" class="hammenu__heading">
 						<ul class="hammenu__list">
 							<li class="hammenu__item"><a href="<?php echo home_url('#home-support') ?>" @click="toggleMenu">オンラインレッスン6つのサポート</a></li>
 							<li class="hammenu__item"><a href="<?php echo home_url('#home-flow') ?>" @click="toggleMenu">レッスン参加までの流れ</a></li>
@@ -121,7 +121,7 @@
 						</ul>
 					</div>
 					<div class="hammenu__block">
-						<img src="<?php echo get_template_directory_uri();?>/assets/img/menu_heading03.svg" alt="" id="hammenu__headingContact" class="hammenu__heading">
+						<img src="<?php echo get_template_directory_uri();?>/assets/img/menu_heading03.svg" alt="Contact" id="hammenu__headingContact" class="hammenu__heading">
 						<ul class="hammenu__list">
 							<li class="hammenu__item"><a href="<?php echo home_url('/contact/') ?>">お問い合わせはこちら</a></li>
 						</ul>

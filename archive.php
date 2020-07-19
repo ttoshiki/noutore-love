@@ -31,7 +31,7 @@ get_header();
 										<?php if (has_post_thumbnail()) { ?>
 											<?php the_post_thumbnail(); ?>
 										<?php } else { ?>
-											<img src="" alt="no image">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.jpg" alt="no image">
 										<?php }?>
 										<?php $terms = get_the_terms('', 'column_category'); ?>
 										<?php if ($terms) { ?>
@@ -110,7 +110,7 @@ get_header();
 									<?php if (has_post_thumbnail()) { ?>
 										<?php the_post_thumbnail(); ?>
 									<?php } else { ?>
-										<img src="" alt="no image">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.jpg" alt="no image">
 										<?php }?>
 										<?php $terms = get_the_terms('', 'column_category'); ?>
 										<div class="archive__articlePostData">

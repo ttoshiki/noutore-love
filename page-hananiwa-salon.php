@@ -16,9 +16,9 @@ get_header();
 ?>
 
 	<main class="hananiwa__main">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hananiwa-salon/main_visual.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/hananiwa-salon/main_visual@2x.jpg" alt="" class="hananiwa__mainVisual">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hananiwa-salon/main_visual.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/hananiwa-salon/main_visual@2x.jpg" alt="花庭サロンイメージ" class="hananiwa__mainVisual">
         <section class="hananiwa__about" id="about">
-            <h2 class="hananiwa__aboutHeading">
+            <h1 class="hananiwa__aboutHeading">
                 <span class="sr-only">「脳トレ」コミュニティの拠点について</span>
                 <img
                     src="<?php echo get_template_directory_uri(); ?>/assets/img/hananiwa-salon/about_header.svg"
@@ -30,9 +30,9 @@ get_header();
                     alt="「脳トレ」コミュニティの拠点について"
                     class="-sp"
                 >
-            </h2>
+            </h1>
             <div class="hananiwa__desc">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hananiwa-salon/base_image.jpg" alt="" class="hananiwa__descImage">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hananiwa-salon/base_image.jpg" alt="花庭サロンイメージ" class="hananiwa__descImage">
                 <p class="hananiwa__descParagraph">
                     「脳トレ」コミュニティでは自社サロンを有しております。<br />
                     2019年、東京・銀座からほど近い都会に「花庭サロン」は誕生しました。<br />
@@ -53,37 +53,37 @@ get_header();
             <ul class="hananiwa__baseList">
                 <li class="hananiwa__baseItem">
                     <div class="hananiwa__baseContents">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_power.svg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_power.svg" alt="電源アイコン">
                         <p class="hananiwa__baseText"><span>電源</span></p>
                     </div>
                 </li>
                 <li class="hananiwa__baseItem">
                     <div class="hananiwa__baseContents">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_wifi.svg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_wifi.svg" alt="無料Wi-fiアイコン">
                         <p class="hananiwa__baseText"><span>無料<br class="-pc" />Wi-fi</span></p>
                     </div>
                 </li>
                 <li class="hananiwa__baseItem">
                     <div class="hananiwa__baseContents">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_projector.svg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_projector.svg" alt="ホワイトボードアイコン">
                         <p class="hananiwa__baseText"><span>ホワイトボード<br class="-sp" />(固定)<br />プロジェクター</span></p>
                     </div>
                 </li>
                 <li class="hananiwa__baseItem">
                     <div class="hananiwa__baseContents">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_mic.svg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_mic.svg" alt="マイクアイコン">
                         <p class="hananiwa__baseText"><span>マイク音響設備</span></p>
                     </div>
                 </li>
                 <li class="hananiwa__baseItem">
                     <div class="hananiwa__baseContents">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_drink.svg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_drink.svg" alt="ドリンクアイコン">
                         <p class="hananiwa__baseText"><span>フリードリンク</span></p>
                     </div>
                 </li>
                 <li class="hananiwa__baseItem">
                     <div class="hananiwa__baseContents">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_make.svg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_make.svg" alt="メイクルームアイコン">
                         <p class="hananiwa__baseText"><span>メイクルーム</span></p>
                     </div>
                 </li>

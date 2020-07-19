@@ -13,7 +13,7 @@
 	<div id="toTop">
 		<transition name="totop-fade">
 			<button class="toTop__link" v-if="isShow">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/namakemono_top.png" alt="" class="toTop__image" @click="toTop">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/namakemono_top.png" alt="topへ" class="toTop__image" @click="toTop">
 			</button>
 		</transition>
 	</div>
@@ -92,8 +92,8 @@
 				<small class="footer__copyright">Copyright © 2020 「脳トレ」NOUTORE online lesson. <br class="-sp" />All Rights Reserved.</small>
 			</div>
 			<div class="footer__banner">
-				<a href="//team.noutore-love.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner_community.png" alt=""></a>
-				<a href="//reservation.noutore-love.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner_reservation.png" alt=""></a>
+				<a href="//team.noutore-love.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner_community.png" alt="「脳トレ」コミュニティ"></a>
+				<a href="//reservation.noutore-love.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner_reservation.png" alt="「脳トレ」セッション予約"></a>
 			</div>
 		</div>
 	</footer><!-- #colophon -->

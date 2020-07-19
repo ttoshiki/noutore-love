@@ -17,7 +17,7 @@ get_header();
 ?>
 
 	<main class="archive__main">
-		<div class="archive__taxTitleWrapper"><h2 class="archive__taxTitle">SEARCH WORD</h2></div>
+		<div class="archive__taxTitleWrapper"><h1 class="archive__taxTitle">SEARCH WORD</h1></div>
 		<h2 class="archive__titleCategory">"<?php echo $search_query; ?>"<span class="archive__catCount">（<?php echo $total_results; ?>件）</span></h2>
     <section>
 			<?php if (have_posts()): ?>
@@ -29,7 +29,7 @@ get_header();
 									<?php if (has_post_thumbnail()) { ?>
 										<?php the_post_thumbnail(); ?>
 									<?php } else { ?>
-										<img src="" alt="no image">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/img/noimage.jpg" alt="no image">
 										<?php }?>
 										<?php $terms = get_the_terms('', 'column_category'); ?>
 										<div class="archive__articlePostData">
@@ -38,7 +38,7 @@ get_header();
 													<span class="archive__category category-<?php echo$term->slug; ?>"><?php echo $term->name; ?></span>
 												<?php } ?>
 											<?php } ?>
-											<time class="archive__articleDate"><?php echo get_the_date( 'Y/m/d' ); ?></time>
+											<time class="archive__articleDate"><?php echo get_the_date('Y/m/d'); ?></time>
 										</div>
 									<h2 class="archive__ItemTitle"><?php the_title(); ?></h2>
 								</article>
@@ -65,8 +65,8 @@ get_header();
         <li class="cat-item"><a href="<?php echo home_url('/column/') ?>">最新記事</a></li>
         <?php
           $terms = get_terms('column_category');
-          foreach ( $terms as $term ) {
-            echo '<li class="cat-item cat-' . $term->slug . '"><a href="'.get_term_link($term).'">'.$term->name.'</a></li>';
+          foreach ($terms as $term) {
+              echo '<li class="cat-item cat-' . $term->slug . '"><a href="'.get_term_link($term).'">'.$term->name.'</a></li>';
           }
           ?>
       </ul>
