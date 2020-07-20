@@ -161,14 +161,14 @@ get_header();
 						>
 					</h2>
 					<?php get_template_part('template-parts/search-category'); ?> -->
-					<h2 class="archive__pushNoticeHeading">
+					<!-- <h2 class="archive__pushNoticeHeading">
 						<span class="sr-only">プッシュ通知を購読</span>
 						<img
 							src="<?php echo get_template_directory_uri(); ?>/assets/img/archive/push_notice_header.svg"
 							alt="プッシュ通知を購読"
 						>
 					</h2>
-					<a href="" class="archive__pushNoticeButton">購読する</a>
+					<a href="" class="archive__pushNoticeButton">購読する</a> -->
 				</div>
 				<div class="archive__twitterArea -pc">
 					<a class="twitter-timeline" data-height="100%" href="https://twitter.com/noutore_info?ref_src=twsrc%5Etfw">Tweets by noutore_info</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -188,7 +188,7 @@ get_header();
 				</div>
 				<div class="banner">
 					<h3 class="prHeading">「脳トレ」スタートブック</h3>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner04.jpg" alt="「脳トレ」スタートブック" class="bannerImage">
+					<a href="<?php echo home_url(); ?>/startbook"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner04.jpg" alt="「脳トレ」スタートブック" class="bannerImage"></a>
 				</div>
 			</div>
 		</section>

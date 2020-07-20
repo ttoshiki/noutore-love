@@ -45,7 +45,7 @@ get_header();
         “特定の誰かがうまくいった方法”ではなく、<mark class="online-lesson__aboutParagraphMark">“誰にでも適用されるスキルと仕組み”</mark>を<br class="-pc" /><mark class="online-lesson__aboutParagraphMark">体系的に学べる</mark>ため、<mark class="online-lesson__aboutParagraphMark">再現性の高さに定評</mark>があります。
       </p>
       <div class="buttonWrapper online-lesson">
-        <a href="#" class="button">
+        <a href="<?php echo home_url(); ?>/column_category/member_interview/" class="button">
           <div class="buttonInner">
           <div class="buttonIcon"><?php echo file_get_contents(get_template_directory() . '/assets/img/icons/icon_angle.svg'); ?></div>
           <span>メンバーの声</span>

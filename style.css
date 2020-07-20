@@ -2929,6 +2929,7 @@ img {
 
 .archive__userActionArea {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 80%;
   max-width: 800px;
