@@ -37,7 +37,11 @@
 <?php } ?>
 <div id="page" class="site">
 	<header id="header" class="header">
-		<h1 class="header__logo">
+		<?php if (is_front_page() && is_home()): ?>
+			<h1 class="header__logo">
+		<?php else: ?>
+			<p class="header__logo">
+		<?php endif; ?>
 			<span class="sr-only">「脳トレ」オンラインレッスン</span>
 			<div class="header__logoWrapper">
 				<a href="<?php echo home_url(); ?>">
@@ -56,11 +60,15 @@
 					<?php } ?>
 				</a>
 			</div>
-
-			<div class="header__fixed" :class="isFixed">
-				<div :class="isFixed">
-					<transition name="trans_slide">
-						<div class="header__menuLogo" :class="isShow" v-if="isShow">
+		<?php if (is_front_page() && is_home()): ?>
+			</h1>
+		<?php else: ?>
+			</p>
+		<?php endif; ?>
+		<div class="header__fixed" :class="isFixed">
+			<div :class="isFixed">
+				<transition name="trans_slide">
+					<div class="header__menuLogo" :class="isShow" v-if="isShow">
 							<a href="<?php echo home_url(); ?>">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="サイトロゴ" class="header__logoImage -pc">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-sp.svg" alt="「脳トレ」オンラインレッスン" class="header__logoImage -sp"
@@ -86,7 +94,6 @@
 							<button @click="toggleSearchField" :class="searchFieldOpened" class="header__iconButton"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_search.svg"></button>
 						</li>
 					</ul>
-
 					<nav id="site-navigation" class="header__navigation">
 						<span class="header__trigger" href="#" @click="toggleMenu" id="hoge">
 							<span></span>
