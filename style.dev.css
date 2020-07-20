@@ -4228,6 +4228,10 @@ img {
   }
 }
 
+.page__main {
+  padding: 120px;
+}
+
 .diagnosis__mainHeader {
   display: block;
   width: 80%;
