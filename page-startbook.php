@@ -89,7 +89,7 @@ get_header();
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/case01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/case01.jpg 1x <?php echo get_template_directory_uri(); ?>/assets/img/startbook/case01@2x.jpg 2x" alt="" class="startbook__caseImage -pc">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/case-sp.jpg" alt="" class="startbook__caseImage -sp">
       </div>
-      <a href="#" class="startbook__caseButton">
+      <a href="<?php echo home_url('/column_category/member_interview/'); ?>" class="startbook__caseButton">
         <?php echo file_get_contents(get_template_directory() . '/assets/img/icons/icon_angle.svg'); ?>
         <span>「脳トレ」メンバーの<br class="-sp">体験談はこちら</span>
       </a>

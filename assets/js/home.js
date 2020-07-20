@@ -10,7 +10,6 @@ window.addEventListener("load", function () {
   var source = document.createElement('source');
   var img = document.createElement('img')
   source.type = 'image/webp';
-  // source.srcset = '/wp-content/themes/noutore-love/assets/img/home/book.webp?' + timestamp;
   // img.src = '/wp-content/themes/noutore-love/assets/img/home/book.gif?' + timestamp;
 
   // source.srcset = '/wp/wp-content/themes/noutore-love/assets/img/home/book.webp?' + timestamp;
