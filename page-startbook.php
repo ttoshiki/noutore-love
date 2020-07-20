@@ -86,7 +86,7 @@ get_header();
         5年ほど続いている安心のレッスンをもとに<br class="-sp">作られたスタートブックです。
       </p>
       <div class="startbook__caseImageWrapper">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/case01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/case01.jpg 1x" alt="" class="startbook__caseImage -pc">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/case01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/case01.jpg 1x <?php echo get_template_directory_uri(); ?>/assets/img/startbook/case01@2x.jpg 2x" alt="" class="startbook__caseImage -pc">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/case-sp.jpg" alt="" class="startbook__caseImage -sp">
       </div>
       <a href="#" class="startbook__caseButton">
