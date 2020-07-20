@@ -254,7 +254,7 @@ get_header();
         <div class="startbook__flowPay">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/flow_pay.svg" alt="お支払い">
           <p class="startbook__flowParagraph">PayPal(ペイパル)アカウントによるネット決済システム（クレジットカード・銀行口座振替）にて承ります。恐れ入りますがPayPal(ペイパル)のアカウントをお持ちでない方はご登録のほどお願いいたします。</p>
-          <p class="startbook__flowLinkParagraph">→<a href="#" class="startbook__flowLink">PayPal(ペイパル)のアカウント登録・銀行口座振替に関するご案内ページはこちら</a></p>
+          <p class="startbook__flowLinkParagraph">→<a href="https://www.paypal.com/jp/webapps/mpp/personal" class="startbook__flowLink">PayPal(ペイパル)のアカウント登録・銀行口座振替に関するご案内ページはこちら</a></p>
         </div>
         <div class="startbook__flowShipping">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/flow_shipping.svg" alt="発送">
