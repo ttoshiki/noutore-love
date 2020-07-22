@@ -190,13 +190,17 @@ get_header();
         <p class="online-lesson__stepParagraph">現実をダイナミックに動かすためには、その人<strong>専用に個別カスタマイズされたアドバイス・サポートが必須</strong>です。ただ知識を入れるだけではなく、<strong>直接メンターに相談することでインプットとアウトプットを行います。</strong></p>
         <div class="online-lesson__chargeWrapper">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/online-lesson/charge.svg" alt="担当" class="online-lesson__chargeImage">
-          <div class="online-lesson__charger">
-            <div class="online-lesson__chargerIcon"><?php echo file_get_contents(get_template_directory() . '/assets/img/icons/icon_angle.svg'); ?></div>
-            <span class="online-lesson__chargeName">saki</span>
+          <div>
+            <a href="<?php echo home_url('/profile/#saki'); ?>" class="online-lesson__charger">
+              <div class="online-lesson__chargerIcon"><?php echo file_get_contents(get_template_directory() . '/assets/img/icons/icon_angle.svg'); ?></div>
+              <span class="online-lesson__chargeName">saki</span>
+            </a>
           </div>
-          <div class="online-lesson__charger">
-            <div class="online-lesson__chargerIcon"><?php echo file_get_contents(get_template_directory() . '/assets/img/icons/icon_angle.svg'); ?></div>
-            <span class="online-lesson__chargeName">みい</span>
+          <div>
+            <a href="<?php echo home_url('/profile/#mii'); ?>" class="online-lesson__charger">
+              <div class="online-lesson__chargerIcon"><?php echo file_get_contents(get_template_directory() . '/assets/img/icons/icon_angle.svg'); ?></div>
+              <span class="online-lesson__chargeName">みい</span>
+            </a>
           </div>
         </div>
         <h2 class="online-lesson__step2SubHeading">
@@ -313,13 +317,17 @@ get_header();
         <div class="online-lesson__chargeWrapper -step5">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/online-lesson/charge.svg" alt="担当" class="online-lesson__chargeImage">
           <div class="online-lesson__chargerWrapper">
-            <div class="online-lesson__charger">
-              <div class="online-lesson__chargerIcon"><?php echo file_get_contents(get_template_directory() . '/assets/img/icons/icon_angle.svg'); ?></div>
-              <span class="online-lesson__chargeName">江藤有紀</span>
+            <div>
+              <a href="<?php echo home_url('/profile/#etoh'); ?>" class="online-lesson__charger">
+                <div class="online-lesson__chargerIcon"><?php echo file_get_contents(get_template_directory() . '/assets/img/icons/icon_angle.svg'); ?></div>
+                <span class="online-lesson__chargeName">江藤有紀</span>
+              </a>
             </div>
-            <div class="online-lesson__charger">
-              <div class="online-lesson__chargerIcon"><?php echo file_get_contents(get_template_directory() . '/assets/img/icons/icon_angle.svg'); ?></div>
-              <span class="online-lesson__chargeName">小原彩夏</span>
+            <div>
+              <a href="<?php echo home_url('/profile/#obara'); ?>" class="online-lesson__charger">
+                <div class="online-lesson__chargerIcon"><?php echo file_get_contents(get_template_directory() . '/assets/img/icons/icon_angle.svg'); ?></div>
+                <span class="online-lesson__chargeName">小原彩夏</span>
+              </a>
             </div>
           </div>
         </div>
