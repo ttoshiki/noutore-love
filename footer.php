@@ -88,7 +88,10 @@
 		</div>
 		<div class="footer__lower">
 			<div class=footer__links>
-				<a href="#" class="footer__lowerLink">プライバシーポリシー・免責事項</a>
+				<div class="footer__lowerLink">
+					<a href="<?php echo home_url('/privacy/') ?>" class="footer__lowerLink">プライバシーポリシー</a>
+					・<a href="<?php echo home_url('/law/') ?>" class="footer__lowerLink">免責事項</a>
+				</div>
 				<small class="footer__copyright">Copyright © 2020 「脳トレ」NOUTORE online lesson. <br class="-sp" />All Rights Reserved.</small>
 			</div>
 			<div class="footer__banner">

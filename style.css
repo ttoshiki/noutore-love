@@ -4240,6 +4240,8 @@ img {
 
 .page__main {
   padding: 48px 120px 120px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .page__main h1 {
