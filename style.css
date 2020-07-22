@@ -323,6 +323,7 @@ img {
 .header__iconSearch {
   position: relative;
   width: 32px;
+  margin-left: 11px;
 }
 
 .header__iconSearch .search-input {
@@ -348,8 +349,8 @@ img {
 .header__iconLine img,
 .header__iconMail img,
 .header__iconSearch img {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .header__iconTwitter img:hover,
@@ -361,7 +362,7 @@ img {
 }
 
 .header__iconMap img {
-  width: 22px;
+  width: 18px;
   height: 32px;
 }
 

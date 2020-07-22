@@ -82,7 +82,7 @@
 							<div class="header__fixedIcon" :class="isIconShow" v-if="isIconShow">
 								<li class="header__iconItem header__iconTwitter" :class="isIconShow"><a href="https://twitter.com/noutore_info?s=20" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_twitter.svg"></a></li>
 								<!-- <li class="header__iconItem header__iconYoutube" :class="isIconShow"><a href="" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_youtube.svg"></a></li> -->
-								<li class="header__iconItem header__iconLine" :class="isIconShow"><a href="https://39auto.biz/namakemono-yuki/touroku/entryform15.htm" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_line.svg"></a></li>
+								<li class="header__iconItem header__iconLine" :class="isIconShow"><a href="https://line.me/R/ti/p/%40496jcxcd" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_line.svg"></a></li>
 								<li class="header__iconItem header__iconMail" :class="isIconShow"><a href="<?php echo home_url('/contact/') ?>" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_mail.svg"></a></li>
 								<li class="header__iconItem header__iconMap" :class="isIconShow"><a href="<?php echo home_url('/hananiwa-salon') ?>" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_map.svg"></a></li>
 							</div>
@@ -138,7 +138,7 @@
 						<ul class="hammenu__footerList">
 							<li class="hammenu__footerItem hammenu__iconTwitter"><a href="https://twitter.com/noutore_info?s=20" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_twitter.svg"></a></li>
 							<!-- <li class="hammenu__footerItem hammenu__iconYoutube"><a href="" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_youtube.svg"></a></li> -->
-							<li class="hammenu__footerItem hammenu__iconLine"><a href="https://39auto.biz/namakemono-yuki/touroku/entryform15.htm" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_line.svg"></a></li>
+							<li class="hammenu__footerItem hammenu__iconLine"><a href="https://line.me/R/ti/p/%40496jcxcd" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_line.svg"></a></li>
 						</ul>
 					</div>
 					<footer class="hammenu__footer">
@@ -147,7 +147,7 @@
 							<ul class="hammenu__footerList">
 								<li class="hammenu__footerItem hammenu__iconTwitter"><a href="https://twitter.com/noutore_info?s=20" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_twitter.svg"></a></li>
 								<!-- <li class="hammenu__footerItem hammenu__iconYoutube"><a href="" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_youtube.svg"></a></li> -->
-								<li class="hammenu__footerItem hammenu__iconLine"><a href="https://39auto.biz/namakemono-yuki/touroku/entryform15.htm" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_line.svg"></a></li>
+								<li class="hammenu__footerItem hammenu__iconLine"><a href="https://line.me/R/ti/p/%40496jcxcd" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_line.svg"></a></li>
 							</ul>
 						</div>
 						<small class="hammenu__copyright">Copyright © 2020 「脳トレ」NOUTORE online lesson. <br class="-sp">All Rights Reserved.</small>

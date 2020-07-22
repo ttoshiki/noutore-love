@@ -97,7 +97,7 @@ get_header();
 				</p>
 				<div class="single__followSns">
 						<a href="https://twitter.com/noutore_info?s=20" class="single__followSnsLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_twitter.svg" alt="twitterアイコン" class="single__followSnsIcon"></a>
-						<a href="https://39auto.biz/namakemono-yuki/touroku/entryform15.htm" class="single__followSnsLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_line.svg" alt="lineアイコン" class="single__followSnsIcon"></a>
+						<a href="https://line.me/R/ti/p/%40496jcxcd" class="single__followSnsLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_line.svg" alt="lineアイコン" class="single__followSnsIcon"></a>
 				</div>
 			</section>
 			<?php get_template_part('template-parts/breadcrumb'); ?>

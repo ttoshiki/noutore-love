@@ -179,7 +179,11 @@ get_header();
 			</div>
 		</section>
 		<section class="archive__bannerArea">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/archive/brain_training_editor.png" alt="「脳トレ」編集部" class="bannerImage -full">
+			<picture>
+				<source media="(min-width: 769px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/archive/brain_training_editor.png" class="bannerImage -full -pc">
+				<source media="(max-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/archive/brain_training_editor-sp.png" class="bannerImage -full -sp">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/archive/brain_training_editor.png 1x <?php echo get_template_directory_uri(); ?>/assets/img/archive/brain_training_editor@2x.png 2x" alt="こちら「脳トレ」編集部" class="bannerImage -full">
+    	</picture>
 			<?php get_template_part('template-parts/banners'); ?>
 			<div class="banners">
 				<div class="banner">

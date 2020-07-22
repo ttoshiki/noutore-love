@@ -67,7 +67,7 @@
 							<span>お問い合わせ先</span>
 						</h2>
 						<ul class="footer__middleSubList">
-							<li class="footer__middleSubItem"><a href="https://39auto.biz/namakemono-yuki/touroku/entryform15.htm">LINE公式アカウント</a></li>
+							<li class="footer__middleSubItem"><a href="https://line.me/R/ti/p/%40496jcxcd">LINE公式アカウント</a></li>
 							<li class="footer__middleSubItem"><a href="<?php echo home_url('/contact/') ?>">お問い合わせフォーム</a></li>
 						</ul>
 					</li>

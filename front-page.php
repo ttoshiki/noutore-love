@@ -395,7 +395,7 @@ get_header();
             「私に合った学び方は？」など<br />
             ご相談を受け付けております。
           </p>
-          <a href="https://39auto.biz/namakemono-yuki/touroku/entryform15.htm" class="home__lineAccountButton">@496jcxcd<span class="home__linkAccountButtonShiny"></span></a>
+          <a href="https://line.me/R/ti/p/%40496jcxcd" class="home__lineAccountButton">@496jcxcd<span class="home__linkAccountButtonShiny"></span></a>
         </div>
       </div>
     </section>
