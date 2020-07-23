@@ -1373,6 +1373,14 @@ img {
   animation: jump 3s ease-in-out infinite normal;
 }
 
+.home__columnButtonWrapper {
+  position: absolute;
+  top: 35.2vw;
+  left: 6vw;
+  width: 18vw;
+  margin: 0;
+}
+
 .home__mainVisual {
   display: block;
   width: 80%;
@@ -2348,6 +2356,11 @@ img {
     top: 66.2vw;
     right: 2vw;
     width: 24.71vw;
+  }
+  .home__columnButtonWrapper {
+    top: 71vw;
+    left: 2vw;
+    width: 26vw;
   }
   .home__leadSentence {
     margin-top: 20px;

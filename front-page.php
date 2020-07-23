@@ -31,6 +31,11 @@ get_header();
       >
       </a>
     </h2>
+    <figure class="home__columnButtonWrapper">
+      <a href="<?php echo home_url('/column/'); ?>">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/tea.png" alt="コラムページはこちら">
+      </a>
+    </figure>
     <picture>
       <source media="(min-width: 769px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual.jpg 1x <?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual@2x.jpg 2x" class="home__mainVisual -pc">
       <source media="(max-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual-sp@2x.jpg" class="home__mainVisual -sp">
