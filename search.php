@@ -52,16 +52,16 @@ get_header();
     </section>
 		<?php get_template_part('template-parts/pagination'); ?>
     <section class="archive__column">
-      <h2 class="archive__columnHeading">
+      <!-- <h2 class="archive__columnHeading">
         <span class="sr-only">COLUMN</span>
         <img
         src="<?php echo get_template_directory_uri(); ?>/assets/img/archive/column_header.svg"
         alt="COLUMN"
         class=""
         >
-      </h2>
-      <span class="archive__subHeading">「脳トレ」コラム</span>
-      <ul class="archive__columnCategoryList">
+      </h2> -->
+      <!-- <span class="archive__subHeading">「脳トレ」コラム</span> -->
+      <!-- <ul class="archive__columnCategoryList">
         <li class="cat-item"><a href="<?php echo home_url('/column/') ?>">最新記事</a></li>
         <?php
           $terms = get_terms('column_category');
@@ -69,9 +69,17 @@ get_header();
               echo '<li class="cat-item cat-' . $term->slug . '"><a href="'.get_term_link($term).'">'.$term->name.'</a></li>';
           }
           ?>
-      </ul>
+      </ul> -->
     </section>
 		<section class="archive__keyword">
+			<h2 class="archive__keywordHeading">
+				<span class="sr-only">KEY WORD</span>
+				<img
+					src="<?php echo get_template_directory_uri(); ?>/assets/img/archive/keyword_header.svg"
+					alt="KEY WORD"
+					>
+				</a>
+			</h2>
 			<span class="archive__subHeading">人気のキーワード</span>
 			<?php get_template_part('template-parts/popular-keywords'); ?>
 			<div class="archive__userActionArea">
@@ -84,22 +92,22 @@ get_header();
 							>
 					</h2>
 					<?php get_template_part('template-parts/searchform'); ?>
-					<h2 class="archive__categoryHeading">
+					<!-- <h2 class="archive__categoryHeading">
 						<span class="sr-only">CATEGORY</span>
 						<img
 							src="<?php echo get_template_directory_uri(); ?>/assets/img/archive/category_header.svg"
 							alt="CATEGORY"
 						>
 					</h2>
-					<?php get_template_part('template-parts/search-category'); ?>
-					<h2 class="archive__pushNoticeHeading">
+					<?php get_template_part('template-parts/search-category'); ?> -->
+					<!-- <h2 class="archive__pushNoticeHeading">
 						<span class="sr-only">プッシュ通知を購読</span>
 						<img
 							src="<?php echo get_template_directory_uri(); ?>/assets/img/archive/push_notice_header.svg"
 							alt="プッシュ通知を購読"
 						>
 					</h2>
-					<a href="" class="archive__pushNoticeButton">購読する</a>
+					<a href="" class="archive__pushNoticeButton">購読する</a> -->
 				</div>
 				<div class="archive__twitterArea">
 					<a class="twitter-timeline" data-height="100%" href="https://twitter.com/noutore_info?ref_src=twsrc%5Etfw">Tweets by noutore_info</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

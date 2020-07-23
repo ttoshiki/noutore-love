@@ -603,9 +603,15 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .header__logo {
+    margin-top: 0
+  }
+  .header__logoWrapper {
+    margin-top: 0;
+  }
   .header__logoImage {
-    width: 80%;
-    margin: 48px auto 0;
+    width: 50%;
+    margin: 8px 32px 24px;
   }
   .header__logoImage.-pc {
     display: none;
@@ -2339,7 +2345,7 @@ img {
     margin: 24px auto 0;
   }
   .home__diagnosisButtonWrapper {
-    top: 86.2vw;
+    top: 66.2vw;
     right: 2vw;
     width: 24.71vw;
   }
@@ -3129,6 +3135,10 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .archive__main {
+    margin-top: 40px;
+  }
+
   .archive__main .hooper {
     width: 72%;
     height: 80vw;

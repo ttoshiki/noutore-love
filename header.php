@@ -19,10 +19,11 @@
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon/64x64.png">
-	<meta property="og:url" content="https://noutore-love.com" />
+	<meta property="og:url" content="<?php echo home_url(); ?>" />
 	<meta property="og:type" content="website" />
-	<meta property="og:site_name" content="「脳トレ」オンラインレッスン" />
-	<meta property="og:description" content="「脳トレ」オンラインレッスンは、脳と心の仕組みを学んで、現実を思う通りに創造していくスキルを学ぶ場所です。" />
+	<meta property="og:site_name" content="脳トレオンラインレッスン総合サイト" />
+	<meta property="og:description" content="脳と心の連携を深めてオーダーだけで現実を動かしていく、脳トレオンラインレッスンの総合サイト。潜在意識、引き寄せ、心理学、占い、コーチング、カウンセリングで
+思うような変化がなかった人のためのメソッドです。" />
 	<meta property="og:image" content="<?php echo get_template_directory(); ?>/assets/img/ogp.jpg" />
 	<?php wp_head(); ?>
 </head>
@@ -49,13 +50,23 @@
 						<img
 							src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_vertical.svg"
 							alt="「脳トレ」オンラインレッスン"
-							class="header__logoImage -vertical"
+							class="header__logoImage -vertical -pc"
+							>
+						<img
+							src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-sp.svg"
+							alt="「脳トレ」オンラインレッスン"
+							class="header__logoImage -sp"
 							>
 					<?php } else { ?>
 						<img
 							src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg"
 							alt="「脳トレ」オンラインレッスン"
-							class="header__logoImage"
+							class="header__logoImage -pc"
+							>
+						<img
+							src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-sp.svg"
+							alt="「脳トレ」オンラインレッスン"
+							class="header__logoImage -sp"
 							>
 					<?php } ?>
 				</a>

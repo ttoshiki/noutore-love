@@ -73,12 +73,25 @@ get_header();
 				<h3 class="single__footerHeading">関連するキーワード</h3>
 				<ul class="single__relatedKeywordsList">
 					<?php
+						$post_object = get_post($post->ID); // 投稿オブジェクトを取得
+						$items = get_the_terms($post_object, 'keyword');
+						if ($items) {
+							foreach ($items as $item) {
+									echo '<li class="cat-item"><a href="' . home_url() . '/keyword/' . $item -> slug . '">' . $item -> name . '</a></li>';
+							}
+						}
+						else {
+							echo '<p>関連するキーワードはありません。</p>';
+						}
+					?>
+
+					<!-- <?php
                         $catlist = wp_list_categories(array(
                             'taxonomy' => 'keyword',
                             'title_li' => '', // リストの外側に表示されるタイトルを非表示
                         ));
                         echo $catlist; // タームの一覧を表示
-                    ?>
+                    ?> -->
 				</ul>
 			</div>
 			<section class="single__follow">
