@@ -40,7 +40,7 @@ get_header();
 											<?php } ?>
 											<time class="archive__articleDate"><?php echo get_the_date('Y/m/d'); ?></time>
 										</div>
-									<h2 class="archive__ItemTitle"><?php the_title(); ?></h2>
+									<h2 class="archive__itemTitle"><?php the_title(); ?></h2>
 								</article>
 							</a>
 						</li>
@@ -109,25 +109,15 @@ get_header();
 					</h2>
 					<a href="" class="archive__pushNoticeButton">購読する</a> -->
 				</div>
-				<div class="archive__twitterArea">
+				<div class="archive__twitterArea -pc">
 					<a class="twitter-timeline" data-height="100%" href="https://twitter.com/noutore_info?ref_src=twsrc%5Etfw">Tweets by noutore_info</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</div>
-			</div>
-		</section>
-		<section class="archive__bannerArea">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/archive/brain_training_editor.png" alt="「脳トレ」編集部" class="bannerImage -full">
-			<?php get_template_part('template-parts/banners'); ?>
-			<div class="banners">
-				<div class="banner">
-					<h3 class="prHeading">「脳トレ」セミナー動画＆マニュアル</h3>
-					<a href="<?php echo home_url('/seminar-video/') ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner03.jpg" alt="「脳トレ」セミナー動画＆マニュアル" class="bannerImage"></a>
-				</div>
-				<div class="banner">
-					<h3 class="prHeading">「脳トレ」スタートブック</h3>
-					<a href="<?php echo home_url('/startbook/') ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner04.jpg" alt="「脳トレ」スタートブック" class="bannerImage"></a>
+				<div class="archive__twitterArea -sp">
+					<a class="twitter-timeline -sp" data-lang="ja" data-height="400" href="https://twitter.com/noutore_info?ref_src=twsrc%5Etfw">Tweets by noutore_info</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</div>
 			</div>
 		</section>
+		<?php get_template_part('template-parts/archiveBanners'); ?>
 
 <?php
 get_sidebar();
