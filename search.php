@@ -120,11 +120,11 @@ get_header();
 			<div class="banners">
 				<div class="banner">
 					<h3 class="prHeading">「脳トレ」セミナー動画＆マニュアル</h3>
-					<a href="https://blue-bird-love.com/love-manual/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner03.jpg" alt="「脳トレ」セミナー動画＆マニュアル" class="bannerImage"></a>
+					<a href="<?php echo home_url('/seminar-video/') ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner03.jpg" alt="「脳トレ」セミナー動画＆マニュアル" class="bannerImage"></a>
 				</div>
 				<div class="banner">
 					<h3 class="prHeading">「脳トレ」スタートブック</h3>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner04.jpg" alt="「脳トレ」スタートブック" class="bannerImage">
+					<a href="<?php echo home_url('/startbook/') ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner04.jpg" alt="「脳トレ」スタートブック" class="bannerImage"></a>
 				</div>
 			</div>
 		</section>
