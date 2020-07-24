@@ -86,7 +86,7 @@ get_header();
         5年ほど続いている安心のレッスンをもとに<br class="-sp">作られたスタートブックです。
       </p>
       <div class="startbook__caseImageWrapper">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/case01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/case01.jpg 1x <?php echo get_template_directory_uri(); ?>/assets/img/startbook/case01@2x.jpg 2x" alt="" class="startbook__caseImage -pc">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/case01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/case01@2x.jpg" alt="" class="startbook__caseImage -pc">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/case-sp.jpg" alt="" class="startbook__caseImage -sp">
       </div>
       <a href="<?php echo home_url('/column_category/member_interview/'); ?>" class="startbook__caseButton">
@@ -266,7 +266,7 @@ get_header();
     <?php get_template_part('template-parts/startbook-button'); ?>
     <footer class="startbook__footer">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/footer_text.svg" alt="lets's give it try" class="startbook__footerText">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/footer.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/footer.jpg 1x <?php echo get_template_directory_uri(); ?>/assets/img/startbook/footer@2x.jpg 2x" alt="lets's give it try" class="startbook__footerImage -pc">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/footer.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/footer@2x.jpg" alt="lets's give it try" class="startbook__footerImage -pc">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/footer-sp.jpg" alt="lets's give it try" class="startbook__footerImage -sp">
     </footer>
 
