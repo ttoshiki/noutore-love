@@ -37,7 +37,7 @@ get_header();
       </a>
     </figure>
     <picture>
-      <source media="(min-width: 769px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual.jpg 1x <?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual@2x.jpg 2x" class="home__mainVisual -pc">
+      <source media="(min-width: 769px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual.jpg" class="home__mainVisual -pc">
       <source media="(max-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual-sp@2x.jpg" class="home__mainVisual -sp">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/main_visual.jpg" alt="「脳トレ」オンラインレッスンメインビジュアル" class="home__mainVisual">
     </picture>
@@ -363,18 +363,18 @@ get_header();
         <li class="home__recommendItem fadein">
           <a href="<?php echo home_url("/column/") ?>">
             <picture>
-              <source media="(min-width: 769px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_column.jpg 1x <?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_column@2x.jpg 2x" class="-pc">
+              <source media="(min-width: 769px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_column@2x.jpg" class="-pc">
               <source media="(max-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_column-sp.jpg" class="-sp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_column.jpg" srcset="<?php echo get_template_directory_uri(); ?>./assets/img/home/recommend_column.jpg 1x <?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_column@2x.jpg 2x" alt="どんどん更新！コラム集">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_column.jpg" alt="どんどん更新！コラム集">
             </picture>
           </a>
         </li>
         <li class="home__recommendItem fadein">
           <a href="<?php echo home_url("/noutore-shindan/") ?>">
             <picture>
-              <source media="(min-width: 769px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_diagnosis.jpg 1x <?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_diagnosis@2x.jpg 2x" alt="あなたは何タイプ？脳トレ4タイプ診断" class="-pc">
+              <source media="(min-width: 769px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_diagnosis@2x.jpg" alt="あなたは何タイプ？脳トレ4タイプ診断" class="-pc">
               <source media="(max-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_diagnosis-sp.jpg" alt="あなたは何タイプ？脳トレ4タイプ診断" class="-sp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_diagnosis.jpg" srcset="<?php echo get_template_directory_uri(); ?>./assets/img/home/recommend_column.jpg 1x <?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_column@2x.jpg 2x" alt="あなたは何タイプ？脳トレ4タイプ診断">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/recommend_diagnosis.jpg" alt="あなたは何タイプ？脳トレ4タイプ診断">
             </picture>
           </a>
         </li>
