@@ -56,7 +56,7 @@ get_header();
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/startbook/iguana.jpg" alt="イグアナさんイラスト" class="startbook__iguana">
           <div><span class="startbook__speakerName">イグアナさん</span></div>
         </div>
-        <p class="startbook__speech -iguana">「脳トレ」®︎スタートブックってどんな人にオススメなの？</p>
+        <p class="startbook__speech -iguana">「脳トレ」スタートブックってどんな人にオススメなの？</p>
       </div>
       <div class="startbook__speechBubbleWrapper">
         <div class="startbook__speechBubbleSpeaker -namakemono">
@@ -224,7 +224,7 @@ get_header();
           </li>
         </ol>
         <h3 class="startbook__contentsHeader">おわりに</h3>
-        <h3 class="startbook__contentsHeader">別冊　「脳トレ」®︎主宰者・江藤有紀エピソード集</h3>
+        <h3 class="startbook__contentsHeader">別冊　「脳トレ」主宰者・江藤有紀エピソード集</h3>
       </div>
     </section>
     <section class="startbook__flow" id="flow-slide">

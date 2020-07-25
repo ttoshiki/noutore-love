@@ -206,7 +206,7 @@ window.addEventListener("load", function () {
         fall: [
           {
             group: "C",
-            personName: "Saki",
+            personName: "saki",
             genres: ["秘密の関係", "離婚", "借金", "親子関係"],
           },
         ],

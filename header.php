@@ -27,6 +27,15 @@
 思うような変化がなかった人のためのメソッドです。" />
 	<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/img/ogp.jpg" />
 	<meta name="twitter:card" content="summary" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173526972-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-173526972-1');
+	</script>
 	<?php wp_head(); ?>
 </head>
 

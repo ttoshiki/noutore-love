@@ -12,7 +12,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/diagnosis/text_go.svg" alt="go" class="diagnosis__go">
 
         <div id="diagnosis-form">
-            <h3 class="diagnosis__group">【A郡】</h3>
+            <h3 class="diagnosis__group">【A群】</h3>
             <div class="l-checkboxes">
                 <diagnosis-form
                     v-for="item in groupA"
@@ -22,7 +22,7 @@
                     @change="toggleChecked('A', $event)"
                 />
             </div>
-            <h3 class="diagnosis__group">【B郡】</h3>
+            <h3 class="diagnosis__group">【B群】</h3>
             <div class="l-checkboxes">
                 <diagnosis-form
                     v-for="item in groupB"
@@ -32,7 +32,7 @@
                     @change="toggleChecked('B', $event)"
                 />
             </div>
-            <h3 class="diagnosis__group">【C郡】</h3>
+            <h3 class="diagnosis__group">【C群】</h3>
             <div class="l-checkboxes">
                 <diagnosis-form
                     v-for="item in groupC"
@@ -42,7 +42,7 @@
                     @change="toggleChecked('C', $event)"
                 />
             </div>
-            <h3 class="diagnosis__group">【D郡】</h3>
+            <h3 class="diagnosis__group">【D群】</h3>
             <div class="l-checkboxes">
                 <diagnosis-form
                     v-for="item in groupD"
