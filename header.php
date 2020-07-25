@@ -21,10 +21,12 @@
 	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon/64x64.png">
 	<meta property="og:url" content="<?php echo home_url(); ?>" />
 	<meta property="og:type" content="website" />
+	<meta property="og:title" content="脳トレオンラインレッスン総合サイト" />
 	<meta property="og:site_name" content="脳トレオンラインレッスン総合サイト" />
 	<meta property="og:description" content="脳と心の連携を深めてオーダーだけで現実を動かしていく、脳トレオンラインレッスンの総合サイト。潜在意識、引き寄せ、心理学、占い、コーチング、カウンセリングで
 思うような変化がなかった人のためのメソッドです。" />
-	<meta property="og:image" content="<?php echo get_template_directory(); ?>/assets/img/ogp.jpg" />
+	<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/img/ogp.jpg" />
+	<meta name="twitter:card" content="summary" />
 	<?php wp_head(); ?>
 </head>
 
