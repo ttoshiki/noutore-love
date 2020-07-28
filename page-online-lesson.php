@@ -436,7 +436,8 @@ get_header();
         </div>
         <span v-if="hasError" class="online-lesson__termsError">※利用規約に同意が行われていません</span>
         <div class="buttonWrapper">
-          <a href="https://39auto.biz/namakemono-yuki/touroku/entryform15.htm" class="button" @click="consentCheck">
+          <!-- <a href="https://39auto.biz/namakemono-yuki/touroku/entryform15.htm" class="button" @click="consentCheck"> -->
+          <a href="<?php echo home_url('/sold-out/'); ?>" class="button" @click="consentCheck">
             <div class="buttonInner">
               <span>お申し込みはこちら</span>
             </div>
