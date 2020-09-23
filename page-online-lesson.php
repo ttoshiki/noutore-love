@@ -409,7 +409,7 @@ get_header();
         <li class="online-lesson__recruitOverviewItem">
           <dl>
             <dt>募集期間</dt>
-            <dd>7月25日〜末日</dd>
+            <dd>前月25日〜末日</dd>
           </dl>
         </li>
         <li class="online-lesson__recruitOverviewItem">
