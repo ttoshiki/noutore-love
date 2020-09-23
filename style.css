@@ -604,7 +604,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .header__logo {
-    margin-top: 0
+    margin-top: 0;
   }
   .header__logoWrapper {
     margin-top: 0;
@@ -4263,8 +4263,8 @@ img {
 }
 
 .page__main {
-  padding: 48px 120px 120px;
   max-width: 1000px;
+  padding: 48px 120px 120px;
   margin: 0 auto;
 }
 
@@ -4344,13 +4344,13 @@ img {
 .page__main li:after,
 .page__main li:before {
   position: absolute;
-  content: "";
-  display: block;
-  background: #f0908a;
   top: 0.43em;
   left: 0.5em;
-  height: 11px;
+  display: block;
   width: 4px;
+  height: 11px;
+  content: "";
+  background: #f0908a;
   border-radius: 10px;
   transform: rotate(45deg);
 }
@@ -6778,8 +6778,14 @@ span.online-lesson__stepsSmall {
 
 .online-lesson__recruitHeading {
   display: block;
-  width: 50.41vw;
+  width: 30.41vw;
   margin: 0 auto;
+}
+
+.online-lesson__recruitSubHeading {
+  text-align: center;
+  font-size: 1.8vw;
+  margin: 10px 0 0;
 }
 
 .online-lesson__recruitOverviewList {
@@ -6817,15 +6823,40 @@ span.online-lesson__stepsSmall {
   width: 60%;
   max-width: 1000px;
   height: 400px;
-  padding: 0 4vw;
+  padding: 0 4vw 4vw;
   margin: 4vw auto 0;
   overflow-y: scroll;
   background-color: #ffffff;
   border: 1px solid #000000;
 }
 
-.online-lesson__termsHeading {
+.online-lesson__termsHeading,
+.online-lesson__termsSubHeading {
   text-align: center;
+}
+
+.online-lesson__termsSubHeading {
+  margin: 32px 0 0;
+}
+
+.online-lesson__termsItem {
+  padding-left: 1em;
+  margin: 0 0 16px;
+  text-indent: -1em;
+}
+
+.online-lesson__termsSpan {
+  padding-left: 1em;
+}
+
+.online-lesson__termsItem > h5 {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.online-lesson__termsItem > p {
+  padding-left: 1em;
 }
 
 .online-lesson__termsAgree {
@@ -7090,8 +7121,8 @@ span.online-lesson__stepsSmall {
     background-size: contain;
   }
   .online-lesson__step.-step5 {
-    margin: 94px auto 0;
     z-index: auto;
+    margin: 94px auto 0;
   }
   .online-lesson__step.-step5::before {
     background-image: url(assets/img/online-lesson/step5_decoration-sp.png);
