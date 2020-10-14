@@ -182,13 +182,46 @@ get_header();
         </div>
       </div>
     </section>
+    <section class="home__data" id="home-data">
+      <div class="home__dataBackground">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/data_bg.svg" alt="" class="-pc">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/data_bg-sp.svg" alt="" class="-sp">
+      </div>
+      <div class="home__dataIllust">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/data_illust.svg" alt="" class="-pc">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/data_illust-sp.svg" alt="" class="-sp">
+      </div>
+      <h3 class="home__dataSubHeading">
+        <span class="sr-only">数字でひも解く！</span>
+        <img
+          src="<?php echo get_template_directory_uri(); ?>/assets/img/home/data_header01.svg"
+          alt="数字でひも解く！"
+          >
+      </h3>
+      <h2 class="home__dataHeading">
+        <span class="sr-only">「脳トレ」コミュニティ</span>
+        <svg data-trigger id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 349.87 43.2" width="349.8699951171875" height="43.20000076293945"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1 data-heading-1" d="M13.11,6.24s-3.41,0-7.68-.19c-.2,9-.58,27.46-.58,36.48l-3.51.24C.14,29.38,0,.43,0,.43,7.39,0,13.11,0,13.11,0Z"></path><path class="cls-1 data-heading-2" d="M17.47,41.33S20,32.88,19.54,11.18h6.09v.63H27v-.63h6.05s0,2.07-.33,29.29c-4.61.53-8.45.67-8.45.67V35.86s1.05,0,3.26.1l-.14-6.44H24C21.6,40.23,17.47,41.33,17.47,41.33Zm7-14.16h2.93c0-2-.05-3.74-.1-5.33H25.15Q24.87,24.8,24.43,27.17Zm.91-7.68h1.88c0-2.35-.1-4.08-.15-5.33H25.58C25.54,16.08,25.49,17.86,25.34,19.49ZM38.4,14.93a26.83,26.83,0,0,0-4.27-7.54s5-1.29,9.26,5.43Zm13.06,2.54h5.61s0,2.4-.33,24.87H52.13c0-.53-.05-1.06-.05-1.58H39.74c0,.52,0,1.05,0,1.58H35.09c-.48-20.45-.63-24.87-.63-24.87H40s0,2.12-.29,20.93H52C51.6,21.31,51.46,17.47,51.46,17.47Zm0,1.16a36.17,36.17,0,0,1-2.93,7.1,21.62,21.62,0,0,1,2.93,3.46l-3.79,2.69a23.15,23.15,0,0,0-1.49-2.64c-3.27,4.12-6.34,5-6.34,5a39.61,39.61,0,0,0,4.37-7.73A32.83,32.83,0,0,0,40.13,22a10.64,10.64,0,0,1,5.33,1.53,57.32,57.32,0,0,0,2.3-8Zm-1.83-7L44.5,13.39a26.14,26.14,0,0,0-3.75-7.77S45.84,4.61,49.63,11.62Zm3.7-7.4,5.28,1.4c-2.83,8.3-10.08,8.45-10.08,8.45A23.62,23.62,0,0,0,53.33,4.22Z"></path><path class="cls-1 data-heading-3" d="M76.22,39.22H70.85c-.67-13-.87-29.09-.87-29.09h6.73S76.71,25,76.22,39.22Zm10.23-9.65c-8.5,0-8.93-8.83-8.93-8.83a17.74,17.74,0,0,0,8.93,2.11Z"></path><path class="cls-1 data-heading-4" d="M117.07,25.11s-1,10.41-13.44,14.11H98.21c-.67-13-.87-28.23-.87-28.23h6.72s0,9.89-.24,21.51A21.2,21.2,0,0,0,117.07,25.11Z"></path><path class="cls-1 data-heading-5" d="M137.57,42.77c-7.39.43-13.11.43-13.11.43V37s3.41,0,7.68.15c.2-9,.58-27.46.58-36.49l3.5-.24C137.42,13.87,137.57,42.77,137.57,42.77Z"></path><path class="cls-1 data-heading-6" d="M156.19,13.2s7.63,0,22.95.34c0,0,0,10.08-.43,24.29a222.6,222.6,0,0,1-22.52.09V31.73s6.1-.14,16.8.38c-.24-5.9-.38-11.08-.48-14.44-10.7.33-16.32.43-16.32.43Z"></path><path class="cls-1 data-heading-7" d="M193.39,29.86s7.35,1,18.19,2.88l-.38,5.38c-10-.63-18.34-1.54-18.34-1.54Zm16.8-13.63s-6.14-.58-16.08-1.88l.1-3c11,.24,16.13.58,16.13.58Zm-15.5,8.06.19-3.07c11,.72,14.88,1.2,14.88,1.2l-.24,4.37Z"></path><path class="cls-1 data-heading-8" d="M240,31.88c.05-4.09.19-8,.29-10.76l-10.51.39V17.38s3.45,0,16.27.29c0,0-.34,6.86-1.06,14.3,1.11.05,2.31.1,3.51.1v4.56c-11.72.57-21.51.72-21.51.72V31.73S232,31.73,240,31.88Z"></path><path class="cls-1 data-heading-9" d="M286.13,37c-13,.68-23.81.87-23.81.87V31.11s9.6,0,23.81.43Zm-1.44-23.47v6.72s-8-.19-20.93-.86V13.92C278,13.49,284.69,13.49,284.69,13.49Z"></path><path class="cls-1 data-heading-10" d="M298.66,17.38h20.25l1.92-1.88,1.88,1.88V19.3h-7.64c-.57,19.53-13.25,19.92-13.25,19.92S308,33.6,308.35,19.3h-9.69Zm1.39-5.19V10.27h16.89l1.88-1.92,1.92,1.92v1.92Z"></path><path class="cls-1 data-heading-11" d="M329.09,23.81s9.31-.48,16.27-9.79l4.51,3.36a19.3,19.3,0,0,1-5.76,5.28c-.24,2.69-.62,8.88-.62,16.56h-3.12c-.82-6-1.3-11.33-1.54-14.55A18.43,18.43,0,0,1,329.09,23.81Z"></path></svg>
+      </h2>
+      <p class="home__dataParagraph">
+        2019年8月～2020年8月までに<br>
+        「脳トレ」オンラインレッスンに参加した<br class="-sp">メンバーさんからの<br class="-pc">アンケートを元に<br class="-sp">リアルな統計を出してみました！
+      </p>
+      <div class="buttonWrapper dataButton">
+        <a href="<?php echo home_url('/online-lesson/'); ?>" class="button">
+          <div class="buttonInner">
+            <div class="buttonIcon"><?php echo file_get_contents(get_template_directory() . '/assets/img/icons/icon_angle.svg'); ?></div>
+            <span>詳細データ</span>
+          </div>
+        </a>
+      </div>
+    </section>
     <section class="home__support" id="home-support">
       <h3 class="home__supportSubHeading">
         <span class="sr-only">いつでもどこでも学べます</span>
         <img
           src="<?php echo get_template_directory_uri(); ?>/assets/img/home/support_header01.svg"
           alt="いつでもどこでも学べます"
-          >
+        >
       </h3>
       <h2 class="home__supportHeading">
         <span class="sr-only">オンラインレッスン6つのサポート</span>

@@ -1662,6 +1662,62 @@ img {
   margin: 0;
 }
 
+.home__data {
+  position: relative;
+  padding: 6.4vw 0;
+}
+
+.home__dataIllust {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 73vw;
+  transform: translate(-50%, -50%);
+}
+
+.home__dataBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.home__dataBackground::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #99c4ef;
+  opacity: 0.8;
+}
+
+.home__dataSubHeading {
+  width: 29.7vw;
+  margin: 0 auto;
+}
+
+.home__dataHeading {
+  width: 35vw;
+  margin: 1vw auto 0;
+}
+
+.home__dataHeading svg {
+  height: auto;
+}
+
+.home__dataParagraph {
+  font-size: 1.6vw;
+  text-align: center;
+}
+
+.home__data .dataButton {
+  margin-top: 3vw;
+}
+
 .home__support {
   position: relative;
   padding: 6vw 0;
@@ -2412,8 +2468,34 @@ img {
   .home__genreItem {
     width: 71.66%;
   }
+  .home__data {
+    padding: 12.8vw 0;
+  }
+  .home__dataSubHeading {
+    width: 65.3vw;
+  }
+  .home__dataHeading {
+    width: 77.86vw;
+    margin: 2vw auto 0;
+  }
   .home__supportSubHeading {
     width: 78vw;
+  }
+  .home__dataParagraph {
+    font-size: 4.27vw;
+  }
+  .home__dataIllust {
+    top: 42%;
+    width: 93vw;
+  }
+  .home__dataParagraph {
+    font-size: 4.27vw;
+  }
+  .dataButton .buttonInner {
+    padding: 3vw 12vw;
+  }
+  .home__data .dataButton {
+    margin-top: 7vw;
   }
   .home__supportHeading {
     width: 61vw;
@@ -6783,9 +6865,9 @@ span.online-lesson__stepsSmall {
 }
 
 .online-lesson__recruitSubHeading {
-  text-align: center;
-  font-size: 1.8vw;
   margin: 10px 0 0;
+  font-size: 1.8vw;
+  text-align: center;
 }
 
 .online-lesson__recruitOverviewList {

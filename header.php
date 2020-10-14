@@ -135,6 +135,7 @@
 						<ul class="hammenu__list">
 							<li class="hammenu__item"><a href="<?php echo home_url('#home-about') ?>" @click="toggleMenu">「脳トレ」とは？</a></li>
 							<li class="hammenu__item"><a href="<?php echo home_url('#home-genre') ?>" @click="toggleMenu">「脳トレ」が効果的なジャンル</a></li>
+							<li class="hammenu__item"><a href="<?php echo home_url('#home-data') ?>" @click="toggleMenu">数字でひも解く!「脳トレ」コミュニティ</a></li>
 							<li class="hammenu__item"><a href="<?php echo home_url('/profile') ?>" @click="toggleMenu">運営チームプロフィール</a></li>
 							<li class="hammenu__item"><a href="<?php echo home_url('/hananiwa-salon') ?>" @click="toggleMenu">コミュニティの拠点</a></li>
 						</ul>
