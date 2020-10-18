@@ -68,6 +68,17 @@
 							alt="「脳トレ」オンラインレッスン"
 							class="header__logoImage -sp"
 							>
+					<?php } elseif (is_page('data')) { ?>
+						<img
+							src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_white.svg"
+							alt="「脳トレ」オンラインレッスン"
+							class="header__logoImage -pc"
+						>
+						<img
+							src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_white.svg"
+							alt="「脳トレ」オンラインレッスン"
+							class="header__logoImage -sp"
+						>
 					<?php } else { ?>
 						<img
 							src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg"
@@ -93,8 +104,7 @@
 					<div class="header__menuLogo" :class="isShow" v-if="isShow">
 							<a href="<?php echo home_url(); ?>">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="サイトロゴ" class="header__logoImage -pc">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-sp.svg" alt="「脳トレ」オンラインレッスン" class="header__logoImage -sp"
-									>
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-sp.svg" alt="「脳トレ」オンラインレッスン" class="header__logoImage -sp">
 						</a>
 					</div>
 				</transition>

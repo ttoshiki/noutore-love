@@ -207,7 +207,7 @@ get_header();
         「脳トレ」オンラインレッスンに参加した<br class="-sp">メンバーさんからの<br class="-pc">アンケートを元に<br class="-sp">リアルな統計を出してみました！
       </p>
       <div class="buttonWrapper dataButton">
-        <a href="<?php echo home_url('/online-lesson/'); ?>" class="button">
+        <a href="<?php echo home_url('/data/'); ?>" class="button">
           <div class="buttonInner">
             <div class="buttonIcon"><?php echo file_get_contents(get_template_directory() . '/assets/img/icons/icon_angle.svg'); ?></div>
             <span>詳細データ</span>
