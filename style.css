@@ -7963,3 +7963,132 @@ span.online-lesson__stepsSmall {
     transform: scale(50) rotate(45deg);
   }
 }
+
+.page-data {
+  position: relative;
+  background-image: url(assets/img/data/global_bg.svg);
+  background-size: 50%;
+}
+
+.page-data::before {
+  position: absolute;
+  top: -32px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #99c4ef;
+  opacity: 0.8;
+}
+
+.data__mainVisualWrapper {
+  position: relative;
+  width: 66%;
+  max-width: 800px;
+  margin: 32px auto 0;
+}
+
+.data__magnifying_glass {
+  position: absolute;
+  right: 10px;
+  bottom: 22px;
+  width: 17.5%;
+}
+
+.data__target {
+  position: relative;
+  margin: 64px auto 0;
+  color: #ffffbe;
+  text-align: center;
+  background-color: #1578db;
+}
+
+.data__targetWrapper {
+  position: absolute;
+  top: -52px;
+  left: 50%;
+  z-index: -1;
+  width: 104px;
+  height: 104px;
+  background-color: #1578db;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.data__targetHeading {
+  font-size: 24px;
+}
+
+.data__targetParagraph {
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.data__subheading img {
+  display: block;
+  width: 42.1%;
+  max-width: 540px;
+  margin: 8vw auto 0;
+}
+
+.data__peopleHeadings {
+  padding-bottom: 3vw;
+  background-image: url(assets/img/data/page_title_illust.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+}
+
+.data__peopleHeading {
+  width: 37%;
+  max-width: 520px;
+  margin: 6vw auto 0;
+}
+
+.data__peopleSubHeadingWrapper {
+  position: relative;
+  text-align: center;
+}
+
+.data__peopleSubHeadingWrapper::after {
+  position: absolute;
+  bottom: 0;
+  bottom: -29px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  content: "";
+  border-color: #ffffbe transparent transparent transparent;
+  border-style: solid;
+  border-width: 29px 23.5px 0 23.5px;
+  transform: translateX(-50%);
+}
+
+.data__peopleSubheading {
+  width: 37%;
+  padding: 8px 0;
+  margin: 2.4vw auto 0;
+  font-size: 23px;
+  color: #1578db;
+  background-color: #ffffbe;
+}
+
+.data__peopleList {
+  width: 74%;
+  max-width: 780px;
+  margin: 5vw auto 0;
+}
+
+.data__peopleItemWrapper {
+  display: flex;
+}
+
+.data__peopleItem.-overhang {
+  margin-right: -3vw;
+  margin-left: 3.5vw;
+}
+
+.data__peropleItemBlock.-doubleCol {
+  display: flex;
+}

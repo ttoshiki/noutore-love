@@ -389,3 +389,14 @@ function myplugin_add_custom_box()
         add_meta_box('myplugin_sectionid', __('作成者', 'myplugin_textdomain'), 'post_author_meta_box', 'column', 'advanced');
     }
 }
+
+add_filter('body_class', 'add_page_slug_class_name');
+function add_page_slug_class_name($classes)
+{
+    if (is_page()) {
+        $page = get_post(get_the_ID());
+        $classes[] = 'page-' . $page->post_name;
+    }
+    return $classes;
+}
+
