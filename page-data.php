@@ -59,64 +59,58 @@ get_header();
         </div>
       </div>
       <div class="data__peopleList">
-        <div class="data__peopleItemWrapper">
-          <div class="data__peopleItem">
-            <picture class="data__questionPicture">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_1-sp.webp" media="(max-width: 768px)" type="image/webp">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_1.webp" media="(min-width: 769px)" type="image/webp">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_1-sp.png" media="(max-width: 768px)">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_1.png" alt="居住地はどこですか？">
-            </picture>
-          </div>
-          <div class="data__peopleItem -overhang">
-            <picture class="data__questionPicture">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_2-sp.webp" media="(max-width: 768px)" type="image/webp">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_2.webp" media="(min-width: 769px)" type="image/webp">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_2-sp.png" media="(max-width: 768px)">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_2.png" alt="平均年齢はいくつ？">
-            </picture>
-          </div>
-        </div>
-        <div class="data__peopleItemWrapper">
-          <div class="data__peropleItemBlock">
-            <div class="data__peropleItemBlock -doubleCol">
-              <div class="data__peopleItem">
-                <picture class="data__questionPicture">
-                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_3-sp.webp" media="(max-width: 768px)" type="image/webp">
-                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_3.webp" media="(min-width: 769px)" type="image/webp">
-                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_3-sp.png" media="(max-width: 768px)">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_3.png" alt="婚姻状況">
-                </picture>
-              </div>
-              <div class="data__peopleItem">
-                <picture class="data__questionPicture">
-                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_4-sp.webp" media="(max-width: 768px)" type="image/webp">
-                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_4.webp" media="(min-width: 769px)" type="image/webp">
-                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_4-sp.png" media="(max-width: 768px)">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_4.png" alt="雇用形態">
-                </picture>
-              </div>
-            </div>
-            <div class="data__peopleItem">
-              <picture class="data__questionPicture">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_6-sp.webp" media="(max-width: 768px)" type="image/webp">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_6.webp" media="(min-width: 769px)" type="image/webp">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_6-sp.png" media="(max-width: 768px)">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_6.png" alt="「脳トレ」オンラインレッスンに参加してよかったことは何ですか？">
-              </picture>
-            </div>
-          </div>
-          <div class="data__peopleItem">
-            <picture class="data__questionPicture">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_5-sp.webp" media="(max-width: 768px)" type="image/webp">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_5.webp" media="(min-width: 769px)" type="image/webp">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_5-sp.png" media="(max-width: 768px)">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_5.png" alt="「脳トレ」オンラインレッスンに参加したきっかけは？">
-            </picture>
-          </div>
+        <div class="data__peopleItem">
+          <picture class="data__questionPicture">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_1-sp.webp" media="(max-width: 768px)" type="image/webp">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_1.webp" media="(min-width: 769px)" type="image/webp">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_1-sp.png" media="(max-width: 768px)">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_1.png" alt="居住地はどこですか？">
+          </picture>
         </div>
         <div class="data__peopleItem">
-          <picture class="data__subheading">
+          <picture class="data__questionPicture">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_2-sp.webp" media="(max-width: 768px)" type="image/webp">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_2.webp" media="(min-width: 769px)" type="image/webp">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_2-sp.png" media="(max-width: 768px)">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_2.png" alt="平均年齢はいくつ？">
+          </picture>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_2_speechBubble.png" alt="幅広" class="data__question2 speechBubble">
+        </div>
+        <div class="data__peopleItem">
+          <picture class="data__questionPicture">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_3-sp.webp" media="(max-width: 768px)" type="image/webp">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_3.webp" media="(min-width: 769px)" type="image/webp">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_3-sp.png" media="(max-width: 768px)">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_3.png" alt="婚姻状況">
+          </picture>
+        </div>
+        <div class="data__peopleItem">
+          <picture class="data__questionPicture">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_4-sp.webp" media="(max-width: 768px)" type="image/webp">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_4.webp" media="(min-width: 769px)" type="image/webp">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_4-sp.png" media="(max-width: 768px)">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_4.png" alt="雇用形態">
+          </picture>
+        </div>
+        <div class="data__peopleItem">
+          <picture class="data__questionPicture">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_5-sp.webp" media="(max-width: 768px)" type="image/webp">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_5.webp" media="(min-width: 769px)" type="image/webp">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_5-sp.png" media="(max-width: 768px)">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_5.png" alt="「脳トレ」オンラインレッスンに参加したきっかけは？">
+          </picture>
+        </div>
+        <div class="data__peopleItem">
+          <picture class="data__questionPicture">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_6-sp.webp" media="(max-width: 768px)" type="image/webp">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_6.webp" media="(min-width: 769px)" type="image/webp">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_6-sp.png" media="(max-width: 768px)">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_6.png" alt="「脳トレ」オンラインレッスンに参加してよかったことは何ですか？">
+          </picture>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_6_speechBubble.png" alt="1位" class="data__question6 speechBubble">
+        </div>
+        <div class="data__peopleItem">
+          <picture class="data__questionPicture">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_7-sp.webp" media="(max-width: 768px)" type="image/webp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_7.webp" media="(min-width: 769px)" type="image/webp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_7-sp.png" media="(max-width: 768px)">

@@ -8074,21 +8074,50 @@ span.online-lesson__stepsSmall {
   background-color: #ffffbe;
 }
 
+.data__people {
+}
+
 .data__peopleList {
+  display: grid;
+  grid-template-rows: 20% 13.8% 20% 21%;
+  grid-template-columns: 26.3% 26.3% 1fr;
+  grid-row-gap: 3.5%;
+  grid-column-gap: 5%;
   width: 74%;
   max-width: 780px;
-  margin: 5vw auto 0;
+  margin: 40px auto 0;
 }
 
-.data__peopleItemWrapper {
-  display: flex;
+.data__peopleItem {
+  position: relative;
 }
 
-.data__peopleItem.-overhang {
-  margin-right: -3vw;
-  margin-left: 3.5vw;
+.data__peopleItem:first-child,
+.data__peopleItem:nth-child(6) {
+  grid-column: 1 / 3;
 }
 
-.data__peropleItemBlock.-doubleCol {
-  display: flex;
+.data__peopleItem:nth-child(7) {
+  grid-column: 1 / 4;
+  height: 26vw;
+  max-height: 274px;
+}
+
+.data__peopleItem:nth-child(7) .data__questionPicture {
+  position: absolute;
+  top: -36px;
+}
+
+.data__question2.speechBubble {
+  position: absolute;
+  top: 44%;
+  right: -10%;
+  width: 29%;
+}
+
+.data__question6.speechBubble {
+  position: absolute;
+  top: 32%;
+  left: -9%;
+  width: 18%;
 }
