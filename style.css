@@ -8006,30 +8006,30 @@ span.online-lesson__stepsSmall {
 
 .data__targetWrapper {
   position: absolute;
-  top: -52px;
+  top: -60px;
   left: 50%;
   z-index: -1;
-  width: 104px;
-  height: 104px;
+  width: 120px;
+  height: 120px;
   background-color: #1578db;
   border-radius: 50%;
   transform: translateX(-50%);
 }
 
 .data__targetHeading {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .data__targetParagraph {
   padding: 20px 0;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .data__subheading img {
   display: block;
   width: 42.1%;
   max-width: 540px;
-  margin: 8vw auto 0;
+  margin: 7vw auto 0;
 }
 
 .data__people {
@@ -8091,7 +8091,7 @@ span.online-lesson__stepsSmall {
   width: 74%;
   max-width: 780px;
   margin: 40px auto;
-  margin-bottom: clamp(-180px, -12vw, -17vw);
+  margin-bottom: clamp(-160px, -12vw, -17vw);
 }
 
 .data__peopleItem {
@@ -8228,7 +8228,7 @@ span.online-lesson__stepsSmall {
 
 .data__imageHeading {
   width: 23%;
-  max-width: 236px;
+  max-width: 292px;
   margin: 0 auto;
 }
 
@@ -8240,7 +8240,7 @@ span.online-lesson__stepsSmall {
 
 .data__footerHeading {
   width: 35.8%;
-  max-width: 368px;
+  max-width: 480px;
   margin: 60px auto 0;
 }
 
@@ -8250,7 +8250,7 @@ span.online-lesson__stepsSmall {
 
 .data__footerPageTitleHeading {
   width: 37.6%;
-  padding: 4vw 0;
+  padding: 4vw 0 3vw;
   margin: 1.4vw auto 0;
 }
 
