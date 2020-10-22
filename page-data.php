@@ -36,7 +36,7 @@ get_header();
       <p class="data__targetParagraph">
         2019年8月～2020年8月までに<br>
         脳トレオンラインレッスンに参加したメンバー<br>
-        有効回答者数 96名（現役メンバー48名、卒業メンバー48名）
+        有効回答者数 96名<br class="-sp">（現役メンバー48名、卒業メンバー48名）
       </p>
     </section>
     <picture class="data__subheading">
@@ -107,7 +107,7 @@ get_header();
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_6-sp.png" media="(max-width: 768px)">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_6.png" alt="「脳トレ」オンラインレッスンに参加してよかったことは何ですか？">
           </picture>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_6_speechBubble.png" alt="1位" class="data__question6 speechBubble">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_6_speechBubble.png" alt="1位" class="data__question6 speechBubble -pc">
         </li>
         <li class="data__peopleItem">
           <picture class="data__questionPicture">
@@ -123,12 +123,14 @@ get_header();
       <div class="data__gypsyHeadingWrapper">
         <div class="data__gypsyHeadingInner">
           <h2 class="data__gypsyHeading">
-            <strong class="data__gypsyHeadingStrong">流れ流れて「脳トレ」へ…</strong><br>
-            参加者さんに歴史あり！引き寄せジプシー経験に迫る!!
+            <strong class="data__gypsyHeadingStrong">流れ流れて<br class="-sp">「脳トレ」へ…</strong>
+            参加者さんに歴史あり！<br class="-sp">引き寄せジプシー経験に迫る!!
           </h2>
           <span class="data__gypsyCaution">※ジプシーの定義は自己申告です</span>
           <picture class="data__gypsyHeadingBackground">
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/gypsy_heading_bg.webp" type="image/webp">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/gypsy_heading_bg-sp.webp" media="(max-width: 768px)" type="image/webp">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/gypsy_heading_bg.webp" media="(min-width: 769px)" type="image/webp">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/gypsy_heading_bg-sp.png" media="(max-width: 768px)">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/gypsy_heading_bg.png" alt="">
           </picture>
         </div>
@@ -149,7 +151,7 @@ get_header();
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_2-sp.png" media="(max-width: 768px)">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_2.png" alt="ジプシー期間(回答数79人)">
           </picture>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_2_speechBubble.png" alt="Long!" class="data__questionGypsy2 speechBubble">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_2_speechBubble.png" alt="Long!" class="data__questionGypsy2 speechBubble -pc">
         </li>
         <li class="data__gypsyItem">
           <picture class="data__gypsyPicture">
@@ -158,7 +160,7 @@ get_header();
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_3-sp.png" media="(max-width: 768px)">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_3.png" alt="ジプシー時代に学びに投資した金額は？">
           </picture>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_3_speechBubble.png" alt="うちの代表も元ジプシー" class="data__questionGypsy3 speechBubble">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_3_speechBubble.png" alt="うちの代表も元ジプシー" class="data__questionGypsy3 speechBubble -pc">
         </li>
         <li class="data__gypsyItem">
           <picture class="data__gypsyPicture">
@@ -175,7 +177,10 @@ get_header();
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_5-sp.png" media="(max-width: 768px)">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_5.png" alt="">
           </picture>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_arrow.png" alt="矢印" class="data__questionGypsy6 arrow">
+          <picture class="data__gypsy">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_arrow-sp.png" media="(max-width: 768px)">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_arrow.png" alt="矢印" class="data__questionGypsy6 arrow">
+          </picture>
         </li>
         <li class="data__gypsyItem">
           <picture class="data__gypsyPicture">
@@ -196,7 +201,9 @@ get_header();
         >
       </h2>
       <picture class="data__imagePicture">
-        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/image_girl.webp" type="image/webp">
+        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/image_girl-sp.webp" media="(max-width: 768px)" type="image/webp">
+        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/image_girl.webp" media="(min-width: 769px)" type="image/webp">
+        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/image_girl-sp.png" media="(max-width: 768px)">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/image_girl.png" alt="「脳トレ」参加者さんイメージ">
       </picture>
     </section>

@@ -72,12 +72,7 @@
 						<img
 							src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_white.svg"
 							alt="「脳トレ」オンラインレッスン"
-							class="header__logoImage -pc"
-						>
-						<img
-							src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_white.svg"
-							alt="「脳トレ」オンラインレッスン"
-							class="header__logoImage -sp"
+							class="header__logoImage -singleLine"
 						>
 					<?php } else { ?>
 						<img
