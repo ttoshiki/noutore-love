@@ -104,23 +104,23 @@
 					</div>
 				</transition>
 				<div class="header__fixedMenu">
-					<ul class="header__iconList">
+					<div class="header__iconList">
 						<transition name="trans_slide">
 							<div class="header__fixedIcon" :class="isIconShow" v-if="isIconShow">
-								<li class="header__iconItem header__iconTwitter" :class="isIconShow"><a href="https://twitter.com/noutore_info?s=20" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_twitter.svg"></a></li>
-								<!-- <li class="header__iconItem header__iconYoutube" :class="isIconShow"><a href="" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_youtube.svg"></a></li> -->
-								<li class="header__iconItem header__iconLine" :class="isIconShow"><a href="https://line.me/R/ti/p/%40496jcxcd" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_line.svg"></a></li>
-								<li class="header__iconItem header__iconMail" :class="isIconShow"><a href="<?php echo home_url('/contact/') ?>" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_mail.svg"></a></li>
-								<li class="header__iconItem header__iconMap" :class="isIconShow"><a href="<?php echo home_url('/hananiwa-salon') ?>" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_map.svg"></a></li>
+								<div class="header__iconItem header__iconTwitter" :class="isIconShow"><a href="https://twitter.com/noutore_info?s=20" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_twitter.svg"></a></div>
+								<!-- <div class="header__iconItem header__iconYoutube" :class="isIconShow"><a href="" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_youtube.svg"></a></div> -->
+								<div class="header__iconItem header__iconLine" :class="isIconShow"><a href="https://line.me/R/ti/p/%40496jcxcd" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_line.svg"></a></div>
+								<div class="header__iconItem header__iconMail" :class="isIconShow"><a href="<?php echo home_url('/contact/') ?>" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_mail.svg"></a></div>
+								<div class="header__iconItem header__iconMap" :class="isIconShow"><a href="<?php echo home_url('/hananiwa-salon') ?>" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_map.svg"></a></div>
 							</div>
 						</transition>
-						<li class="header__iconItem header__iconSearch -isIconShow">
+						<div class="header__iconItem header__iconSearch -isIconShow">
 							<form class="search" method="get" action="<?php echo home_url(); ?>" role="search">
 								<input ref="focusField" :class="searchFieldOpened" class="search-input" type="search" name="s" placeholder="キーワードを入力してEnter">
 							</form>
 							<button @click="toggleSearchField" :class="searchFieldOpened" class="header__iconButton"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_search.svg"></button>
-						</li>
-					</ul>
+						</div>
+					</div>
 					<nav id="site-navigation" class="header__navigation">
 						<span class="header__trigger" href="#" @click="toggleMenu" id="hoge">
 							<span></span>

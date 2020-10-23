@@ -59,7 +59,7 @@ get_header();
         </div>
       </div>
       <ul class="data__peopleList">
-        <li class="data__peopleItem">
+        <li class="data__peopleItem -first">
           <picture class="data__questionPicture">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_1-sp.webp" media="(max-width: 768px)" type="image/webp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_1.webp" media="(min-width: 769px)" type="image/webp">
@@ -67,7 +67,7 @@ get_header();
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_1.png" alt="居住地はどこですか？">
           </picture>
         </li>
-        <li class="data__peopleItem">
+        <li class="data__peopleItem -second">
           <picture class="data__questionPicture">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_2-sp.webp" media="(max-width: 768px)" type="image/webp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_2.webp" media="(min-width: 769px)" type="image/webp">
@@ -76,7 +76,7 @@ get_header();
           </picture>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_2_speechBubble.png" alt="幅広" class="data__question2 speechBubble">
         </li>
-        <li class="data__peopleItem">
+        <li class="data__peopleItem -third">
           <picture class="data__questionPicture">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_3-sp.webp" media="(max-width: 768px)" type="image/webp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_3.webp" media="(min-width: 769px)" type="image/webp">
@@ -84,7 +84,7 @@ get_header();
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_3.png" alt="婚姻状況">
           </picture>
         </li>
-        <li class="data__peopleItem">
+        <li class="data__peopleItem -fourth">
           <picture class="data__questionPicture">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_4-sp.webp" media="(max-width: 768px)" type="image/webp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_4.webp" media="(min-width: 769px)" type="image/webp">
@@ -92,7 +92,7 @@ get_header();
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_4.png" alt="雇用形態">
           </picture>
         </li>
-        <li class="data__peopleItem">
+        <li class="data__peopleItem -fifth">
           <picture class="data__questionPicture">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_5-sp.webp" media="(max-width: 768px)" type="image/webp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_5.webp" media="(min-width: 769px)" type="image/webp">
@@ -100,7 +100,7 @@ get_header();
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_5.png" alt="「脳トレ」オンラインレッスンに参加したきっかけは？">
           </picture>
         </li>
-        <li class="data__peopleItem">
+        <li class="data__peopleItem -sixth">
           <picture class="data__questionPicture">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_6-sp.webp" media="(max-width: 768px)" type="image/webp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_6.webp" media="(min-width: 769px)" type="image/webp">
@@ -109,7 +109,7 @@ get_header();
           </picture>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_6_speechBubble.png" alt="1位" class="data__question6 speechBubble -pc">
         </li>
-        <li class="data__peopleItem">
+        <li class="data__peopleItem -seventh">
           <picture class="data__questionPicture">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_7-sp.webp" media="(max-width: 768px)" type="image/webp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question01_7.webp" media="(min-width: 769px)" type="image/webp">
@@ -136,7 +136,7 @@ get_header();
         </div>
       </div>
       <ul class="data__gypsyList">
-        <li class="data__gypsyItem">
+        <li class="data__gypsyItem -first">
           <picture class="data__gypsyPicture">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_1-sp.webp" media="(max-width: 768px)" type="image/webp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_1.webp" media="(min-width: 769px)" type="image/webp">
@@ -144,7 +144,7 @@ get_header();
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_1.png" alt="ジプシー経験">
           </picture>
         </li>
-        <li class="data__gypsyItem">
+        <li class="data__gypsyItem -second">
           <picture class="data__gypsyPicture">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_2-sp.webp" media="(max-width: 768px)" type="image/webp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_2.webp" media="(min-width: 769px)" type="image/webp">
@@ -153,7 +153,7 @@ get_header();
           </picture>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_2_speechBubble.png" alt="Long!" class="data__questionGypsy2 speechBubble -pc">
         </li>
-        <li class="data__gypsyItem">
+        <li class="data__gypsyItem -third">
           <picture class="data__gypsyPicture">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_3-sp.webp" media="(max-width: 768px)" type="image/webp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_3.webp" media="(min-width: 769px)" type="image/webp">
@@ -162,7 +162,7 @@ get_header();
           </picture>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_3_speechBubble.png" alt="うちの代表も元ジプシー" class="data__questionGypsy3 speechBubble -pc">
         </li>
-        <li class="data__gypsyItem">
+        <li class="data__gypsyItem -fourth">
           <picture class="data__gypsyPicture">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_4-sp.webp" media="(max-width: 768px)" type="image/webp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_4.webp" media="(min-width: 769px)" type="image/webp">
@@ -170,7 +170,7 @@ get_header();
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_4.png" alt="元ジプシー経験者の方へ「脳トレ」オンラインレッスンへ辿り着いた理由は？(複数回答可)">
           </picture>
         </li>
-        <li class="data__gypsyItem">
+        <li class="data__gypsyItem -fifth">
           <picture class="data__gypsyPicture">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_5-sp.webp" media="(max-width: 768px)" type="image/webp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_5.webp" media="(min-width: 769px)" type="image/webp">
@@ -182,7 +182,7 @@ get_header();
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_arrow.png" alt="矢印" class="data__questionGypsy6 arrow">
           </picture>
         </li>
-        <li class="data__gypsyItem">
+        <li class="data__gypsyItem -sixth">
           <picture class="data__gypsyPicture">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_6-sp.webp" media="(max-width: 768px)" type="image/webp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/question02_6.webp" media="(min-width: 769px)" type="image/webp">
@@ -200,12 +200,46 @@ get_header();
           alt="「脳トレ」診断"
         >
       </h2>
-      <picture class="data__imagePicture">
-        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/image_girl-sp.webp" media="(max-width: 768px)" type="image/webp">
-        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/image_girl.webp" media="(min-width: 769px)" type="image/webp">
-        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/image_girl-sp.png" media="(max-width: 768px)">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/image_girl.png" alt="「脳トレ」参加者さんイメージ">
-      </picture>
+      <div class="data__imageWrapper">
+        <span class="data__imagePicture">
+          <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/image_girl-sp.webp" media="(max-width: 768px)" type="image/webp">
+          <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/image_girl.webp" media="(min-width: 769px)" type="image/webp">
+          <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/data/image_girl-sp.png" media="(max-width: 768px)">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/image_girl.png" alt="「脳トレ」参加者さんイメージ">
+        </span>
+        <span>
+          <span class="sr-only">関東在住</span>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/image_speech_bubble01.svg" alt="関東在住" class="data__imageSpeechBubble -first">
+        </span>
+        <span>
+          <span class="sr-only">33歳</span>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/image_speech_bubble02.svg" alt="33歳" class="data__imageSpeechBubble -second">
+        </span>
+        <span>
+          <span class="sr-only">未婚</span>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/image_speech_bubble03.svg" alt="未婚" class="data__imageSpeechBubble -third">
+        </span>
+        <span>
+          <span class="sr-only">会社員</span>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/image_speech_bubble04.svg" alt="会社員" class="data__imageSpeechBubble -fourth">
+        </span>
+        <span>
+          <span class="sr-only">悩み 恋愛＆結婚</span>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/image_speech_bubble05.svg" alt="悩み 恋愛＆結婚" class="data__imageSpeechBubble -fifth">
+        </span>
+        <span>
+          <span class="sr-only">目標 新たなビジョンを見つけたい！</span>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/image_speech_bubble06.svg" alt="目標 新たなビジョンを見つけたい！" class="data__imageSpeechBubble -sixth">
+        </span>
+        <span>
+          <span class="sr-only">1年の引き寄せジプシー経験有 25万円散財</span>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/image_speech_bubble07.svg" alt="1年の引き寄せジプシー経験有 25万円散財" class="data__imageSpeechBubble -seventh">
+        </span>
+        <span>
+          <span class="sr-only">学びの場では理論的な説明を欲します！</span>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/image_speech_bubble08.svg" alt="学びの場では理論的な説明を欲します！" class="data__imageSpeechBubble -eighth">
+        </span>
+      </div>
     </section>
     <section class="data__footer">
       <h2 class="data__footerHeading">

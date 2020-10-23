@@ -284,7 +284,6 @@ img {
   z-index: 100;
   display: flex;
   height: 64px;
-  background-color: #ffffff;
 }
 
 .header__fixedIcon {
@@ -297,10 +296,6 @@ img {
   left: 32px;
   display: none;
   width: 280px;
-}
-
-.header__navigation {
-  margin-left: 24px;
 }
 
 .header__iconList {
@@ -323,7 +318,9 @@ img {
 .header__iconSearch {
   position: relative;
   width: 32px;
-  margin-left: 11px;
+  height: 64px;
+  padding: 16px 48px 16px 24px;
+  margin: 0;
 }
 
 .header__iconSearch .search-input {
@@ -7991,6 +7988,22 @@ span.online-lesson__stepsSmall {
   width: 66%;
   max-width: 800px;
   margin: 32px auto 0;
+  animation: updown 3.5s linear infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  33.33333% {
+    transform: translateY(-10px);
+  }
+  66.66667% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .data__magnifying_glass {
@@ -7998,6 +8011,7 @@ span.online-lesson__stepsSmall {
   right: 10px;
   bottom: 22px;
   width: 17.5%;
+  animation: jump 3s ease-in-out infinite normal;
 }
 
 .data__target {
@@ -8034,6 +8048,8 @@ span.online-lesson__stepsSmall {
   width: 42.1%;
   max-width: 540px;
   margin: 7vw auto 0;
+  opacity: 0;
+  transform: translate(0, 20px);
 }
 
 .data__people {
@@ -8050,6 +8066,8 @@ span.online-lesson__stepsSmall {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 76%;
+  opacity: 0;
+  transform: translate(0, 20px);
 }
 
 .data__peopleHeading {
@@ -8061,6 +8079,8 @@ span.online-lesson__stepsSmall {
 .data__peopleSubHeadingWrapper {
   position: relative;
   text-align: center;
+  opacity: 0;
+  transform: translate(0, 20px);
 }
 
 .data__peopleSubHeadingWrapper::after {
@@ -8100,6 +8120,8 @@ span.online-lesson__stepsSmall {
 
 .data__peopleItem {
   position: relative;
+  opacity: 0;
+  transform: translate(0, 20px);
 }
 
 .data__peopleItem:first-child,
@@ -8192,6 +8214,11 @@ span.online-lesson__stepsSmall {
   position: relative;
 }
 
+.data__gypsyItem:not(:nth-child(5)) {
+  opacity: 0;
+  transform: translate(0, 20px);
+}
+
 .data__questionGypsy2.speechBubble {
   position: absolute;
   bottom: -3%;
@@ -8214,6 +8241,8 @@ span.online-lesson__stepsSmall {
 .data__gypsyItem:nth-child(5) .data__gypsyPicture {
   position: absolute;
   top: -27px;
+  opacity: 0;
+  transform: translate(0, 20px);
 }
 
 .data__questionGypsy6.arrow {
@@ -8222,10 +8251,13 @@ span.online-lesson__stepsSmall {
   right: -12%;
   z-index: 10;
   width: 16%;
-  transform: translateY(-50%);
+  opacity: 0;
 }
 
 .data__image {
+  max-width: 531px;
+  max-width: 1000px;
+  margin: 0 auto;
   background-image: url(assets/img/data/image_bg.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -8240,8 +8272,76 @@ span.online-lesson__stepsSmall {
 
 .data__imagePicture img {
   display: block;
+  width: 20.54%;
+  max-width: 109px;
+  margin: 12px auto 0;
+}
+
+.data__imageWrapper {
+  position: relative;
   width: 51.6%;
+  max-width: 531px;
   margin: 0 auto;
+}
+
+.data__imageSpeechBubble {
+  transform: scale(0);
+}
+
+.data__imageSpeechBubble.-first {
+  position: absolute;
+  top: -0.3%;
+  left: 5%;
+  width: 28.88%;
+}
+
+.data__imageSpeechBubble.-second {
+  position: absolute;
+  top: 0.2%;
+  right: 15.1%;
+  width: 17.83%;
+}
+
+.data__imageSpeechBubble.-third {
+  position: absolute;
+  top: 22.4%;
+  left: 7.1%;
+  width: 17.06%;
+}
+
+.data__imageSpeechBubble.-fourth {
+  position: absolute;
+  top: 13.4%;
+  right: 10.1%;
+  width: 23.9%;
+}
+
+.data__imageSpeechBubble.-fifth {
+  position: absolute;
+  top: 34.1%;
+  left: -0.4%;
+  width: 28.76%;
+}
+
+.data__imageSpeechBubble.-sixth {
+  position: absolute;
+  top: 37.7%;
+  right: 0;
+  width: 28.42%;
+}
+
+.data__imageSpeechBubble.-seventh {
+  position: absolute;
+  top: 65.1%;
+  left: 3%;
+  width: 34.57%;
+}
+
+.data__imageSpeechBubble.-eighth {
+  position: absolute;
+  top: 65.1%;
+  right: 12%;
+  width: 25.55%;
 }
 
 .data__footerHeading {
@@ -8387,8 +8487,11 @@ span.online-lesson__stepsSmall {
     width: 20%;
     transform: translate(-50%, 0);
   }
+  .data__gypsyItem:nth-child(6) {
+    z-index: -1;
+  }
   .data__image {
-    margin: 9.4vw auto 0;
+    margin: 9.4vw auto 34vw;
     background-image: url(assets/img/data/image_bg-sp.png);
     background-position: top;
     background-size: 84%;
@@ -8397,8 +8500,48 @@ span.online-lesson__stepsSmall {
     width: 50%;
   }
   .data__imagePicture img {
-    width: 90%;
+    width: 41.4%;
     margin: 4vw auto;
+  }
+  .data__imageSpeechBubble.-first {
+    top: 10%;
+    left: -35%;
+    width: 58.08%;
+  }
+  .data__imageSpeechBubble.-second {
+    top: 17%;
+    right: -21%;
+    width: 35.82%;
+  }
+  .data__imageSpeechBubble.-third {
+    top: 39.2%;
+    left: -29%;
+    width: 34.52%;
+  }
+  .data__imageSpeechBubble.-fourth {
+    top: 37.7%;
+    right: -28.4%;
+    width: 53.6%;
+  }
+  .data__imageSpeechBubble.-fifth {
+    top: 54%;
+    left: -40%;
+    width: 62.26%;
+  }
+  .data__imageSpeechBubble.-sixth {
+    top: 65%;
+    right: -30%;
+    width: 57.03%;
+  }
+  .data__imageSpeechBubble.-seventh {
+    top: 91%;
+    left: -39%;
+    width: 84.26%;
+  }
+  .data__imageSpeechBubble.-eighth {
+    top: 92%;
+    right: -24%;
+    width: 63.55%;
   }
   .data__footerHeading {
     width: 70%;
