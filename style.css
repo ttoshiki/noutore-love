@@ -2316,6 +2316,27 @@ img {
   }
 }
 
+@keyframes jump-sp {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5px, -10px);
+  }
+  20% {
+    transform: translate(0, 0%);
+  }
+  30% {
+    transform: translate(5px, -10px);
+  }
+  40% {
+    transform: translate(0, 0%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .home__mainVisual {
     width: 100%;
@@ -8376,6 +8397,9 @@ span.online-lesson__stepsSmall {
     width: 92%;
     margin: 0 auto;
   }
+  .data__magnifying_glass {
+    animation: jump-sp 3s ease-in-out infinite normal;
+  }
   .data__targetWrapper {
     top: -40px;
     width: 80px;
@@ -8520,7 +8544,7 @@ span.online-lesson__stepsSmall {
   }
   .data__imageSpeechBubble.-fourth {
     top: 37.7%;
-    right: -28.4%;
+    right: -34.4%;
     width: 53.6%;
   }
   .data__imageSpeechBubble.-fifth {
@@ -8530,7 +8554,7 @@ span.online-lesson__stepsSmall {
   }
   .data__imageSpeechBubble.-sixth {
     top: 65%;
-    right: -30%;
+    right: -38%;
     width: 57.03%;
   }
   .data__imageSpeechBubble.-seventh {
@@ -8540,7 +8564,7 @@ span.online-lesson__stepsSmall {
   }
   .data__imageSpeechBubble.-eighth {
     top: 92%;
-    right: -24%;
+    right: -26%;
     width: 63.55%;
   }
   .data__footerHeading {
