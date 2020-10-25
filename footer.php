@@ -39,6 +39,7 @@
 					<ul class="footer__middleSubList">
 						<li class="footer__middleSubItem"><a href="<?php echo home_url('#home-about') ?>">「脳トレ」とは？</a></li>
 						<li class="footer__middleSubItem"><a href="<?php echo home_url('#home-genre') ?>">「脳トレ」が効果的なジャンル</a></li>
+						<li class="footer__middleSubItem"><a href="<?php echo home_url('#home-data') ?>">数字でひも解く！「脳トレ」コミュニティ</a></li>
 						<li class="footer__middleSubItem"><a href="<?php echo home_url('/profile') ?>">運営チームプロフィール</a></li>
 						<li class="footer__middleSubItem"><a href="<?php echo home_url('/hananiwa-salon') ?>">コミュニティの拠点</a></li>
 					</ul>
