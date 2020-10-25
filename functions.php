@@ -186,6 +186,12 @@ function namakemono_community_scripts()
         wp_enqueue_style('hooper-style');
     }
 
+    if (is_page('data')) {
+        wp_enqueue_script('gsap-scripts', get_template_directory_uri() . '/assets/js/lib/gsap.min.js', array(), _S_VERSION, true);
+        wp_enqueue_script('gsap-scroll-scripts', get_template_directory_uri() . '/assets/js/lib/ScrollTrigger.min.js', array(), _S_VERSION, true);
+        wp_enqueue_script('data-animation-scripts', get_template_directory_uri() . '/assets/js/data-animation.js', array(), _S_VERSION, true);
+    }
+
 
     if (is_archive() && !is_post_type_archive('seminar_video')) {
         wp_enqueue_script('namakemono-column-slider', get_template_directory_uri() . '/assets/js/min/hooper-column.min.js', array(), _S_VERSION, true);
@@ -389,3 +395,14 @@ function myplugin_add_custom_box()
         add_meta_box('myplugin_sectionid', __('作成者', 'myplugin_textdomain'), 'post_author_meta_box', 'column', 'advanced');
     }
 }
+
+add_filter('body_class', 'add_page_slug_class_name');
+function add_page_slug_class_name($classes)
+{
+    if (is_page()) {
+        $page = get_post(get_the_ID());
+        $classes[] = 'page-' . $page->post_name;
+    }
+    return $classes;
+}
+

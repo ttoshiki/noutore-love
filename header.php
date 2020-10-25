@@ -68,6 +68,12 @@
 							alt="「脳トレ」オンラインレッスン"
 							class="header__logoImage -sp"
 							>
+					<?php } elseif (is_page('data')) { ?>
+						<img
+							src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_white.svg"
+							alt="「脳トレ」オンラインレッスン"
+							class="header__logoImage -singleLine"
+						>
 					<?php } else { ?>
 						<img
 							src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg"
@@ -93,29 +99,28 @@
 					<div class="header__menuLogo" :class="isShow" v-if="isShow">
 							<a href="<?php echo home_url(); ?>">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="サイトロゴ" class="header__logoImage -pc">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-sp.svg" alt="「脳トレ」オンラインレッスン" class="header__logoImage -sp"
-									>
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-sp.svg" alt="「脳トレ」オンラインレッスン" class="header__logoImage -sp">
 						</a>
 					</div>
 				</transition>
 				<div class="header__fixedMenu">
-					<ul class="header__iconList">
+					<div class="header__iconList">
 						<transition name="trans_slide">
 							<div class="header__fixedIcon" :class="isIconShow" v-if="isIconShow">
-								<li class="header__iconItem header__iconTwitter" :class="isIconShow"><a href="https://twitter.com/noutore_info?s=20" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_twitter.svg"></a></li>
-								<!-- <li class="header__iconItem header__iconYoutube" :class="isIconShow"><a href="" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_youtube.svg"></a></li> -->
-								<li class="header__iconItem header__iconLine" :class="isIconShow"><a href="https://line.me/R/ti/p/%40496jcxcd" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_line.svg"></a></li>
-								<li class="header__iconItem header__iconMail" :class="isIconShow"><a href="<?php echo home_url('/contact/') ?>" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_mail.svg"></a></li>
-								<li class="header__iconItem header__iconMap" :class="isIconShow"><a href="<?php echo home_url('/hananiwa-salon') ?>" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_map.svg"></a></li>
+								<div class="header__iconItem header__iconTwitter" :class="isIconShow"><a href="https://twitter.com/noutore_info?s=20" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_twitter.svg"></a></div>
+								<!-- <div class="header__iconItem header__iconYoutube" :class="isIconShow"><a href="" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_youtube.svg"></a></div> -->
+								<div class="header__iconItem header__iconLine" :class="isIconShow"><a href="https://line.me/R/ti/p/%40496jcxcd" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_line.svg"></a></div>
+								<div class="header__iconItem header__iconMail" :class="isIconShow"><a href="<?php echo home_url('/contact/') ?>" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_mail.svg"></a></div>
+								<div class="header__iconItem header__iconMap" :class="isIconShow"><a href="<?php echo home_url('/hananiwa-salon') ?>" class="header__iconLink"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_map.svg"></a></div>
 							</div>
 						</transition>
-						<li class="header__iconItem header__iconSearch -isIconShow">
+						<div class="header__iconItem header__iconSearch -isIconShow">
 							<form class="search" method="get" action="<?php echo home_url(); ?>" role="search">
 								<input ref="focusField" :class="searchFieldOpened" class="search-input" type="search" name="s" placeholder="キーワードを入力してEnter">
 							</form>
 							<button @click="toggleSearchField" :class="searchFieldOpened" class="header__iconButton"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/icon_search.svg"></button>
-						</li>
-					</ul>
+						</div>
+					</div>
 					<nav id="site-navigation" class="header__navigation">
 						<span class="header__trigger" href="#" @click="toggleMenu" id="hoge">
 							<span></span>
@@ -135,6 +140,7 @@
 						<ul class="hammenu__list">
 							<li class="hammenu__item"><a href="<?php echo home_url('#home-about') ?>" @click="toggleMenu">「脳トレ」とは？</a></li>
 							<li class="hammenu__item"><a href="<?php echo home_url('#home-genre') ?>" @click="toggleMenu">「脳トレ」が効果的なジャンル</a></li>
+							<li class="hammenu__item"><a href="<?php echo home_url('#home-data') ?>" @click="toggleMenu">数字でひも解く!「脳トレ」コミュニティ</a></li>
 							<li class="hammenu__item"><a href="<?php echo home_url('/profile') ?>" @click="toggleMenu">運営チームプロフィール</a></li>
 							<li class="hammenu__item"><a href="<?php echo home_url('/hananiwa-salon') ?>" @click="toggleMenu">コミュニティの拠点</a></li>
 						</ul>
