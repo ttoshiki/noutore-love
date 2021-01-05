@@ -399,7 +399,7 @@ get_header();
             alt="メンバー募集要綱"
         >
       </h2>
-      <h3 class="online-lesson__recruitSubHeading">2020年10月スタートメンバー</h3>
+      <h3 class="online-lesson__recruitSubHeading">2020年12月スタートメンバー</h3>
       <ul class="online-lesson__recruitOverviewList">
         <li class="online-lesson__recruitOverviewItem">
           <dl>
